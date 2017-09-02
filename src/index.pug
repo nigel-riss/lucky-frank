@@ -7,6 +7,56 @@ head
     
     link(rel="stylesheet", href="styles.css")
 
-    title Document
+    title Lucky Frank Barbershop
 
 body
+    header.page-header
+        .header-contacts
+            .contact-item
+                .contact-item__icon
+                .contact-item__content
+                    a(href="#") +7 123 456-78-90
+
+            .contact-item 
+                .contact-item__icon
+                .contact-item__content Пон.-Пят.: 10<sup>00</sup>-20<sup>00</sup>
+
+            .contact-item.contact-item--address
+                .contact-item__icon
+                .contact-item__content г. Краснодар, ул. Барбершопная, д.777
+
+            .contact-item.contact-item--social
+                .contact-item__content
+                    a(href="https://www.instagram.com/truemanbarbershop/").social-icon.icon-instagram Instagram
+                    a(href="https://www.facebook.com/truemanbarbershop/").social-icon.icon-facebook Facebook
+                    a(href="https://vk.com/truemanbarbershop").social-icon.icon-vkontakte Vkontakte
+
+        nav.main-nav
+            .logo: img(src="img/logo.svg", alt="Lucky Frank Barbershop logo")
+
+            ul.main-menu
+                li: a(href="#") Главная
+                li: a(href="#") О нас
+                li: a(href="#") Услуги
+                li: a(href="#") Прайс
+                li: a(href="#") Советы
+                li: a(href="#") Мастера
+                li: a(href="#") Контакты
+
+        section.hero
+            header.hero__header
+                p.hero__welcome Добро пожаловать в
+                h1.hero__title Frank Barbershop
+                p.hero__subtitle Барбершоп для тех, кто разбирается в стиле
+                .hero__booking
+                    a(href="#").button Онлайн запись
+
+            .hero__quote
+                blockquote.quote
+                    p.quote__deco Frank <span>Says:</span>
+                    p.quote__text Костюм, шляпа, хорошая работа и одинокое пьянство по выходным — вот что украшает мужчину
+
+            .hero__deco
+
+        section.section.about
+            header.section__header

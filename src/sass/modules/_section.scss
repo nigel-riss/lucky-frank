@@ -1,6 +1,6 @@
 .section {
     // box model
-    padding: 25px;
+    padding: 60px 25px;
 
     &__header {
         // positioning
@@ -25,6 +25,18 @@
 
             // visual
             background-color: $brown;
+        }
+
+        &--inversed {
+            .section__suptitle {
+                // typography
+                color: $white;
+            }
+
+            .section__subtitle {
+                // typography
+                color: $white;
+            }
         }
     }
 

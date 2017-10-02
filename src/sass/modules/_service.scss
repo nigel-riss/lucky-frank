@@ -1,20 +1,64 @@
 .service {
-    &__icon {
+    // box model
+    padding-bottom: 60px;
 
+    &__icon {
+        // box model
+        height: 64px;
+        width: 64px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+
+        img {
+            // box model
+            max-height: 100%;
+            max-width: 100%;
+        }
     }
 
     &__title {
+        // box model
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+
         // typography
         font-family: $titleFont;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
+        text-align: center;
         text-transform: uppercase;
     }
 
     &__description {
+        // box model
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
 
+        // typography
+        color: $brown;
+        font-weight: 700;
+        text-align: center;
     }
 
     &__more {
+        // typography
+        text-align: center;
 
+        a {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+            padding: 5px 20px;
+
+            // typography
+            color: $brown;
+            font-size: 0.875rem;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            // visual
+            border: 2px solid $brown;
+        }
     }
 }

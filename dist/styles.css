@@ -517,7 +517,9 @@ body {
 
 .hero {
   padding: 25px;
-  background-color: #484340; }
+  background-color: #484340;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.25);
+          box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.25); }
   .hero__header {
     position: relative;
     padding-top: 60px;
@@ -602,7 +604,7 @@ body {
     color: #ffffff; }
 
 .section {
-  padding: 25px; }
+  padding: 60px 25px; }
   .section__header {
     position: relative;
     margin-bottom: 40px;
@@ -616,6 +618,10 @@ body {
       height: 2px;
       width: 50px;
       background-color: #a97140; }
+    .section__header--inversed .section__suptitle {
+      color: #ffffff; }
+    .section__header--inversed .section__subtitle {
+      color: #ffffff; }
   .section__suptitle {
     margin: 0;
     padding: 0;
@@ -646,7 +652,78 @@ body {
       text-decoration: none;
       text-transform: uppercase; }
 
-.service__title {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.5rem;
+.about {
+  -webkit-box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.25);
+          box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.25); }
+
+.services {
+  padding: 60px 25px; }
+
+.service {
+  padding-bottom: 60px; }
+  .service__icon {
+    height: 64px;
+    width: 64px;
+    margin: 0 auto;
+    margin-bottom: 15px; }
+    .service__icon img {
+      max-height: 100%;
+      max-width: 100%; }
+  .service__title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.75rem;
+    text-align: center;
+    text-transform: uppercase; }
+  .service__description {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    color: #a97140;
+    font-weight: 700;
+    text-align: center; }
+  .service__more {
+    text-align: center; }
+    .service__more a {
+      display: inline-block;
+      vertical-align: top;
+      padding: 5px 20px;
+      color: #a97140;
+      font-size: 0.875rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 2px solid #a97140; }
+
+.stat__header {
+  height: 300px; }
+
+.stat__icon {
+  height: 92px;
+  width: 92px; }
+  .stat__icon img {
+    max-height: 100%;
+    max-width: 100%; }
+
+.stat__count {
+  margin: 0;
+  padding: 0;
+  color: #a97140;
+  font-size: 5rem;
+  font-weight: 700; }
+
+.stat__name {
+  font-weight: 700;
+  letter-spacing: 2px;
   text-transform: uppercase; }
+
+.prices {
+  background-color: #222222; }
+
+a.button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 30px;
+  color: #ffffff;
+  border: 2px solid #a97140; }

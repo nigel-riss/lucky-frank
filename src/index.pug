@@ -86,28 +86,32 @@ body
                     img(src="/img/shaving-icon.svg", alt="Бритьё в барбершопе Lucky Frank")
                 h3.service__title Бритьё
                 p.service__description Профессиональный подход к каждому клиенту от наших лучших мастеров-барберов
-                a(href="#").service_more Подробнее
+                .service__more 
+                    a(href="#") Подробнее
 
             article.service
                 .service__icon
                     img(src="/img/haircut-icon.svg", alt="Стрижки в барбершопе Lucky Frank")
                 h3.service__title Стрижки
                 p.service__description Профессиональный подход к каждому клиенту от наших лучших мастеров-барберов
-                a(href="#").service_more Подробнее
+                .service__more 
+                    a(href="#") Подробнее
 
             article.service
                 .service__icon
                     img(src="/img/royal-icon.svg", alt="Королевское бритьё в барбершопе Lucky Frank")
                 h3.service__title Королевское бритьё
-                p.service__description Профессиональный подход к каждому клиенту от наших лучших мастеров-барберов
-                a(href="#").service_more Подробнее
+                p.service__description Настоящий ритуал, состоящий из нескольких этапов
+                .service__more 
+                    a(href="#") Подробнее
 
             article.service
                 .service__icon
                     img(src="/img/tattoo-icon.svg", alt="Профессиональные татуировки в барбершопе Lucky Frank")
                 h3.service__title Татуировки
                 p.service__description Наши тату мастера осуществят вашу самую смелую идею
-                a(href="#").service_more Подробнее
+                .service__more 
+                    a(href="#") Подробнее
 
         
     section.section.statistics
@@ -117,7 +121,7 @@ body
                     .stat__icon
                         img(src="/img/haircut-icon.svg", alt="Стрижки в барбершопе Lucky Frank")
                     p.stat__count 35
-                    p.stat_name идеальных причёсок
+                    p.stat__name идеальных <br>причёсок
                 
                 .stat__photo: img(src="", alt="")
                 .stat__background: img(src="", alt="")
@@ -127,7 +131,7 @@ body
                     .stat__icon
                         img(src="/img/shaving-icon.svg", alt="Бритьё в барбершопе Lucky Frank")
                     p.stat__count 25
-                    p.stat_name подстриженых бород
+                    p.stat__name подстриженых <br>бород
                 
                 .stat__photo: img(src="", alt="")
                 .stat__background: img(src="", alt="")
@@ -135,18 +139,21 @@ body
             article.stat
                 header.stat__header
                     .stat__icon
-                        img(src="/img/tatto-icon.svg", alt="Профессиональные татуировки в барбершопе Lucky Frank")
+                        img(src="/img/tattoo-icon.svg", alt="Профессиональные татуировки в барбершопе Lucky Frank")
                     p.stat__count 15
-                    p.stat_name набитых татуировок
+                    p.stat__name набитых <br>татуировок
                 
                 .stat__photo: img(src="", alt="")
                 .stat__background: img(src="", alt="")
 
     section.section.prices
-        header.section__header
+        header.section__header.section__header--inversed
             p.section__suptitle Прайс Lucky Frank
-            h2.section__title Прайс-лист на услуги
-            p.subtitle Позволь себе настоящий стиль
+            h2.section__title Прайс-лист <br>на услуги
+            p.section__subtitle Позволь себе настоящий стиль
+
+        .section__more
+            a(href="").button Все услуги
 
         .section__content
             table.prices-table
@@ -206,7 +213,9 @@ body
         header.section__header
             p.section__suptitle Барберы Lucky Frank
             h2.section__title Наши мастера
-            p.subtitle Мы знаем, что такое стиль
+            p.section__subtitle Мы знаем, что такое стиль
+
+        .section__more
             a(href="") Онлайн запись
 
         .section__content

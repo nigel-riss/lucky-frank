@@ -1,18 +1,15 @@
-.hero {
+.section {
     // box model
     padding: 25px;
-
-    // visual
-    background-color: $chocolate;
 
     &__header {
         // positioning
         position: relative;
 
         // box model
-        padding-top: 60px;
-        padding-bottom: 20px;
         margin-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         &::after {
             content: "";
@@ -31,16 +28,15 @@
         }
     }
 
-    &__welcome {
+    &__suptitle {
         // box model
         margin: 0;
         padding: 0;
         padding-bottom: 10px;
 
         // typography
-        color: $brown;
-        font-size: 0.875rem;
         font-weight: 700;
+        letter-spacing: 2px;
         text-transform: uppercase;
     }
 
@@ -49,11 +45,10 @@
         margin: 0;
         padding: 0;
         padding-bottom: 30px;
-        
+
         // typography
-        color: $white;
-        font-family: $titleFont;
-        font-size: 3rem;
+        color: $brown;
+        font-weight: 400;
         text-transform: uppercase;
     }
 
@@ -63,43 +58,29 @@
         padding: 0;
 
         // typography
-        color: $white;
-        font-family: $mainFont;
+        font-weight: 700;
         letter-spacing: 2px;
-        line-height: 1.5;
         text-transform: uppercase;
     }
 
-    &__booking {
-        a {
-            // box model
-            display: inline-block;
-            vertical-align: top;
-            margin-bottom: 60px;
-            padding: 10px 20px;
-
+    &__content {
+        p {
             // typography
-            color: $white;
-            text-decoration: none;
-            text-transform: uppercase;
-
-            // visual
-            border: 2px solid $brown;
+            line-height: 1.75;
         }
     }
 
-    &__quote {
+    &__more {
         // box model
-        margin-top: -10px;
-        margin-bottom: -25px;
-        padding-left: 10px;
-        padding-bottom: 20px;
+        padding-top: 20px;
 
-        // visual
-        border-left: 1px solid $white;
-    }
-
-    &__deco {
-
+        a {
+            // typography
+            color: $brown;
+            font-weight: 700;
+            // letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
     }
 }

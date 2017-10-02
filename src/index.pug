@@ -6,7 +6,8 @@ head
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     
     link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;subset=cyrillic", rel="stylesheet")
-    link(href="https://fonts.googleapis.com/css?family=Oswald:400&amp;subset=cyrillic", rel="stylesheet")
+    //- link(href="https://fonts.googleapis.com/css?family=Oswald:400&amp;subset=cyrillic", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400&amp;subset=cyrillic", rel="stylesheet")
     link(rel="stylesheet", href="styles.css")
 
     title Lucky Frank Barbershop
@@ -68,13 +69,14 @@ body
 
     section.section.about
         header.section__header
-            p.section__supheader О Барбершопе Lucky Frank
-            h2.section__title Добро пожаловать в Lucky Frank Barbershop
-            p.subtitle Мы ждём тебя в гости
+            p.section__suptitle О Барбершопе
+            h2.section__title Добро пожаловать <br>в Lucky Frank Barbershop
+            p.section__subtitle Мы ждём тебя в гости
 
         .section__content
             p Мы намного больше чем просто мужская парикмахерская, это даже больше чем мужской клуб по интересам, это именно то место, где ты найдешь себя и свой стиль. Мужские стрижки и бритье — это наш профиль, и мы уверены, что мы стрижем и бреем лучше всех.
-            a(href="").section__more узнай больше
+            .section__more 
+                a(href="") узнай больше
 
 
     section.section.services
@@ -84,28 +86,28 @@ body
                     img(src="/img/shaving-icon.svg", alt="Бритьё в барбершопе Lucky Frank")
                 h3.service__title Бритьё
                 p.service__description Профессиональный подход к каждому клиенту от наших лучших мастеров-барберов
-                a(href="").service_more Подробнее
+                a(href="#").service_more Подробнее
 
             article.service
                 .service__icon
                     img(src="/img/haircut-icon.svg", alt="Стрижки в барбершопе Lucky Frank")
                 h3.service__title Стрижки
                 p.service__description Профессиональный подход к каждому клиенту от наших лучших мастеров-барберов
-                a(href="").service_more Подробнее
+                a(href="#").service_more Подробнее
 
             article.service
                 .service__icon
                     img(src="/img/royal-icon.svg", alt="Королевское бритьё в барбершопе Lucky Frank")
                 h3.service__title Королевское бритьё
                 p.service__description Профессиональный подход к каждому клиенту от наших лучших мастеров-барберов
-                a(href="").service_more
+                a(href="#").service_more Подробнее
 
             article.service
                 .service__icon
                     img(src="/img/tattoo-icon.svg", alt="Профессиональные татуировки в барбершопе Lucky Frank")
                 h3.service__title Татуировки
                 p.service__description Наши тату мастера осуществят вашу самую смелую идею
-                a(href="").service_more Подробнее
+                a(href="#").service_more Подробнее
 
         
     section.section.statistics
@@ -140,9 +142,9 @@ body
                 .stat__photo: img(src="", alt="")
                 .stat__background: img(src="", alt="")
 
-    section.section.price
+    section.section.prices
         header.section__header
-            p.section__supheader Прайс Lucky Frank
+            p.section__suptitle Прайс Lucky Frank
             h2.section__title Прайс-лист на услуги
             p.subtitle Позволь себе настоящий стиль
 
@@ -202,7 +204,7 @@ body
 
     section.section.team
         header.section__header
-            p.section__supheader Барберы Lucky Frank
+            p.section__suptitle Барберы Lucky Frank
             h2.section__title Наши мастера
             p.subtitle Мы знаем, что такое стиль
             a(href="") Онлайн запись

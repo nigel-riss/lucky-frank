@@ -5,6 +5,8 @@ head
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;subset=cyrillic", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Oswald:400&amp;subset=cyrillic", rel="stylesheet")
     link(rel="stylesheet", href="styles.css")
 
     title Lucky Frank Barbershop
@@ -12,17 +14,17 @@ head
 body
     header.page-header
         .header-contacts
-            .contact-item
-                .contact-item__icon
+            .contact-item.contact-item--phone
+                .contact-item__icon.icon-phone
                 .contact-item__content
                     a(href="#") +7 123 456-78-90
 
             .contact-item 
-                .contact-item__icon
+                .contact-item__icon.icon-clock
                 .contact-item__content Пон.-Пят.: 10<sup>00</sup>-20<sup>00</sup>
 
             .contact-item.contact-item--address
-                .contact-item__icon
+                .contact-item__icon.icon-location
                 .contact-item__content г. Краснодар, ул. Барбершопная, д.777
 
             .contact-item.contact-item--social
@@ -31,9 +33,9 @@ body
                     a(href="https://www.facebook.com/truemanbarbershop/").social-icon.icon-facebook Facebook
                     a(href="https://vk.com/truemanbarbershop").social-icon.icon-vkontakte Vkontakte
 
-        nav.main-nav
-            .logo: img(src="img/logo.svg", alt="Lucky Frank Barbershop logo")
+        .logo: img(src="img/logo-white.svg", alt="Lucky Frank Barbershop logo")
 
+        nav.main-nav
             ul.main-menu
                 li: a(href="#") Главная
                 li: a(href="#") О нас
@@ -47,15 +49,19 @@ body
     section.hero
         header.hero__header
             p.hero__welcome Добро пожаловать в
-            h1.hero__title Frank Barbershop
-            p.hero__subtitle Барбершоп для тех, кто разбирается в стиле
-            .hero__booking
-                a(href="#").button Онлайн запись
+            h1.hero__title Lucky Frank <br>Barbershop
+            p.hero__subtitle Барбершоп для тех, <br>кто разбирается в стиле
+
+        .hero__booking
+            a(href="#") Онлайн запись
 
         .hero__quote
-            blockquote.quote
-                p.quote__deco Frank <span>Says:</span>
-                p.quote__text Костюм, шляпа, хорошая работа и одинокое пьянство по выходным — вот что украшает мужчину
+            blockquote.quote.quote--inversed
+                .quote__deco 
+                h3.quote__title Frank <em>Says:</em>
+                p.quote__text Костюм, шляпа, хорошая работа и одинокое пьянство по выходным <br><strong>— вот что украшает мужчину</strong>
+                .quote__signature
+                    img(src="/img/sign.png", alt="")
 
         .hero__deco
 

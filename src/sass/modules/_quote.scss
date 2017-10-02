@@ -1,0 +1,61 @@
+.quote {
+    // positioning
+    position: relative;
+
+    // box model
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px;
+
+    &__deco {
+
+    }
+
+    &__title {
+        // box model
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+
+        // typography
+        font-family: $titleFont;
+        font-size: 1.75rem;
+        text-transform: uppercase;
+
+        em {
+            // typography
+            color: $brown;
+            font-style: normal;
+        }
+    }
+
+    &__text {
+        // box model
+        margin: 0;
+        padding: 0;
+
+        // typography
+        font-style: italic;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+
+    &__signature {
+        // positioning
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &--inversed {
+        .quote__title {
+            // typography
+            color: $white;
+        }
+
+        .quote__text {
+            // typography
+            color: $white;
+        }
+    }
+}

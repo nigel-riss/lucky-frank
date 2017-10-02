@@ -4,30 +4,32 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;amp;subset=cyrillic" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400&amp;amp;subset=cyrillic" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
   <title>Lucky Frank Barbershop</title>
 </head>
 <body>
   <header class="page-header">
     <div class="header-contacts">
-      <div class="contact-item">
-        <div class="contact-item__icon"></div>
+      <div class="contact-item contact-item--phone">
+        <div class="contact-item__icon icon-phone"></div>
         <div class="contact-item__content"><a href="#">+7 123 456-78-90</a></div>
       </div>
       <div class="contact-item"> 
-        <div class="contact-item__icon"></div>
+        <div class="contact-item__icon icon-clock"></div>
         <div class="contact-item__content">Пон.-Пят.: 10<sup>00</sup>-20<sup>00</sup></div>
       </div>
       <div class="contact-item contact-item--address">
-        <div class="contact-item__icon"></div>
+        <div class="contact-item__icon icon-location"></div>
         <div class="contact-item__content">г. Краснодар, ул. Барбершопная, д.777</div>
       </div>
       <div class="contact-item contact-item--social">
         <div class="contact-item__content"><a class="social-icon icon-instagram" href="https://www.instagram.com/truemanbarbershop/">Instagram</a><a class="social-icon icon-facebook" href="https://www.facebook.com/truemanbarbershop/">Facebook</a><a class="social-icon icon-vkontakte" href="https://vk.com/truemanbarbershop">Vkontakte</a></div>
       </div>
     </div>
+    <div class="logo"><img src="img/logo-white.svg" alt="Lucky Frank Barbershop logo"/></div>
     <nav class="main-nav">
-      <div class="logo"><img src="img/logo.svg" alt="Lucky Frank Barbershop logo"/></div>
       <ul class="main-menu">
         <li><a href="#">Главная</a></li>
         <li><a href="#">О нас</a></li>
@@ -42,14 +44,16 @@
   <section class="hero">
     <header class="hero__header">
       <p class="hero__welcome">Добро пожаловать в</p>
-      <h1 class="hero__title">Frank Barbershop</h1>
-      <p class="hero__subtitle">Барбершоп для тех, кто разбирается в стиле</p>
-      <div class="hero__booking"><a class="button" href="#">Онлайн запись</a></div>
+      <h1 class="hero__title">Lucky Frank <br>Barbershop</h1>
+      <p class="hero__subtitle">Барбершоп для тех, <br>кто разбирается в стиле</p>
     </header>
+    <div class="hero__booking"><a href="#">Онлайн запись</a></div>
     <div class="hero__quote">
-      <blockquote class="quote">
-        <p class="quote__deco">Frank <span>Says:</span></p>
-        <p class="quote__text">Костюм, шляпа, хорошая работа и одинокое пьянство по выходным — вот что украшает мужчину</p>
+      <blockquote class="quote quote--inversed">
+        <div class="quote__deco"> </div>
+        <h3 class="quote__title">Frank <em>Says:</em></h3>
+        <p class="quote__text">Костюм, шляпа, хорошая работа и одинокое пьянство по выходным <br><strong>— вот что украшает мужчину</strong></p>
+        <div class="quote__signature"><img src="/img/sign.png" alt=""/></div>
       </blockquote>
     </div>
     <div class="hero__deco"></div>

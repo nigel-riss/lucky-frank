@@ -1,8 +1,23 @@
 // wordpress
+@import 'base/wordpress';
 
 // fonts
+@import 'fonts/icons';
 
 // base
 @import 'normalize.css';
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/global';
 
 // modules
+//      page header
+@import 'modules/page-header';
+@import 'modules/header-contacts';
+@import 'modules/contact-item';
+@import 'modules/logo';
+@import 'modules/main-nav';
+
+//      hero
+@import 'modules/hero';
+@import 'modules/quote';

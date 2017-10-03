@@ -503,6 +503,8 @@ body {
     display: inline-block; }
 
 .logo {
+  position: relative;
+  z-index: 3;
   max-width: 300px;
   margin: 0 auto;
   margin-bottom: -70px;
@@ -516,6 +518,8 @@ body {
   opacity: 0; }
 
 .hero {
+  position: relative;
+  z-index: 2;
   padding: 25px;
   background-color: #484340;
   background-image: url("/img/bg-m.jpg");
@@ -656,6 +660,8 @@ body {
       text-transform: uppercase; }
 
 .about {
+  position: relative;
+  z-index: 1;
   background-image: url("/img/about-bg-m.jpg");
   background-position: center center;
   background-size: cover;
@@ -764,6 +770,48 @@ body {
 .advices {
   -webkit-box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.25);
           box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.25); }
+
+.page-footer {
+  padding: 60px 25px;
+  background-color: #222222; }
+
+.footer-logo__image {
+  position: relative;
+  z-index: 2;
+  max-width: 300px;
+  margin: 0 auto; }
+  .footer-logo__image img {
+    width: 100%; }
+
+.footer-logo__title {
+  color: #a97140;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 3.1rem;
+  line-height: 0.5;
+  text-align: center;
+  text-transform: uppercase; }
+  .footer-logo__title small {
+    font-size: 1.14rem; }
+
+.footer-block__title {
+  padding-left: 40px;
+  color: #a97140;
+  text-transform: uppercase; }
+
+.footer-info {
+  position: relative; }
+  .footer-info__icon {
+    position: absolute;
+    color: #a97140;
+    font-size: 1.4em; }
+  .footer-info__text {
+    padding-left: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.5; }
+    .footer-info__text a {
+      color: #ffffff;
+      text-decoration: none; }
 
 a.button {
   display: inline-block;

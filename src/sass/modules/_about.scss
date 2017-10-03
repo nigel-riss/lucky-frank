@@ -1,4 +1,8 @@
 .about {
+    // positioning
+    position: relative;
+    z-index: 1;
+
     // visual
     background-image: url('/img/about-bg-m.jpg');
     background-position: center center;

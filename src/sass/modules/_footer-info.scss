@@ -1,0 +1,29 @@
+.footer-info {
+    // positioning
+    position: relative;
+
+    &__icon {
+        // positioning
+        position: absolute;
+
+        // typography
+        color: $brown;
+        font-size: 1.4em;
+    }
+
+    &__text {
+        // box model
+        padding-left: 40px;
+
+        // typography
+        color: $white;
+        font-weight: 700;
+        line-height: 1.5;
+
+        a {
+            // typography
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}

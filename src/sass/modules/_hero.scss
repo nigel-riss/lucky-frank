@@ -1,4 +1,8 @@
 .hero {
+    // positioning
+    position: relative;
+    z-index: 2;
+
     // box model
     padding: 25px;
 

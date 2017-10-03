@@ -1,4 +1,8 @@
 .logo {
+    // positioning
+    position: relative;
+    z-index: 3;
+    
     // box model
     max-width: 300px;
     margin: 0 auto;

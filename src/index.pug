@@ -123,7 +123,8 @@ body
                     .stat__count 35
                     .stat__name идеальных <br>причёсок
                 
-                .stat__photo: img(src="", alt="")
+                .stat__photo
+                    img(src="/img/haircut-photo.png", alt="")
                 .stat__background.stat__background--hair
                     img(src="/img/haircut-bg.jpg", alt="")
                 
@@ -134,7 +135,8 @@ body
                     .stat__count 25
                     .stat__name подстриженых <br>бород
                 
-                .stat__photo: img(src="", alt="")
+                .stat__photo
+                    img(src="/img/shaving-photo.png", alt="")
                 .stat__background
                     img(src="/img/shaving-bg.jpg", alt="")
 
@@ -145,7 +147,8 @@ body
                     .stat__count 15
                     .stat__name набитых <br>татуировок
                 
-                .stat__photo: img(src="", alt="")
+                .stat__photo
+                    img(src="/img/tattoo-photo.png", alt="")
                 .stat__background
                     img(src="/img/tattoo-bg.jpg", alt="")
 
@@ -155,58 +158,57 @@ body
             h2.section__title Прайс-лист <br>на услуги
             p.section__subtitle Позволь себе настоящий стиль
 
-        .section__more
-            a(href="").button Все услуги
-
         .section__content
             table.prices-table
                 caption Основные услуги
                 tr
-                    td Стрижка мужская <br><small>Подбор стиля, мытье головы, укладка</small>
-                    td 1500 <span>p.</span>
+                    td Стрижка мужская <br><small>подбор стиля, мытье головы, укладка</small>
+                    td 1500 
                 tr
                     td Стрижка детская <br><small>от 5 до 14 лет</small>
-                    td 1200 <span>p.</span>
+                    td 1200 
                 tr
-                    td Стрижка под машинку <br><small>Одна насадка</small>
-                    td 600 <span>p.</span>
+                    td Стрижка под машинку <br><small>одна насадка</small>
+                    td 600 
                 tr
                     td Коррекция бороды
-                    td 600 <span>p.</span>
+                    td 600 
                 tr
-                    td Королевское бритьё бороды<br><small>(c косметикой Truefitt & Hill)</small>
-                    td 1500 <span>p.</span>
+                    td Королевское бритьё бороды<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small>
+                    td 1500 
                 tr
-                    td Королевское бритьё головы<br><small>(c косметикой Truefitt & Hill)</small>
-                    td 2000 <span>p.</span>
+                    td Королевское бритьё головы<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small>
+                    td 2000 
 
             table.prices-table
                 caption Дополнительные услуги
                 tr
                     td Камуфляж седых волос
-                    td 1100 <span>p.</span>
+                    td 1100 
                 tr
                     td Окантовка с подбриванием
-                    td 500 <span>p.</span>
+                    td 500 
                 tr
                     td Мытьё и укладка волос
-                    td 400 <span>p.</span>
+                    td 400 
 
             table.prices-table
                 caption Комплексные услуги
                 tr
                     td Стрижка мужская + Коррекция бороды
-                    td 1800 <span>p.</span>
+                    td 1800 
                 tr
                     td Стрижка мужская + Королевское бритьё
-                    td 2700 <span>p.</span>
+                    td 2700 
                 tr
                     td Отец + сын
-                    td 2200 <span>p.</span>
+                    td 2200 
                 tr
                     td Друг + друг
-                    td 2600 <span>p.</span>
-
+                    td 2600 
+                    
+        .section__more
+            a(href="").button Все услуги
 
     section.section.advices
         article.advice
@@ -228,7 +230,6 @@ body
                         p.member__position Барбер
                         h3.member__name Олег
                         
-                    .member__cover
                     .member__photo: img(src="./img/barbers/barber1.jpg", alt="")
                 
             article.member
@@ -236,7 +237,6 @@ body
                     p.member__position Барбер
                     h3.member__name Дмитрий
 
-                .member__cover
                 .member__photo: img(src="./img/barbers/barber2.jpg", alt="")
                 
             article.member
@@ -244,7 +244,6 @@ body
                     p.member__position Барбер
                     h3.member__name Юрий
 
-                .member__cover
                 .member__photo: img(src="./img/barbers/barber3.jpg", alt="")
 
             article.member.member--join

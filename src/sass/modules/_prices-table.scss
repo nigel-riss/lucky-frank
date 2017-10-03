@@ -1,3 +1,56 @@
 .prices-table {
-    
+    // box model
+    width: 100%;
+    margin-top: 50px;
+
+    // table
+    border-collapse: collapse;
+
+    caption {
+        // box model
+        padding-bottom: 20px;
+
+        // typography
+        color: $white;
+        // color: $brown;
+        font-family: $titleFont;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    td {
+        // box model
+        padding: 5px 0;
+        padding-bottom: 15px;
+
+        // typography
+        color: $white;
+        font-weight: 700;
+        line-height: 1.5;
+
+        &:nth-of-type(1) {
+            // box model
+            vertical-align: top;
+            padding-right: 20px;
+
+            // typography
+            text-align: left;
+        }
+
+        &:nth-of-type(2) {
+            // box model
+            vertical-align: top;
+
+            // typography
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        small {
+            // typography
+            color: $brown;
+            font-size: 1em;
+        }
+    }
 }

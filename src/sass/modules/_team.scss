@@ -1,3 +1,8 @@
 .team {
-    
+    &__more {
+        a {
+            // box model
+            display: inline-block;
+        }
+    }
 }

@@ -13,6 +13,17 @@
     background-size: cover;
     box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
 
+    @include atTabletsPortrait {
+        // visual
+        background-image: url('/img/bg-t.jpg');
+    }
+
+    @include atTabletsPortrait {
+        // box model
+        padding: 80px;
+        // padding-bottom: 25px;
+    }
+
     &__header {
         // positioning
         position: relative;
@@ -21,6 +32,11 @@
         padding-top: 60px;
         padding-bottom: 20px;
         margin-bottom: 40px;
+
+        @include atTabletsPortrait {
+            // box model
+            margin-bottom: 60px;
+        }
 
         &::after {
             content: "";
@@ -36,6 +52,11 @@
 
             // visual
             background-color: $brown;
+
+            @include atTabletsPortrait {
+                // positioning
+                bottom: -10px;
+            }
         }
     }
 
@@ -50,6 +71,11 @@
         font-size: 0.875rem;
         font-weight: 700;
         text-transform: uppercase;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.25rem;
+        }
     }
 
     &__title {
@@ -63,6 +89,15 @@
         font-family: $titleFont;
         font-size: 3rem;
         text-transform: uppercase;
+
+        @include atTabletsPortrait {
+            // box model
+            padding-bottom: 20px;
+
+            // typography
+            font-size: 6rem;
+            line-height: 0.9;
+        }
     }
 
     &__subtitle {

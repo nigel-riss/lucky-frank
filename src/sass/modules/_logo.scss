@@ -8,6 +8,14 @@
     margin: 0 auto;
     margin-bottom: -70px;
     padding: 20px;
+    
+    @include atTabletsPortrait {
+        max-width: 380px;
+        margin: 0;
+        margin-bottom: -120px;
+        padding-left: 60px;
+        padding-top: 40px;
+    }
 
     img {
         // box model

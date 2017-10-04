@@ -36,4 +36,11 @@
         // box model
         display: inline-block;
     }
+    
+    &--location {
+        @include atTabletsPortrait {
+            // box model
+            display: inline-block;
+        }
+    }
 }

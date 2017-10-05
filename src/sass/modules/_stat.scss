@@ -5,6 +5,11 @@
     // visual
     overflow: hidden;
 
+    @include atTabletsPortrait {
+        // box model
+        padding-left: 10px;
+    }
+
     &__header {
         // positioning
         position: relative;

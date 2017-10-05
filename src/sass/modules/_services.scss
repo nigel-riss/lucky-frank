@@ -4,6 +4,10 @@
     padding-bottom: 0;
 
     @include atTabletsPortrait {
+        // box model
+        padding: 60px 25px;
+        padding-bottom: 10px;
+        
         // typography
         font-size: 0;
         text-align: center;

@@ -1,4 +1,9 @@
 .prices {
     // visual
     background-color: $dark;
+
+    @include atTabletsPortrait {
+        // box model
+        padding: 80px;
+    }
 }

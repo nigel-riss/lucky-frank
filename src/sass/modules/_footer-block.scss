@@ -1,18 +1,17 @@
 .footer-block {
+    // box model
+    padding-top: 10px;
+
     &__header {
 
     }
 
     &__title {
         // box model
-        padding-left: 40px;
+        padding-left: 45px;
         
         // typography
         color: $brown;
         text-transform: uppercase;
-    }
-
-    &__content {
-
     }
 }

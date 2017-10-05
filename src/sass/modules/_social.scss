@@ -1,0 +1,23 @@
+.social {
+    a {
+        // box model
+        display: inline-block;
+
+        // typography
+        font-size: 0;
+
+        &::before {
+            // box model
+            padding-right: 30px;
+            // typography
+            color: $white;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+    }
+
+    &--footer {
+        // box model
+        padding-left: 45px;
+    }
+}

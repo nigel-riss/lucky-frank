@@ -2,28 +2,52 @@
     // positioning
     position: relative;
 
+    // box model
+    margin-bottom: 25px;
+
     &__icon {
         // positioning
         position: absolute;
+        left: 0;
+        top: 0;
+
+        // box model
+        width: 35px;
+        vertical-align: bottom;
 
         // typography
         color: $brown;
         font-size: 1.4em;
+        text-align: center;
+        // border: 1px solid red;
     }
 
     &__text {
         // box model
-        padding-left: 40px;
+        padding-left: 45px;
 
         // typography
         color: $white;
-        font-weight: 700;
+        // font-weight: 700;
         line-height: 1.5;
 
         a {
             // typography
             color: $white;
             text-decoration: none;
+        }
+
+        &--schedule {
+            // typography
+            line-height: 2;
+        }
+
+        em {
+            // typography
+            color: $brown;
+            font-style: normal;
+            font-weight: 700;
+            text-transform: uppercase;
         }
     }
 }

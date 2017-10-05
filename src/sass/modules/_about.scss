@@ -8,4 +8,12 @@
     background-position: center center;
     background-size: cover;
     box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
+    
+    @include atTabletsPortrait {
+        // box model
+        padding: 80px;
+        
+        // visual
+        background-image: url('/img/about-bg-t.jpg');
+    }
 }

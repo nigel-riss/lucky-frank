@@ -1,28 +1,34 @@
-const gulp = require('gulp');
-const watch = require('gulp-watch');
-const browserSync = require('browser-sync').create();
+const gulp = require("gulp");
+const watch = require("gulp-watch");
+const browserSync = require("browser-sync").create();
 
-gulp.task('watch', () => {
+gulp.task("watch", () => {
     browserSync.init({
         server: {
-            baseDir: 'dist'
+            baseDir: "dist"
+        },
+        notify: {
+            styles: {
+                top: "auto",
+                bottom: "0"
+            }
         }
     });
 
-    watch('./src/**/*.pug', () => {
-        gulp.start('pugChanged');
-    })
+    watch("./src/**/*.pug", () => {
+        gulp.start("pugChanged");
+    });
 
-    watch('./src/**/*.scss', () => {
-        gulp.start('cssInject');
-    })
+    watch("./src/**/*.scss", () => {
+        gulp.start("cssInject");
+    });
 });
 
-gulp.task('pugChanged', ['pugRender'], () => {
+gulp.task("pugChanged", ["pugRender"], () => {
     browserSync.reload();
 });
 
-gulp.task('cssInject', ['styles'], () => {
-    gulp.src('./dist/styles.css')
+gulp.task("cssInject", ["styles"], () => {
+    gulp.src("./dist/styles.css")
     .pipe(browserSync.stream());
 });

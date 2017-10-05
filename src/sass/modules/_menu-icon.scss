@@ -1,0 +1,62 @@
+.menu-icon {
+    // positioning
+    position: fixed;
+    right: 8px;
+    top: 8px;
+    z-index: 5;
+
+    // box model
+    height: 40px;
+    width: 40px;
+
+    // visual
+    // background-color: $dark;
+    // border: 1px solid $brown;
+    // border: 1px solid $dark;
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        top: 10px;
+        left: 6px;
+
+        // box model
+        height: 3px;
+        width: 26px;
+
+        // visual
+        background-color: $brown;
+    }
+
+    &__middle {
+        // positioning
+        position: absolute;
+        top: 17px;
+        left: 6px;
+
+        // box model
+        height: 3px;
+        width: 26px;
+
+        // visual
+        background-color: $brown;
+    }
+    
+    &::after {
+        content: "";
+
+        // positioning
+        position: absolute;
+        top: 24px;
+        left: 6px;
+    
+        // box model
+        height: 3px;
+        width: 26px;
+    
+        // visual
+        background-color: $brown;
+    }
+}

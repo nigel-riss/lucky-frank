@@ -1,7 +1,7 @@
 .contact-item {
     // box model
     display: none;
-    padding: 15px;
+    padding: 15px 30px;
 
     &__icon {
         // box model
@@ -35,12 +35,26 @@
     &--phone {
         // box model
         display: inline-block;
+
+        // visual
+        // border-right: 1px solid $brown;
     }
     
-    &--location {
+    &--address {
         @include atTabletsPortrait {
             // box model
             display: inline-block;
+
+            // visual
+            border-left: 1px solid $brown;
         }
+    }
+
+    &--menu-icon {
+        // box model
+        display: inline-block;
+
+        // visual
+        border-left: 1px solid $brown;
     }
 }

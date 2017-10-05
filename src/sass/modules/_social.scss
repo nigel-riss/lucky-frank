@@ -1,4 +1,9 @@
 .social {
+    @include atTabletsPortrait {
+        // box model
+        padding-top: 27px;
+    }
+
     a {
         // box model
         display: inline-block;

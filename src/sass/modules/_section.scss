@@ -109,10 +109,13 @@
 
         @include atTabletsPortrait {
             // box model
-            padding-top: 30px;
+            padding-top: 40px;
         }
 
         a {
+            // box model
+            display: inline-block;
+
             // typography
             color: $brown;
             font-weight: 700;

@@ -2,6 +2,15 @@
     // box model
     padding-top: 10px;
 
+    @include atTabletsPortrait {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        width: 49%;
+        padding: 20px;
+        padding-top: 0;
+    }
+
     &__header {
 
     }
@@ -12,6 +21,7 @@
         
         // typography
         color: $brown;
+        font-size: 1.5rem;
         text-transform: uppercase;
     }
 }

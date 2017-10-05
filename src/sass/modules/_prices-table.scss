@@ -3,13 +3,16 @@
     width: 100%;
     margin-top: 50px;
 
-    // table
-    border-collapse: collapse;
-
+    
+    @include atTabletsPortrait {
+        // visual
+        border: 2px solid $brown;
+    }
+    
     caption {
         // box model
-        padding-bottom: 20px;
-
+        padding-bottom:20px;
+        
         // typography
         color: $white;
         // color: $brown;
@@ -17,13 +20,40 @@
         font-size: 1.5rem;
         font-weight: 700;
         text-transform: uppercase;
-    }
 
+        @include atTabletsPortrait {
+            // box model
+            padding-bottom: 30px;
+        }
+    }
+    
+    tbody {
+        &::before {
+            content: "";
+
+            // box model
+            display: block;
+            height: 30px;
+            width: 100%;
+            border: 1px solid transparent;
+        }
+
+        &::after {
+            content: "";
+
+            // box model
+            display: block;
+            height: 30px;
+            width: 100%;
+            border: 1px solid transparent;
+        }
+    }
+    
     td {
         // box model
         padding: 5px 0;
         padding-bottom: 15px;
-
+        
         // typography
         color: $white;
         font-weight: 700;
@@ -36,21 +66,32 @@
 
             // typography
             text-align: left;
-        }
 
+            @include atTabletsPortrait {
+                // box model
+                padding-left: 40px;
+            }
+        }
+        
         &:nth-of-type(2) {
             // box model
             vertical-align: top;
-
+            
             // typography
             text-align: right;
             white-space: nowrap;
-        }
 
+            @include atTabletsPortrait {
+                // box model
+                padding-right: 40px;
+            }
+        }
+        
         small {
             // typography
             color: $brown;
             font-size: 1em;
+            font-weight: 400;
         }
     }
 }

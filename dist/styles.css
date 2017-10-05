@@ -736,8 +736,9 @@ body {
     padding-top: 20px; }
     @media (min-width: 700px) {
       .section__more {
-        padding-top: 30px; } }
+        padding-top: 40px; } }
     .section__more a {
+      display: inline-block;
       color: #a97140;
       font-weight: 700;
       text-decoration: none;
@@ -880,6 +881,7 @@ body {
 
 .page-footer {
   padding: 60px 25px;
+  font-size: 0;
   background-color: #222222; }
 
 .footer-logo__image {
@@ -902,13 +904,22 @@ body {
 
 .footer-block {
   padding-top: 10px; }
+  @media (min-width: 700px) {
+    .footer-block {
+      display: inline-block;
+      vertical-align: top;
+      width: 49%;
+      padding: 20px;
+      padding-top: 0; } }
   .footer-block__title {
     padding-left: 45px;
     color: #a97140;
+    font-size: 1.5rem;
     text-transform: uppercase; }
 
 .footer-info {
   position: relative;
+  font-size: 1rem;
   margin-bottom: 25px; }
   .footer-info__icon {
     position: absolute;
@@ -943,8 +954,10 @@ a.button {
 
 .prices-table {
   width: 100%;
-  margin-top: 50px;
-  border-collapse: collapse; }
+  margin-top: 50px; }
+  @media (min-width: 700px) {
+    .prices-table {
+      border: 2px solid #a97140; } }
   .prices-table caption {
     padding-bottom: 20px;
     color: #ffffff;
@@ -952,6 +965,21 @@ a.button {
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .prices-table caption {
+        padding-bottom: 30px; } }
+  .prices-table tbody::before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 100%;
+    border: 1px solid transparent; }
+  .prices-table tbody::after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 100%;
+    border: 1px solid transparent; }
   .prices-table td {
     padding: 5px 0;
     padding-bottom: 15px;
@@ -962,17 +990,28 @@ a.button {
       vertical-align: top;
       padding-right: 20px;
       text-align: left; }
+      @media (min-width: 700px) {
+        .prices-table td:nth-of-type(1) {
+          padding-left: 40px; } }
     .prices-table td:nth-of-type(2) {
       vertical-align: top;
       text-align: right;
       white-space: nowrap; }
+      @media (min-width: 700px) {
+        .prices-table td:nth-of-type(2) {
+          padding-right: 40px; } }
     .prices-table td small {
       color: #a97140;
-      font-size: 1em; }
+      font-size: 1em;
+      font-weight: 400; }
 
 .member {
   height: 450px;
   background-color: #222222; }
+
+@media (min-width: 700px) {
+  .social {
+    padding-top: 27px; } }
 
 .social a {
   display: inline-block;

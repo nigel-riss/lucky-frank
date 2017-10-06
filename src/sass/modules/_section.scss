@@ -97,14 +97,20 @@
     }
     
     &__content {
-        p {
-            // typography
-            line-height: 1.75;
+        &--wrapper {
+            // box model
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+    }
 
-            @include atTabletsLandscape {
-                // typography
-                font-size: 1.125rem;
-            }
+    &__text {
+        // typography
+        line-height: 1.75;
+
+        @include atTabletsLandscape {
+            // typography
+            font-size: 1.125rem;
         }
     }
 

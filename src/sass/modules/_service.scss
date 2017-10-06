@@ -5,11 +5,15 @@
     @include atTabletsPortrait {
         // box model
         display: inline-block;
+        vertical-align: top;
         width: 49%;
         padding: 30px;
         padding-bottom: 60px;
+    }
 
-        // border: 1px solid $brown ;
+    @include atDesktop {
+        // box model
+        width: 25%;
     }
 
     &__icon {
@@ -48,7 +52,8 @@
         // typography
         color: $brown;
         font-size: 1rem;
-        font-weight: 700;
+        font-weight: 600;
+        line-height: 1.5;
         text-align: center;
     }
 
@@ -70,6 +75,11 @@
 
             // visual
             border: 2px solid $brown;
+        }
+
+        @include atDesktop {
+            // box model
+            display: none;
         }
     }
 }

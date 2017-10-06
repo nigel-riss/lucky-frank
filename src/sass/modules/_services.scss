@@ -12,4 +12,9 @@
         font-size: 0;
         text-align: center;
     }
+
+    @include atDesktop {
+        // box model
+        padding: 60px;
+    }
 }

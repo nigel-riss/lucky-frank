@@ -9,10 +9,10 @@
     height: 40px;
     width: 40px;
 
-    // visual
-    // background-color: $dark;
-    // border: 1px solid $brown;
-    // border: 1px solid $dark;
+    @include atDesktop {
+        // box model
+        display: none;
+    }
 
     &::before {
         content: "";

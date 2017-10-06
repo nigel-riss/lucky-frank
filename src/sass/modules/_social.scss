@@ -21,6 +21,16 @@
         }
     }
 
+    &--header {
+        // box model
+        padding-top: 5px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        
+        // typography
+        text-align: right;
+    }
+
     &--footer {
         // box model
         padding-left: 45px;

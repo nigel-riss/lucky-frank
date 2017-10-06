@@ -60,11 +60,18 @@
         }
     }
 
-    &--menu-icon {
-        // box model
-        display: inline-block;
-
-        // visual
-        border-left: 1px solid $brown;
+    &--social {
+        @include atDesktop {
+            // positioning
+            position: absolute;
+            right: 0;
+            top: 0;
+            
+            // box model
+            display: inline-block;
+    
+            // visual
+            border-left: 1px solid $brown;
+        }
     }
 }

@@ -43,5 +43,10 @@
             // typography
             font-size: 1.25rem;
         }
+
+        @include atDesktopLarge {
+            // box model
+            padding: 5px 30px;
+        }
     }
 }

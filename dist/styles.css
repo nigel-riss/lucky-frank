@@ -517,9 +517,13 @@ body {
       display: inline-block;
       vertical-align: top;
       border-left: 1px solid #a97140; } }
-  .contact-item--menu-icon {
-    display: inline-block;
-    border-left: 1px solid #a97140; }
+  @media (min-width: 1200px) {
+    .contact-item--social {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: inline-block;
+      border-left: 1px solid #a97140; } }
 
 .logo {
   position: relative;
@@ -595,6 +599,9 @@ body {
     @media (min-width: 1200px) {
       .main-menu a {
         font-size: 1.25rem; } }
+    @media (min-width: 1400px) {
+      .main-menu a {
+        padding: 5px 30px; } }
 
 .menu-icon {
   position: fixed;
@@ -651,13 +658,19 @@ body {
   @media (min-width: 900px) {
     .hero {
       background-image: url("/img/bg-d.jpg");
-      background-position: center right; } }
+      background-position: right center; } }
+  @media (min-width: 1200px) {
+    .hero {
+      background-position: right top; } }
   .hero__header {
     position: relative;
     padding-top: 60px;
     padding-bottom: 20px;
     margin-bottom: 40px; }
     @media (min-width: 700px) {
+      .hero__header {
+        margin-bottom: 60px; } }
+    @media (min-width: 1200px) {
       .hero__header {
         margin-bottom: 60px; } }
     .hero__header::after {
@@ -682,6 +695,10 @@ body {
     @media (min-width: 700px) {
       .hero__welcome {
         font-size: 1.25rem; } }
+    @media (min-width: 1200px) {
+      .hero__welcome {
+        padding-left: 7px;
+        font-size: 1.5rem; } }
   .hero__title {
     margin: 0;
     padding: 0;
@@ -695,6 +712,9 @@ body {
         padding-bottom: 20px;
         font-size: 5rem;
         line-height: 0.9; } }
+    @media (min-width: 1200px) {
+      .hero__title {
+        font-size: 7rem; } }
   .hero__subtitle {
     margin: 0;
     padding: 0;
@@ -703,6 +723,9 @@ body {
     letter-spacing: 2px;
     line-height: 1.5;
     text-transform: uppercase; }
+    @media (min-width: 1200px) {
+      .hero__subtitle {
+        letter-spacing: 4px; } }
   .hero__booking a {
     display: inline-block;
     vertical-align: top;
@@ -727,6 +750,13 @@ body {
         padding: 30px;
         padding-bottom: 40px;
         padding-top: 10px; } }
+    @media (min-width: 1200px) {
+      .hero__quote {
+        padding-right: calc(50% - 500px); } }
+    @media (min-width: 1400px) {
+      .hero__quote {
+        width: 45%;
+        padding-right: calc(45% - 500px); } }
 
 .quote {
   position: relative;
@@ -746,6 +776,9 @@ body {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.75rem;
     text-transform: uppercase; }
+    @media (min-width: 1400px) {
+      .quote__title {
+        font-size: 2.25rem; } }
     .quote__title em {
       color: #a97140;
       font-style: normal; }
@@ -761,6 +794,9 @@ body {
     @media (min-width: 900px) {
       .quote__text {
         font-size: 1.25rem; } }
+    @media (min-width: 1400px) {
+      .quote__text {
+        font-size: 1.5rem; } }
   .quote__signature {
     position: absolute;
     bottom: 0;
@@ -770,6 +806,14 @@ body {
       .quote__signature {
         bottom: -40px;
         width: 200px; } }
+    @media (min-width: 1400px) {
+      .quote__signature {
+        right: auto;
+        bottom: auto;
+        top: 0;
+        top: -80px;
+        right: 20px;
+        width: 250px; } }
     .quote__signature img {
       width: 100%; }
   .quote--inversed .quote__title {
@@ -1148,6 +1192,12 @@ a.button {
     color: #ffffff;
     font-size: 1rem;
     text-decoration: none; }
+
+.social--header {
+  padding-top: 5px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  text-align: right; }
 
 .social--footer {
   padding-left: 45px; }

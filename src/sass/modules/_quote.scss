@@ -7,6 +7,16 @@
     padding: 0;
     padding-bottom: 80px;
 
+    @include atTabletsPortrait {
+        // box model
+        padding-bottom: 100px;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        padding-bottom: 40px;
+    }
+
     &__deco {
 
     }
@@ -38,6 +48,16 @@
         font-style: italic;
         line-height: 1.5;
         text-transform: uppercase;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.125rem;
+        }
+
+        @include atTabletsLandscape {
+            // typography
+            font-size: 1.25rem;
+        }
     }
 
     &__signature {
@@ -45,6 +65,22 @@
         position: absolute;
         bottom: 0;
         right: 0;
+
+        // box model
+        width: 140px;
+
+        @include atTabletsLandscape {
+            // positioning
+            bottom: -40px;
+
+            // box model
+            width: 200px;
+        }
+
+        img {
+            // box model
+            width: 100%;
+        }
     }
 
     &--inversed {

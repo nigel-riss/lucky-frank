@@ -14,14 +14,23 @@
     box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
 
     @include atTabletsPortrait {
+        // box model
+        padding: 80px;
+        padding-bottom: 140px;
+
         // visual
         background-image: url('/img/bg-t.jpg');
     }
 
-    @include atTabletsPortrait {
+    @include atTabletsLandscape {
         // box model
         padding: 80px;
-        // padding-bottom: 25px;
+    }
+    
+    @include atTabletsLandscape {
+        // visual
+        background-image: url('/img/bg-d.jpg');
+        background-position: center right;
     }
 
     &__header {
@@ -95,7 +104,7 @@
             padding-bottom: 20px;
 
             // typography
-            font-size: 6rem;
+            font-size: 5rem;
             line-height: 0.9;
         }
     }
@@ -140,6 +149,19 @@
 
         // visual
         border-left: 1px solid $white;
+
+        @include atTabletsPortrait {
+            // positioning
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            // box model
+            width: 55%;
+            padding: 30px;
+            padding-bottom: 40px;
+            padding-top: 10px;
+        }
     }
 
     &__deco {

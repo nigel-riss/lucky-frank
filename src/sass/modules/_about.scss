@@ -16,4 +16,34 @@
         // visual
         background-image: url('/img/about-bg-t.jpg');
     }
+    
+    @include atTabletsLandscape {
+        // box model
+        padding-right: 44%;
+
+        // visual
+        background-image: url('/img/about-bg.jpg');
+    }
+
+    &__deco {
+        // box model
+        display: none;
+        
+        @include atTabletsLandscape {
+            // positioning
+            position: absolute;
+            bottom: 60px;
+            right: 60px;
+
+            // box model
+            display: block;
+            max-width: 500px;
+            width: 35%;
+
+            img {
+                // box model
+                width: 100%;
+            }
+        }
+    }
 }

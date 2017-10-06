@@ -489,7 +489,7 @@ body {
 
 .contact-item {
   display: none;
-  padding: 15px 30px; }
+  padding: 15px 27px; }
   .contact-item__icon {
     display: inline-block;
     vertical-align: middle;
@@ -505,10 +505,17 @@ body {
       color: #ffffff;
       text-decoration: none; }
   .contact-item--phone {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: top; }
   @media (min-width: 700px) {
     .contact-item--address {
       display: inline-block;
+      vertical-align: top;
+      border-left: 1px solid #a97140; } }
+  @media (min-width: 900px) {
+    .contact-item--schedule {
+      display: inline-block;
+      vertical-align: top;
       border-left: 1px solid #a97140; } }
   .contact-item--menu-icon {
     display: inline-block;

@@ -17,4 +17,14 @@
         // box model
         padding: 60px;
     }
+
+    &__desktop {
+        // box model
+        display: none;
+
+        @include atDesktop {
+            // box model
+            display: block;
+        }
+    }
 }

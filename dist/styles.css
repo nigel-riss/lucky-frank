@@ -666,6 +666,9 @@ body {
   @media (min-width: 1200px) {
     .hero {
       background-position: right top; } }
+  @media (min-width: 1400px) {
+    .hero {
+      min-height: 800px; } }
   .hero__header {
     position: relative;
     padding-top: 60px;
@@ -677,6 +680,9 @@ body {
     @media (min-width: 1200px) {
       .hero__header {
         margin-bottom: 60px; } }
+    @media (min-width: 1400px) {
+      .hero__header {
+        padding-top: 110px; } }
     .hero__header::after {
       content: "";
       position: absolute;
@@ -722,6 +728,9 @@ body {
       .hero__title {
         margin-left: -6px;
         font-size: 7rem; } }
+    @media (min-width: 1400px) {
+      .hero__title {
+        font-size: 8rem; } }
   .hero__subtitle {
     margin: 0;
     padding: 0;
@@ -939,6 +948,11 @@ body {
   @media (min-width: 1200px) {
     .services {
       padding: 60px; } }
+  .services__desktop {
+    display: none; }
+    @media (min-width: 1200px) {
+      .services__desktop {
+        display: block; } }
 
 .service {
   padding-bottom: 60px; }

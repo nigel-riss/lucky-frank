@@ -15,16 +15,56 @@
 
     @include atDesktop {
         // box model
-        padding: 60px;
+        padding: 80px;
+
+        // visual
+        background-image: url('/img/services-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right bottom;
     }
 
     &__desktop {
+        // positioning
+        position: relative;
+
         // box model
         display: none;
 
         @include atDesktop {
             // box model
             display: block;
+            padding-bottom: 200px;
+
+            // typography
+            text-align: center;
         }
+        
+        @include atDesktopLarge {
+            // box model
+            padding-bottom: 260px;
+
+            // typography
+            text-align: left;
+        }
+
+        @media (min-width: 1800px) {
+            // box model
+            padding-bottom: 80px;
+        }
+    }
+
+    &__quote {
+        // positioning
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        // box model
+        width: 550px;
+        padding-top: 30px;
+
+        // typography
+        text-align: left;
     }
 }

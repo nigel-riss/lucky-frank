@@ -1201,10 +1201,9 @@ body {
     .prices__column {
       display: inline-block;
       vertical-align: top;
-      width: calc(50% - 21px); } }
-  @media (min-width: 1200px) {
-    .prices__column--left {
-      margin-right: 40px; } }
+      width: calc(50% - 21px); }
+      .prices__column--left {
+        margin-right: 40px; } }
   .prices__more {
     margin-top: 60px;
     text-align: center; }
@@ -1287,6 +1286,8 @@ body {
       text-decoration: none; }
     .footer-info__text--schedule {
       line-height: 2; }
+      .footer-info__text--schedule sup {
+        font-size: 0.62em; }
     .footer-info__text em {
       color: #a97140;
       font-style: normal;

@@ -43,6 +43,11 @@
         &--schedule {
             // typography
             line-height: 2;
+
+            sup {
+                // typography
+                font-size: 0.62em;
+            }
         }
 
         em {

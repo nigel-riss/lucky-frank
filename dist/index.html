@@ -183,82 +183,86 @@
       <h2 class="section__title">Прайс-лист <br>на услуги</h2>
       <p class="section__subtitle">Позволь себе настоящий стиль</p>
     </header>
-    <div class="section__content">
-      <table class="prices-table">
-        <thead>
-          <caption>Основные услуги</caption>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Стрижка мужская <br><small>подбор стиля, мытье головы, укладка</small></td>
-            <td>1500 </td>
-          </tr>
-          <tr>
-            <td>Стрижка детская <br><small>от 5 до 14 лет</small></td>
-            <td>1200 </td>
-          </tr>
-          <tr>
-            <td>Стрижка под машинку <br><small>одна насадка</small></td>
-            <td>600 </td>
-          </tr>
-          <tr>
-            <td>Коррекция бороды</td>
-            <td>600 </td>
-          </tr>
-          <tr>
-            <td>Королевское бритьё бороды<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small></td>
-            <td>1500 </td>
-          </tr>
-          <tr>
-            <td>Королевское бритьё головы<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small></td>
-            <td>2000 </td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="prices-table">
-        <thead>
-          <caption>Дополнительные услуги</caption>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Камуфляж седых волос</td>
-            <td>1100 </td>
-          </tr>
-          <tr>
-            <td>Окантовка с подбриванием</td>
-            <td>500 </td>
-          </tr>
-          <tr>
-            <td>Мытьё и укладка волос</td>
-            <td>400 </td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="prices-table">
-        <thead>
-          <caption>Комплексные услуги</caption>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Стрижка мужская + Коррекция бороды</td>
-            <td>1800 </td>
-          </tr>
-          <tr>
-            <td>Стрижка мужская + Королевское бритьё</td>
-            <td>2700 </td>
-          </tr>
-          <tr>
-            <td>Отец + сын</td>
-            <td>2200 </td>
-          </tr>
-          <tr>
-            <td>Друг + друг</td>
-            <td>2600 </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="prices__content">
+      <div class="prices__column prices__column--left">
+        <table class="prices-table">
+          <thead>
+            <caption>Основные услуги</caption>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Стрижка мужская <br><small>подбор стиля, мытье головы, укладка</small></td>
+              <td>1500 </td>
+            </tr>
+            <tr>
+              <td>Стрижка детская <br><small>от 5 до 14 лет</small></td>
+              <td>1200 </td>
+            </tr>
+            <tr>
+              <td>Стрижка под машинку <br><small>одна насадка</small></td>
+              <td>600 </td>
+            </tr>
+            <tr>
+              <td>Коррекция бороды</td>
+              <td>600 </td>
+            </tr>
+            <tr>
+              <td>Королевское бритьё бороды<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small></td>
+              <td>1500 </td>
+            </tr>
+            <tr>
+              <td>Королевское бритьё головы<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small></td>
+              <td>2000 </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prices__column">
+        <table class="prices-table">
+          <thead>
+            <caption>Дополнительные услуги</caption>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Камуфляж седых волос</td>
+              <td>1100 </td>
+            </tr>
+            <tr>
+              <td>Окантовка с подбриванием</td>
+              <td>500 </td>
+            </tr>
+            <tr>
+              <td>Мытьё и укладка волос</td>
+              <td>400 </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="prices-table">
+          <thead>
+            <caption>Комплексные услуги</caption>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Стрижка мужская + Коррекция бороды</td>
+              <td>1800 </td>
+            </tr>
+            <tr>
+              <td>Стрижка мужская + Королевское бритьё</td>
+              <td>2700 </td>
+            </tr>
+            <tr>
+              <td>Отец + сын</td>
+              <td>2200 </td>
+            </tr>
+            <tr>
+              <td>Друг + друг</td>
+              <td>2600 </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <div class="section__more"><a class="button" href="">Все услуги</a></div>
+    <div class="prices__more"><a class="button" href="">Все услуги</a></div>
   </section>
   <section class="section advices">
     <article class="advice"></article>
@@ -269,34 +273,35 @@
       <h2 class="section__title">Наши мастера</h2>
       <p class="section__subtitle">Мы знаем, что такое стиль</p>
     </header>
-    <div class="section__more"><a href="">Онлайн запись</a></div>
-    <div class="section__content">
-      <article class="member"><a href="">
-          <header class="member__header">
-            <p class="member__position">Барбер</p>
-            <h3 class="member__name">Олег</h3>
-          </header>
-          <div class="member__photo"><img src="./img/barbers/barber1.jpg" alt=""/></div></a></article>
+    <div class="team__more"><a class="button button--inverse" href="">Онлайн запись</a></div>
+    <div class="team__content">
+      <article class="member">
+        <header class="member__header">
+          <p class="member__position">Барбер</p>
+          <h3 class="member__name">Олег</h3>
+        </header>
+        <div class="member__photo"><img src="/img/team/barber1.jpg" alt=""/></div>
+      </article>
       <article class="member">
         <header class="member__header">
           <p class="member__position">Барбер</p>
           <h3 class="member__name">Дмитрий</h3>
         </header>
-        <div class="member__photo"><img src="./img/barbers/barber2.jpg" alt=""/></div>
+        <div class="member__photo"><img src="/img/team/barber2.jpg" alt=""/></div>
       </article>
       <article class="member">
         <header class="member__header">
           <p class="member__position">Барбер</p>
           <h3 class="member__name">Юрий</h3>
         </header>
-        <div class="member__photo"><img src="./img/barbers/barber3.jpg" alt=""/></div>
+        <div class="member__photo"><img src="./img/team/barber3.jpg" alt=""/></div>
       </article>
-      <article class="member member--join">
-        <header class="member__header">
-          <h3 class="member__title">Присоединяйся<br>к нашей команде</h3>
+      <article class="join">
+        <header class="join__header">
+          <h3 class="join__title">Присоединяйся<br>к нашей команде</h3>
         </header>
-        <div class="member__cover member__cover--join"></div>
-        <div class="member__photo"><img src="./img/barbers/join.jpg" alt=""/></div>
+        <div class="join__cover"></div>
+        <div class="join__photo"><img src="./img/team/join.png" alt=""/></div>
       </article>
     </div>
   </section>

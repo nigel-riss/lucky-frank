@@ -215,62 +215,64 @@ body
             h2.section__title Прайс-лист <br>на услуги
             p.section__subtitle Позволь себе настоящий стиль
 
-        .section__content
-            table.prices-table
-                thead
-                    caption Основные услуги
-                tbody
-                    tr
-                        td Стрижка мужская <br><small>подбор стиля, мытье головы, укладка</small>
-                        td 1500 
-                    tr
-                        td Стрижка детская <br><small>от 5 до 14 лет</small>
-                        td 1200 
-                    tr
-                        td Стрижка под машинку <br><small>одна насадка</small>
-                        td 600 
-                    tr
-                        td Коррекция бороды
-                        td 600 
-                    tr
-                        td Королевское бритьё бороды<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small>
-                        td 1500 
-                    tr
-                        td Королевское бритьё головы<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small>
-                        td 2000 
+        .prices__content
+            .prices__column.prices__column--left
+                table.prices-table
+                    thead
+                        caption Основные услуги
+                    tbody
+                        tr
+                            td Стрижка мужская <br><small>подбор стиля, мытье головы, укладка</small>
+                            td 1500 
+                        tr
+                            td Стрижка детская <br><small>от 5 до 14 лет</small>
+                            td 1200 
+                        tr
+                            td Стрижка под машинку <br><small>одна насадка</small>
+                            td 600 
+                        tr
+                            td Коррекция бороды
+                            td 600 
+                        tr
+                            td Королевское бритьё бороды<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small>
+                            td 1500 
+                        tr
+                            td Королевское бритьё головы<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small>
+                            td 2000 
 
-            table.prices-table
-                thead
-                    caption Дополнительные услуги
-                tbody
-                    tr
-                        td Камуфляж седых волос
-                        td 1100 
-                    tr
-                        td Окантовка с подбриванием
-                        td 500 
-                    tr
-                        td Мытьё и укладка волос
-                        td 400 
+            .prices__column
+                table.prices-table
+                    thead
+                        caption Дополнительные услуги
+                    tbody
+                        tr
+                            td Камуфляж седых волос
+                            td 1100 
+                        tr
+                            td Окантовка с подбриванием
+                            td 500 
+                        tr
+                            td Мытьё и укладка волос
+                            td 400 
 
-            table.prices-table
-                thead
-                    caption Комплексные услуги
-                tbody
-                    tr
-                        td Стрижка мужская + Коррекция бороды
-                        td 1800 
-                    tr
-                        td Стрижка мужская + Королевское бритьё
-                        td 2700 
-                    tr
-                        td Отец + сын
-                        td 2200 
-                    tr
-                        td Друг + друг
-                        td 2600 
+                table.prices-table
+                    thead
+                        caption Комплексные услуги
+                    tbody
+                        tr
+                            td Стрижка мужская + Коррекция бороды
+                            td 1800 
+                        tr
+                            td Стрижка мужская + Королевское бритьё
+                            td 2700 
+                        tr
+                            td Отец + сын
+                            td 2200 
+                        tr
+                            td Друг + друг
+                            td 2600 
                     
-        .section__more
+        .prices__more
             a(href="").button Все услуги
 
     section.section.advices
@@ -283,38 +285,33 @@ body
             h2.section__title Наши мастера
             p.section__subtitle Мы знаем, что такое стиль
 
-        .section__more
-            a(href="") Онлайн запись
+        .team__more
+            a(href="").button.button--inverse Онлайн запись
 
-        .section__content
+        .team__content
             article.member
-                a(href="")
-                    header.member__header
-                        p.member__position Барбер
-                        h3.member__name Олег
-                        
-                    .member__photo: img(src="./img/barbers/barber1.jpg", alt="")
+                header.member__header
+                    p.member__position Барбер
+                    h3.member__name Олег
+                .member__photo: img(src="/img/team/barber1.jpg", alt="")
                 
             article.member
                 header.member__header
                     p.member__position Барбер
                     h3.member__name Дмитрий
-
-                .member__photo: img(src="./img/barbers/barber2.jpg", alt="")
+                .member__photo: img(src="/img/team/barber2.jpg", alt="")
                 
             article.member
                 header.member__header
                     p.member__position Барбер
                     h3.member__name Юрий
+                .member__photo: img(src="./img/team/barber3.jpg", alt="")
 
-                .member__photo: img(src="./img/barbers/barber3.jpg", alt="")
-
-            article.member.member--join
-                header.member__header
-                    h3.member__title Присоединяйся<br>к нашей команде
-
-                .member__cover.member__cover--join
-                .member__photo: img(src="./img/barbers/join.jpg", alt="")
+            article.join
+                header.join__header
+                    h3.join__title Присоединяйся<br>к нашей команде
+                .join__cover
+                .join__photo: img(src="./img/team/join.png", alt="")
 
     footer.page-footer
         .footer-logo

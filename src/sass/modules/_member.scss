@@ -1,24 +1,89 @@
 .member {
+    // positioning
+    position: relative;
+
     // box model
-    height: 450px;
+    display: inline-block;
+    vertical-align: top;
+    height: 131vw;
+    height: calc(131vw - 62px);
+    width: 100%;
+    max-width: 360px;
+    max-height: 475px;
+
+    margin-bottom: 25px;
 
     // visual
     background-color: $dark;
+    overflow: hidden;
 
     &__header {
+        // positioning
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 2;
+
         // box model
-        
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+
+        // visual
+        border: 2px solid $white;
     }
 
     &__position {
+        // positioning
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
 
+        // box model
+        display: inline-block;
+        vertical-align: bottom;
+        margin: 0;
+        padding: 0;
+
+        // typography
+        color: $white;
+        font-size: 1rem;
+        line-height: 1;
+        text-transform: uppercase;
     }
 
     &__name {
+        // positioning
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
 
+        // box model
+        display: inline-block;
+        vertical-align: bottom;
+        margin: 0;
+        padding: 0;
+
+        // typography
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
     }
 
     &__photo {
+        // positioning
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
 
+        // box model
+        width: 100%;
+
+        img {
+            // box model
+            width: 100%;
+        }
     }
 }

@@ -899,9 +899,7 @@ body {
     .section__more a {
       display: inline-block;
       color: #a97140;
-      font-weight: 700;
-      text-decoration: none;
-      text-transform: uppercase; }
+      font-weight: 700; }
 
 .about {
   position: relative;
@@ -1192,14 +1190,42 @@ body {
       left: 0; }
 
 .prices {
+  position: relative;
   background-color: #222222; }
   @media (min-width: 700px) {
     .prices {
       padding: 80px; } }
+  .prices__content {
+    font-size: 0; }
+  @media (min-width: 1200px) {
+    .prices__column {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(50% - 21px); } }
+  @media (min-width: 1200px) {
+    .prices__column--left {
+      margin-right: 40px; } }
+  .prices__more {
+    margin-top: 60px;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      .prices__more {
+        position: absolute;
+        bottom: 80px;
+        left: 80px; } }
 
 .advices {
   -webkit-box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.25);
           box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.25); }
+
+.team__more {
+  padding-bottom: 40px; }
+  .team__more a {
+    display: inline-block; }
+
+.team__content {
+  font-size: 0;
+  text-align: center; }
 
 .page-footer {
   padding: 60px 25px;
@@ -1272,7 +1298,12 @@ a.button {
   vertical-align: top;
   padding: 10px 30px;
   color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
   border: 2px solid #a97140; }
+  a.button--inverse {
+    color: #222222;
+    font-weight: 700; }
 
 .prices-table {
   width: 100%;
@@ -1306,6 +1337,7 @@ a.button {
     padding: 5px 0;
     padding-bottom: 15px;
     color: #ffffff;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.5; }
     .prices-table td:nth-of-type(1) {
@@ -1328,8 +1360,58 @@ a.button {
       font-weight: 400; }
 
 .member {
-  height: 450px;
-  background-color: #222222; }
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 131vw;
+  height: calc(131vw - 62px);
+  width: 100%;
+  max-width: 360px;
+  max-height: 475px;
+  margin-bottom: 25px;
+  background-color: #222222;
+  overflow: hidden; }
+  .member__header {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border: 2px solid #ffffff; }
+  .member__position {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1;
+    text-transform: uppercase; }
+  .member__name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase; }
+  .member__photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%; }
+    .member__photo img {
+      width: 100%; }
 
 @media (min-width: 700px) {
   .social {

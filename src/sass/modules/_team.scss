@@ -1,8 +1,17 @@
 .team {
     &__more {
+        // box model
+        padding-bottom: 40px;
+        
         a {
             // box model
             display: inline-block;
         }
+    }
+    
+    &__content {
+        // typography
+        font-size: 0;
+        text-align: center;
     }
 }

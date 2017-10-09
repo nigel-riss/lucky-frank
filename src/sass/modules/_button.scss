@@ -6,7 +6,15 @@ a.button {
 
     // typography
     color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
 
     // visual
     border: 2px solid $brown;
+
+    &--inverse{
+        // typography
+        color: $dark;
+        font-weight: 700;
+    }
 }

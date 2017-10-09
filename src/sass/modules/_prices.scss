@@ -1,9 +1,48 @@
 .prices {
+    // positioning
+    position: relative;
+
     // visual
     background-color: $dark;
 
     @include atTabletsPortrait {
         // box model
         padding: 80px;
+    }
+
+    &__content {
+        // typography
+        font-size: 0;
+    }
+
+    &__column {
+        @include atDesktop {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+            width: calc(50% - 21px);
+        }
+
+        &--left {
+            @include atDesktop {
+                // box model
+                margin-right: 40px;
+            }
+        }
+    }
+
+    &__more {
+        // box model
+        margin-top: 60px;
+
+        // typography
+        text-align: center;
+
+        @include atDesktop {
+            // positioning
+            position: absolute;
+            bottom: 80px;
+            left: 80px;
+        }
     }
 }

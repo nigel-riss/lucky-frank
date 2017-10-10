@@ -1,8 +1,26 @@
 .team {
+    // visual
+    background-image: url('/img/team-bg-m.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    
+    @include atTabletsPortrait {
+        // box model
+        padding: 80px;
+        
+        // visual
+        background-image: url('/img/team-bg-t.jpg');
+    }
+    
+    @include atTabletsLandscape {
+        // visual
+        background-image: url('/img/team-bg.jpg');
+    }
+    
     &__more {
         // box model
         padding-bottom: 40px;
-        
+
         a {
             // box model
             display: inline-block;

@@ -59,4 +59,14 @@
         // visual
         background-color: $brown;
     }
+
+    &--close-x {
+        &::before {
+
+        }
+
+        &::after {
+            
+        }
+    }
 }

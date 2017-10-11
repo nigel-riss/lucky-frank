@@ -15,13 +15,22 @@ gulp.task("watch", () => {
         }
     });
 
+    // pug
     watch("./src/**/*.pug", () => {
         gulp.start("pugChanged");
     });
 
-    watch("./src/**/*.scss", () => {
+    // css
+    watch("./src/sass/**/*.scss", () => {
         gulp.start("cssInject");
     });
+
+    // js
+    watch("./src/js/**/*.js", () => {
+        gulp.start("jsChanged");
+    });
+
+    // wordpress
 });
 
 gulp.task("pugChanged", ["pugRender"], () => {
@@ -30,5 +39,9 @@ gulp.task("pugChanged", ["pugRender"], () => {
 
 gulp.task("cssInject", ["styles"], () => {
     gulp.src("./dist/styles.css")
-    .pipe(browserSync.stream());
+        .pipe(browserSync.stream());
+});
+
+gulp.task("jsChanged", ["scripts"], () => {
+    browserSync.reload();
 });

@@ -544,7 +544,7 @@ body {
 
 .main-nav {
   position: fixed;
-  right: 0;
+  left: -100%;
   top: 0;
   z-index: 3;
   height: 100vh;
@@ -555,8 +555,8 @@ body {
   background-color: rgba(34, 34, 34, 0.95);
   -webkit-box-shadow: 0 0 20px 0 rgba(34, 34, 34, 0.5);
           box-shadow: 0 0 20px 0 rgba(34, 34, 34, 0.5);
-  visibility: hidden;
-  opacity: 0; }
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
   @media (min-width: 1200px) {
     .main-nav {
       position: absolute;
@@ -577,6 +577,10 @@ body {
     @media (min-width: 1200px) {
       .main-nav__logo {
         display: none; } }
+  .main-nav--shown {
+    left: 0;
+    visibility: visible;
+    opacity: 1; }
 
 .main-menu {
   margin: 0;
@@ -716,7 +720,7 @@ body {
     padding-bottom: 20px;
     color: #ffffff;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase; }
     @media (min-width: 700px) {
       .hero__title {

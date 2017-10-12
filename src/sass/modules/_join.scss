@@ -11,6 +11,22 @@
     max-width: 360px;
     max-height: 475px;
 
+    @include atTabletsPortrait {
+        // box model
+        height: 340px;
+        width: 258px;
+        height: 48vw;
+        width: 37vw;
+    }
+    
+    @include atDesktop {
+        // box model
+        height: 340px;
+        width: 258px;
+        height: 26vw;
+        width: 19vw;
+    }
+
     &__header {
         // positioning
         position: absolute;
@@ -23,7 +39,7 @@
         height: calc(100% - 20px);
 
         // visual
-        border: 10px solid $white;
+        border: 7px solid $white;
     }
 
     &__title {
@@ -35,6 +51,7 @@
         // box model
         margin: 0;
         padding: 0;
+        width: 90%;
 
         // typography
         color: $white;
@@ -43,6 +60,16 @@
         line-height: 1.25;
         text-align: left;
         text-transform: uppercase;
+
+        @include atDesktop {
+            // typography
+            font-size: 1rem;
+        }
+
+        @include atDesktopLarge {
+            // typography
+            font-size: 1.125rem;
+        }
     }
 
     &__photo {

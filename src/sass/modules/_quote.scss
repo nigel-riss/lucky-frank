@@ -18,7 +18,19 @@
     }
 
     &__deco {
+        // positioning
+        position: absolute;
+        top: -50px;
+        left: 0;
 
+        // box model
+        width: 60px;
+        height: 20px;
+
+        // visual
+        background-image: url('./img/mustache.svg');
+        background-repeat: no-repeat;
+        background-position: center left;
     }
 
     &__title {
@@ -89,10 +101,6 @@
 
         @include atDesktopLarge {
             // positioning
-            // right: auto;
-            // bottom: auto;
-            // top: -80px;
-            // right: 20px;
             bottom: -60px;
 
             // box model

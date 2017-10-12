@@ -1,4 +1,7 @@
 .team {
+    // positioning
+    position: relative;
+
     // visual
     background-image: url('/img/team-bg-m.jpg');
     background-position: bottom center;
@@ -13,13 +16,21 @@
     }
     
     @include atTabletsLandscape {
+        // box model
+        padding-bottom: 100px;
+
         // visual
         background-image: url('/img/team-bg.jpg');
+    }
+
+    @include atDesktop {
+        // box model
+        padding-bottom: 80px;
     }
     
     &__more {
         // box model
-        padding-bottom: 40px;
+        padding-bottom: 60px;
 
         a {
             // box model
@@ -31,5 +42,29 @@
         // typography
         font-size: 0;
         text-align: center;
+        
+        @include atTabletsPortrait {
+            // box model
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__quote {
+        // box model
+        padding: 10px;
+        padding-top: 40px;
+        margin-bottom: -50px;
+
+        @include atDesktop {
+            // positioning
+            position: absolute;
+            right: 60px;
+            top: 110px;
+
+            // box model
+            width: 45%;
+        }
     }
 }

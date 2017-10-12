@@ -46,4 +46,28 @@
             }
         }
     }
+
+    &__more {
+        // box model
+        padding-top: 20px;
+
+        // typography
+        text-align: left;
+
+        a {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px 20px;
+
+            // typography
+            color: $brown;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            // visual
+            border: 2px solid $brown;
+        }
+    }
 }

@@ -7,7 +7,8 @@ head
     
     link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&amp;subset=cyrillic", rel="stylesheet")
     //- link(href="https://fonts.googleapis.com/css?family=Oswald:400&amp;subset=cyrillic", rel="stylesheet")
-    link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400&amp;subset=cyrillic", rel="stylesheet")
+    //- link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&amp;subset=cyrillic", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic", rel="stylesheet")
     link(rel="stylesheet", href="styles.css")
 
     title Lucky Frank Barbershop
@@ -18,15 +19,15 @@ body
             .contact-item.contact-item--phone
                 .contact-item__icon.icon-phone
                 .contact-item__content
-                    a(href="#") +7 123 456-78-90
+                    a(href="#") +7 918 195 94 19
 
             .contact-item.contact-item--schedule
                 .contact-item__icon.icon-clock
-                .contact-item__content Пон.-Пят.: 10<sup>00</sup>-20<sup>00</sup>
+                .contact-item__content Пон.-Вос.: 10<sup>00</sup>-22<sup>00</sup>
 
             .contact-item.contact-item--address
                 .contact-item__icon.icon-location
-                .contact-item__content г. Краснодар, ул. Барбершопная, д.777
+                .contact-item__content г. Краснодар, ул. Мира 54
 
             .contact-item.contact-item--social
                 .contact-item__content
@@ -79,7 +80,7 @@ body
 
         .section__content
             p.section__text Мы намного больше чем просто мужская парикмахерская, это даже больше чем мужской клуб по интересам, это именно то место, где ты найдешь себя и свой стиль. Мужские стрижки и бритье — это наш профиль, и мы уверены, что мы стрижем и бреем лучше всех.
-            .section__more 
+            .about__more 
                 a(href="") узнай больше
 
         .about__deco: img(src="/img/about-deco.png", alt="")
@@ -275,8 +276,8 @@ body
         .prices__more
             a(href="").button Все услуги
 
-    section.section.advices
-        article.advice
+    //- section.section.advices
+    //-     article.advice
 
 
     section.section.team
@@ -313,11 +314,19 @@ body
                 .join__cover
                 .join__photo: img(src="./img/team/join.png", alt="")
 
+        .team__quote
+            blockquote.quote
+                .quote__deco 
+                h3.quote__title Frank <em>Says:</em>
+                p.quote__text Чтобы иметь успех, нужно иметь друзей; но чтобы поддерживать большой успех, <br><strong>нужно иметь много друзей.</strong>
+                .quote__signature
+                    img(src="/img/sign.png", alt="")
+
     footer.page-footer
         .footer-logo
             .footer-logo__image
                 img(src="/img/logo-white.svg", alt="")
-            h2.footer-logo__title Lucky Frank <br><small>территория настоящих мужчин</small>
+            h2.footer-logo__title Lucky Frank<br><small>территория настоящих мужчин</small>
 
         .footer-block
             header.footer-block__header
@@ -326,11 +335,11 @@ body
             .footer-block__content
                 .footer-info
                     .footer-info__icon.icon-phone
-                    p.footer-info__text: a(href="tel:+79111234567") +7 911 123 45 67
+                    p.footer-info__text: a(href="tel:+79111234567") +7 918 195 94 19
 
                 .footer-info
                     .footer-info__icon.icon-location
-                    p.footer-info__text г. Калининград, ул. Вебдевовская, д. 1337
+                    p.footer-info__text г. Краснодар, ул. Мира 54
 
                 .footer-info
                     .footer-info__icon.icon-mail-alt
@@ -349,6 +358,13 @@ body
             .footer-block__content
                 .footer-info
                     .footer-info__icon.icon-clock
-                    p.footer-info__text.footer-info__text--schedule Понедельник: 10<sup>00</sup> - 20<sup>00</sup> <br>Вторник: 10<sup>00</sup> - 20<sup>00</sup> <br>Среда: 10<sup>00</sup> - 20<sup>00</sup> <br>Четверг: 10<sup>00</sup> - 20<sup>00</sup> <br>Пятница: 10<sup>00</sup> - 20<sup>00</sup> <br>Суббота: 10<sup>00</sup> - 20<sup>00</sup> <br>Воскресенье: <em>Выходной</em>
+                    p.footer-info__text.footer-info__text--schedule Понедельник: 10<sup>00</sup> - 22<sup>00</sup> <br>
+                        | Вторник: 10<sup>00</sup> - 22<sup>00</sup> <br>
+                        | Среда: 10<sup>00</sup> - 22<sup>00</sup> <br>
+                        | Четверг: 10<sup>00</sup> - 22<sup>00</sup> <br>
+                        | Пятница: 10<sup>00</sup> - 22<sup>00</sup> <br>
+                        | Суббота: 10<sup>00</sup> - 22<sup>00</sup> <br>
+                        | Воскресенье: 10<sup>00</sup> - 22<sup>00</sup> <br>
+                        //- | Воскресенье: <em>Выходной</em>
 
     script(src="menu.js")

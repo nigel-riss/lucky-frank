@@ -7,4 +7,32 @@
     
     // visual
     background-color: $dark;
+    overflow: hidden;
+
+    @include atTabletsLandscape {
+        // box model
+        padding: 40px 80px;
+    }
+
+    &__wrapper {
+        // box model
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        @include atTabletsLandscape {
+            // box model
+            justify-content: flex-start;
+        }
+
+        @include atDesktop {
+            // box model
+            padding: 60px 80px;
+            padding-bottom: 40px;
+            margin-bottom: -82px;
+
+            // visual
+            border: 2px solid $brown;
+        }
+    }
 }

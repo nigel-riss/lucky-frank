@@ -1,12 +1,34 @@
 .footer-logo {
+    // box model
+    width: 100%;
+    
+    @include atTabletsLandscape {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        width: 250px;
+    }
+
+    @include atDesktop {
+        // box model
+        margin-right: 40px;
+        // padding-top: 20px;
+    }
+
     &__image {
         // positioning
         position: relative;
+        left: -5px;
         z-index: 2;
 
         // box model
-        max-width: 300px;
+        max-width: 250px;
         margin: 0 auto;
+
+        @include atTabletsLandscape {
+            // positioning
+            left: -15px;
+        }
     
         img {
             // box model
@@ -22,6 +44,11 @@
         line-height: 0.5;
         text-align: center;
         text-transform: uppercase;
+
+        @include atTabletsLandscape {
+            // typography
+            text-align: left;
+        }
 
         small {
             // typography

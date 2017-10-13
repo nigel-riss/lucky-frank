@@ -11,6 +11,16 @@
         padding-top: 0;
     }
 
+    @include atTabletsLandscape {
+        // box model
+        width: 32%;
+    }
+
+    @include atDesktop {
+        // box model
+        width: auto;
+    }
+
     &__header {
 
     }
@@ -23,5 +33,11 @@
         color: $brown;
         font-size: 1.5rem;
         text-transform: uppercase;
+
+        @include atTabletsLandscape {
+            // box model
+            margin-top: 0;
+            padding-top: 0;
+        }
     }
 }

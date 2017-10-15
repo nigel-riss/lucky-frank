@@ -755,11 +755,15 @@ body {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    border: 2px solid #a97140; }
+    border: 2px solid #a97140;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+    .hero__booking a:hover {
+      background-color: #a97140; }
   .hero__quote {
     margin-top: -10px;
     margin-bottom: -25px;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-bottom: 20px;
     border-left: 1px solid #ffffff; }
     @media (min-width: 700px) {
@@ -792,13 +796,18 @@ body {
       padding-bottom: 40px; } }
   .quote__deco {
     position: absolute;
-    top: -50px;
+    top: -30px;
     left: 0;
-    width: 60px;
-    height: 20px;
+    width: 40px;
+    height: 16px;
     background-image: url("./img/mustache.svg");
     background-repeat: no-repeat;
     background-position: center left; }
+    @media (min-width: 900px) {
+      .quote__deco {
+        top: -38px;
+        width: 50px;
+        height: 20px; } }
   .quote__title {
     margin: 0;
     padding: 0;
@@ -838,7 +847,8 @@ body {
         width: 200px; } }
     @media (min-width: 1400px) {
       .quote__signature {
-        bottom: -60px;
+        bottom: auto;
+        top: -100px;
         width: 250px; } }
     .quote__signature img {
       width: 100%; }
@@ -954,7 +964,12 @@ body {
       font-weight: 600;
       text-decoration: none;
       text-transform: uppercase;
-      border: 2px solid #a97140; }
+      border: 2px solid #a97140;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+      .about__more a:hover {
+        color: #ffffff;
+        background-color: #a97140; }
 
 .services {
   padding: 60px 25px;
@@ -1221,6 +1236,13 @@ body {
   @media (min-width: 700px) {
     .prices {
       padding: 80px; } }
+  @media (min-width: 1200px) {
+    .prices {
+      padding-bottom: 300px;
+      background-image: url("/img/prices-bg.jpg");
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: contain; } }
   .prices__content {
     font-size: 0; }
   @media (min-width: 1200px) {
@@ -1235,9 +1257,7 @@ body {
     text-align: center; }
     @media (min-width: 1200px) {
       .prices__more {
-        position: absolute;
-        bottom: 80px;
-        left: 80px; } }
+        text-align: left; } }
 
 .advices {
   -webkit-box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.25);
@@ -1278,7 +1298,7 @@ body {
             flex-wrap: wrap; } }
   .team__quote {
     padding: 10px;
-    padding-top: 40px;
+    padding-top: 80px;
     margin-bottom: -50px; }
     @media (min-width: 1200px) {
       .team__quote {
@@ -1411,7 +1431,12 @@ a.button {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid #a97140; }
+  border: 2px solid #a97140;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+  a.button:hover {
+    color: #ffffff;
+    background-color: #a97140; }
   a.button--inverse {
     color: #222222;
     font-weight: 700; }

@@ -11,6 +11,15 @@ a.button {
 
     // visual
     border: 2px solid $brown;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        // typography
+        color: $white;
+        
+        // visual
+        background-color: $brown;
+    }
 
     &--inverse{
         // typography

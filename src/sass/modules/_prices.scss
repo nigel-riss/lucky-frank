@@ -10,6 +10,18 @@
         padding: 80px;
     }
 
+    @include atDesktop {
+        // box model
+        padding-bottom: 300px;
+
+        // visual
+        background-image: url("/img/prices-bg.jpg");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        // background-size: cover;
+        background-size: contain;
+    }
+
     &__content {
         // typography
         font-size: 0;
@@ -38,9 +50,12 @@
 
         @include atDesktop {
             // positioning
-            position: absolute;
-            bottom: 80px;
-            left: 80px;
+            // position: absolute;
+            // bottom: 80px;
+            // left: 80px;
+
+            // typography
+            text-align: left;
         }
     }
 }

@@ -4,7 +4,7 @@
     z-index: 1;
 
     // visual
-    background-image: url('/img/about-bg-m.jpg');
+    background-image: url("./img/about-bg-m.jpg");
     background-position: center center;
     background-size: cover;
     box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
@@ -14,7 +14,7 @@
         padding: 80px;
         
         // visual
-        background-image: url('/img/about-bg-t.jpg');
+        background-image: url("./img/about-bg-t.jpg");
     }
     
     @include atTabletsLandscape {
@@ -22,7 +22,7 @@
         padding-right: 44%;
 
         // visual
-        background-image: url('/img/about-bg.jpg');
+        background-image: url("./img/about-bg.jpg");
     }
 
     &__deco {

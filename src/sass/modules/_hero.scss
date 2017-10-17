@@ -8,7 +8,7 @@
 
     // visual
     background-color: $chocolate;
-    background-image: url('/img/bg-m.jpg');
+    background-image: url("./img/bg-m.jpg");
     background-position: center center;
     background-size: cover;
     box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
@@ -19,7 +19,7 @@
         padding-bottom: 140px;
 
         // visual
-        background-image: url('/img/bg-t.jpg');
+        background-image: url("./img/bg-t.jpg");
     }
 
     @include atTabletsLandscape {
@@ -30,7 +30,7 @@
     
     @include atTabletsLandscape {
         // visual
-        background-image: url('/img/bg-d.jpg');
+        background-image: url("./img/bg-d.jpg");
         background-position: right center;
     }
     

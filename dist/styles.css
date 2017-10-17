@@ -651,7 +651,7 @@ body {
   z-index: 2;
   padding: 25px;
   background-color: #484340;
-  background-image: url("/img/bg-m.jpg");
+  background-image: url("./img/bg-m.jpg");
   background-position: center center;
   background-size: cover;
   -webkit-box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.25);
@@ -660,13 +660,13 @@ body {
     .hero {
       padding: 80px;
       padding-bottom: 140px;
-      background-image: url("/img/bg-t.jpg"); } }
+      background-image: url("./img/bg-t.jpg"); } }
   @media (min-width: 900px) {
     .hero {
       padding: 80px; } }
   @media (min-width: 900px) {
     .hero {
-      background-image: url("/img/bg-d.jpg");
+      background-image: url("./img/bg-d.jpg");
       background-position: right center; } }
   @media (min-width: 1200px) {
     .hero {
@@ -928,7 +928,7 @@ body {
 .about {
   position: relative;
   z-index: 1;
-  background-image: url("/img/about-bg-m.jpg");
+  background-image: url("./img/about-bg-m.jpg");
   background-position: center center;
   background-size: cover;
   -webkit-box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.25);
@@ -936,11 +936,11 @@ body {
   @media (min-width: 700px) {
     .about {
       padding: 80px;
-      background-image: url("/img/about-bg-t.jpg"); } }
+      background-image: url("./img/about-bg-t.jpg"); } }
   @media (min-width: 900px) {
     .about {
       padding-right: 44%;
-      background-image: url("/img/about-bg.jpg"); } }
+      background-image: url("./img/about-bg.jpg"); } }
   .about__deco {
     display: none; }
     @media (min-width: 900px) {
@@ -983,7 +983,7 @@ body {
   @media (min-width: 1200px) {
     .services {
       padding: 80px;
-      background-image: url("/img/services-bg.jpg");
+      background-image: url("./img/services-bg.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: right bottom; } }
@@ -1239,7 +1239,7 @@ body {
   @media (min-width: 1200px) {
     .prices {
       padding-bottom: 300px;
-      background-image: url("/img/prices-bg.jpg");
+      background-image: url("./img/prices-bg.jpg");
       background-position: bottom center;
       background-repeat: no-repeat;
       background-size: contain; } }
@@ -1265,17 +1265,17 @@ body {
 
 .team {
   position: relative;
-  background-image: url("/img/team-bg-m.jpg");
+  background-image: url("./img/team-bg-m.jpg");
   background-position: bottom center;
   background-repeat: no-repeat; }
   @media (min-width: 700px) {
     .team {
       padding: 80px;
-      background-image: url("/img/team-bg-t.jpg"); } }
+      background-image: url("./img/team-bg-t.jpg"); } }
   @media (min-width: 900px) {
     .team {
       padding-bottom: 100px;
-      background-image: url("/img/team-bg.jpg"); } }
+      background-image: url("./img/team-bg.jpg"); } }
   @media (min-width: 1200px) {
     .team {
       padding-bottom: 80px; } }

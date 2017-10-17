@@ -31,6 +31,17 @@ gulp.task("watch", () => {
     });
 
     // wordpress
+    watch("./wp/*.php", () => {
+        gulp.start("copyPHP");
+    });
+
+    watch("./dist/styles.css", () => {
+        gulp.start("copyCSS");
+    });
+
+    watch("./dist/*.js", () => {
+        gulp.start("copyJS");
+    });
 });
 
 gulp.task("pugChanged", ["pugRender"], () => {

@@ -2,6 +2,9 @@
     // positioning
     position: relative;
 
+    // typography
+    font-size: 0;
+
     // visual
     background-color: $dark;
 
@@ -18,6 +21,10 @@
         background-repeat: no-repeat;
         // background-size: cover;
         background-size: contain;
+    }
+
+    &__header {
+
     }
 
     &__content {
@@ -47,12 +54,9 @@
         text-align: center;
 
         @include atDesktop {
-            // positioning
-            // position: absolute;
-            // bottom: 80px;
-            // left: 80px;
 
             // typography
+            font-size: 1rem;
             text-align: left;
         }
     }

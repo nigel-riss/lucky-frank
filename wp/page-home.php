@@ -143,6 +143,8 @@
         </div>
         <div class="hero__deco"></div>
     </section>
+
+
     <section class="section about">
         <header class="section__header">
             <p class="section__suptitle">О Барбершопе</p>
@@ -162,6 +164,8 @@
             <img src="<?php bloginfo("stylesheet_directory"); ?>/img/about-deco.png" alt="" />
         </div>
     </section>
+
+
     <section class="section services">
         <div class="section__content section__content--wrapper">
             <article class="service">
@@ -281,6 +285,8 @@
             </div>
         </div>
     </section>
+
+
     <section class="section statistics">
         <div class="section__content">
             <article class="stat">
@@ -333,6 +339,8 @@
             </article>
         </div>
     </section>
+
+
     <section class="section prices">
         <header class="section__header section__header--inversed">
             <p class="section__suptitle">Прайс Lucky Frank</p>
@@ -437,7 +445,17 @@
                 </table>
             </div>
         </div>
+
+        <div class="partners">
+            <div class="partner"><img src="<?php bloginfo("stylesheet_directory"); ?>/img/partners/american-crew.png" alt="American Crew logo"/></div>
+            <div class="partner"><img src="<?php bloginfo("stylesheet_directory"); ?>/img/partners/truefitt-and-hill.png" alt="Truefitt &amp; Hill logo"/></div>
+            <div class="partner"><img src="<?php bloginfo("stylesheet_directory"); ?>/img/partners/barber-wild.png" alt="Barber WILD logo"/></div>
+            <div class="partner"><img src="<?php bloginfo("stylesheet_directory"); ?>/img/partners/wahl.png" alt="WAHL logo"/></div>
+            <div class="partner"><img src="<?php bloginfo("stylesheet_directory"); ?>/img/partners/proraso.png" alt="Proraso logo"/></div>
+        </div>
     </section>
+
+
     <section class="section team">
         <header class="section__header">
             <p class="section__suptitle">Барберы Lucky Frank</p>

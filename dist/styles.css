@@ -482,6 +482,7 @@ body {
   font-family: inherit; }
 
 .page-header {
+  position: relative;
   background-color: #222222; }
 
 .header-contacts {
@@ -901,6 +902,7 @@ body {
   .section__subtitle {
     margin: 0;
     padding: 0;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase; }
@@ -923,6 +925,7 @@ body {
     .section__more a {
       display: inline-block;
       color: #a97140;
+      font-size: 1rem;
       font-weight: 700; }
 
 .about {
@@ -1232,6 +1235,7 @@ body {
 
 .prices {
   position: relative;
+  font-size: 0;
   background-color: #222222; }
   @media (min-width: 700px) {
     .prices {
@@ -1256,6 +1260,7 @@ body {
     text-align: center; }
     @media (min-width: 1200px) {
       .prices__more {
+        font-size: 1rem;
         text-align: left; } }
 
 .partners {

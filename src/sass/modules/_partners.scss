@@ -1,0 +1,12 @@
+.partners {
+    // box model
+    display: none;
+
+    @include atDesktop {
+        // box model
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+    }
+}

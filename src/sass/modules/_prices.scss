@@ -11,8 +11,6 @@
     }
 
     @include atDesktop {
-        // box model
-        padding-bottom: 300px;
 
         // visual
         background-image: url("./img/prices-bg.jpg");

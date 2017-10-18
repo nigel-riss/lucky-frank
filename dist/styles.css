@@ -1266,9 +1266,8 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
       padding-top: 80px; } }
 
 .partner {
@@ -1276,7 +1275,7 @@ body {
   vertical-align: top;
   padding: 0 20px;
   height: 120px;
-  max-width: 22%; }
+  max-width: 280px; }
   .partner img {
     position: relative;
     top: 50%;
@@ -1305,7 +1304,8 @@ body {
       background-image: url("./img/team-bg.jpg"); } }
   @media (min-width: 1200px) {
     .team {
-      padding-bottom: 80px; } }
+      padding-bottom: 80px;
+      background-size: cover; } }
   .team__more {
     padding-bottom: 60px; }
     .team__more a {

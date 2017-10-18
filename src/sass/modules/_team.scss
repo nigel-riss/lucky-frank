@@ -26,6 +26,9 @@
     @include atDesktop {
         // box model
         padding-bottom: 80px;
+
+        // visual
+        background-size: cover
     }
     
     &__more {

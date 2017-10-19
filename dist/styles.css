@@ -628,24 +628,45 @@ body {
     position: absolute;
     top: 10px;
     left: 6px;
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
     height: 3px;
     width: 26px;
-    background-color: #a97140; }
+    background-color: #a97140;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
   .menu-icon__middle {
     position: absolute;
     top: 17px;
     left: 6px;
     height: 3px;
     width: 26px;
-    background-color: #a97140; }
+    background-color: #a97140;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
   .menu-icon::after {
     content: "";
     position: absolute;
     top: 24px;
     left: 6px;
+    -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
     height: 3px;
     width: 26px;
-    background-color: #a97140; }
+    background-color: #a97140;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .menu-icon--close-x::before {
+    top: 8px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .menu-icon--close-x .menu-icon__middle {
+    width: 0;
+    opacity: 0; }
+  .menu-icon--close-x::after {
+    top: 26px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
 
 .hero {
   position: relative;
@@ -1258,7 +1279,7 @@ body {
   .prices__more {
     margin-top: 60px;
     text-align: center; }
-    @media (min-width: 1200px) {
+    @media (min-width: 700px) {
       .prices__more {
         font-size: 1rem;
         text-align: left; } }
@@ -1461,6 +1482,7 @@ a.button {
   vertical-align: top;
   padding: 10px 30px;
   color: #ffffff;
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #a97140;

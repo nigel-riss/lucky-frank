@@ -1,0 +1,30 @@
+.inner-logo {
+    // positioning
+    position: relative;
+    z-index: 3;
+    
+    // box model
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    @include atTabletsPortrait {
+        // box model
+        max-width: 230px;
+        margin: 0;
+        float: left;
+        padding: 0;
+        padding-top: 5px;
+    }
+
+    @include atDesktop {
+        // box model
+        max-width: 300px;
+        padding-top: 60px;
+    }
+
+    img {
+        // box model
+        width: 100%;
+    }
+}

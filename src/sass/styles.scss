@@ -16,6 +16,7 @@
 @import 'modules/header-contacts';
 @import 'modules/contact-item';
 @import 'modules/logo';
+@import 'modules/inner-logo';
 @import 'modules/main-nav';
 @import 'modules/main-menu';
 @import 'modules/menu-icon';
@@ -23,10 +24,13 @@
 //      hero
 @import 'modules/hero';
 @import 'modules/quote';
+@import 'modules/inner-hero';
 
 //      section
 @import 'modules/section';
+@import 'modules/inner-section';
 @import 'modules/about';
+@import 'modules/inner-about';
 @import 'modules/services';
 @import 'modules/service';
 @import 'modules/service-thumb';

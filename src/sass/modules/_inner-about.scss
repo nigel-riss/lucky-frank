@@ -1,0 +1,83 @@
+.inner-about {
+    // positioning
+    position: relative;
+    z-index: 1;
+
+    // box model
+    padding: 60px 25px;
+
+    // visual
+    background-image: url("./img/about-bg-m.jpg");
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
+    
+    @include atTabletsPortrait {
+        // box model
+        padding: 60px;
+        padding-top: 30px;
+        
+        // visual
+        background-image: url("./img/about-bg-t.jpg");
+    }
+    
+    @include atTabletsLandscape {
+        // box model
+        padding: 80px;
+        padding-right: 44%;
+
+        // visual
+        background-image: url("./img/about-bg.jpg");
+    }
+
+    &__header {
+        // positioning
+        position: relative;
+        
+        // box model
+        margin-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        &::after {
+            content: "";
+            
+            // positioning
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            
+            // box model
+            height: 2px;
+            width: 50px;
+            
+            // visual
+            background-color: $brown;
+        }
+    }
+
+    &__title {
+        // typography
+        color: $brown;
+        font-weight: 400;
+        text-transform: uppercase;
+
+    }
+
+    &__subtitle {
+        // typography
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        // typography
+        line-height: 1.5;
+
+        em {
+            // typography
+            color: $brown;
+        }
+    }
+}

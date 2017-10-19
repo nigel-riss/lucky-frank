@@ -1078,12 +1078,32 @@ body {
         float: left;
         margin-right: 30px;
         margin-bottom: 20px; } }
+    @media (min-width: 900px) {
+      .inner-section__image {
+        margin-right: 40px; } }
+    @media (min-width: 1200px) {
+      .inner-section__image {
+        margin-right: 60px; } }
     .inner-section__image img {
       height: 100%;
       width: 100%; }
   @media (min-width: 700px) {
     .inner-section__content {
       margin-top: -20px; } }
+  @media (min-width: 1200px) {
+    .inner-section__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      min-height: 450px;
+      margin-top: 0; } }
   .inner-section__content p {
     line-height: 1.5; }
 

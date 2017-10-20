@@ -88,7 +88,7 @@ html(lang="en")
 
 
         section.section.services
-            .section__content.section__content--wrapper
+            .section__content.section__content--wrapper.services__to-desktop
                 article.service
                     .service__icon
                         img(src="/img/shaving-icon.svg", alt="Бритьё в барбершопе Lucky Frank")
@@ -125,6 +125,7 @@ html(lang="en")
                 article.service-thumb
                     header.service-thumb__header
                         h3.service-thumb__title Стрижки
+                        .service-thumb__description Модный тренд или вечная классика? Подберем именно то, что подходит Вам
                         .service-thumb__more
                             a(href="#") Подробнее
                         .service-thumb__icon
@@ -135,6 +136,7 @@ html(lang="en")
                 article.service-thumb
                     header.service-thumb__header
                         h3.service-thumb__title Королевское <br>бритьё
+                        .service-thumb__description Настоящий ритуал, состоящий из нескольких этапов, достойный королей
                         .service-thumb__more
                             a(href="#") Подробнее
                         .service-thumb__icon
@@ -147,6 +149,7 @@ html(lang="en")
                 article.service-thumb
                     header.service-thumb__header
                         h3.service-thumb__title Бритьё
+                        .service-thumb__description Профессиональный подход к каждому клиенту от наших лучших мастеров барберов
                         .service-thumb__more
                             a(href="#") Подробнее
                         .service-thumb__icon
@@ -157,6 +160,7 @@ html(lang="en")
                 article.service-thumb
                     header.service-thumb__header
                         h3.service-thumb__title Татуировки
+                        .service-thumb__description Наши тату мастера осуществят вашу самую смелую идею
                         .service-thumb__more
                             a(href="#") Подробнее
                         .service-thumb__icon
@@ -330,6 +334,18 @@ html(lang="en")
                     .quote__signature
                         img(src="/img/sign.png", alt="")
 
+        section.location#contacts
+            .map-label
+                h2.map-label__title Контакты
+                h3.map-label__contact-title Адрес
+                p.map-label__contact-value г. Краснодар, ул. Мира 54
+                h3.map-label__contact-title Электронная почта
+                p.map-label__contact-value: a(href="mailto:info@luckyfrank.ru") info@luckyfrank.ru
+                h3.map-label__contact-title Телефон
+                p.map-label__contact-value: a(href="tel:+79181959419") +7 918 195-94-19
+
+            #map.location__map
+
         footer.page-footer
             .page-footer__wrapper
                 .footer-logo
@@ -376,4 +392,7 @@ html(lang="en")
                                 | Воскресенье: 10<sup>00</sup> - 22<sup>00</sup> <br>
                                 //- | Воскресенье: <em>Выходной</em>
 
+        script(type="text/javascript", src="//w87814.yclients.com/widgetJS", charset="UTF-8")
         script(src="menu.js")
+        script(src="map.js")
+        script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&callback=initMap")

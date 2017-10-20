@@ -76,6 +76,22 @@
         text-transform: uppercase;
     }
 
+    &__description {
+        // positioning
+        position: absolute;
+        top: 150px;
+
+        // box model
+        padding: 0 50px;
+
+        // typography
+        color: $white;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: 700;
+        text-align: center;
+    }
+
     &__more {
         // positioning
         position: absolute;

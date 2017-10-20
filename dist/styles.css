@@ -506,6 +506,8 @@ body {
     .contact-item__content a {
       color: #ffffff;
       text-decoration: none; }
+      .contact-item__content a:hover {
+        color: #a97140; }
   .contact-item--phone {
     display: inline-block;
     vertical-align: top; }
@@ -1049,6 +1051,8 @@ body {
     clear: both; }
   .inner-section__title {
     padding: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
     color: #ffffff;
     font-size: 1.25rem;
     font-weight: 400;
@@ -1057,7 +1061,8 @@ body {
     background-color: #a97140; }
     @media (min-width: 700px) {
       .inner-section__title {
-        display: inline-block; } }
+        display: inline-block;
+        margin-bottom: 40px; } }
   .inner-section__image {
     position: relative;
     max-width: 450px;
@@ -1099,9 +1104,6 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
       min-height: 450px;
       margin-top: 0; } }
   .inner-section__content p {
@@ -1330,6 +1332,15 @@ body {
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase; }
+  .service-thumb__description {
+    position: absolute;
+    top: 150px;
+    padding: 0 50px;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center; }
   .service-thumb__more {
     position: absolute;
     bottom: 50px;
@@ -1562,6 +1573,52 @@ body {
         right: 60px;
         top: 110px;
         width: 45%; } }
+
+.location {
+  position: relative; }
+  .location::before {
+    content: "";
+    position: absolute;
+    z-index: 3; }
+  @media (min-width: 900px) {
+    .location__map {
+      height: 500px; } }
+
+.map-label {
+  display: none; }
+  @media (min-width: 900px) {
+    .map-label {
+      position: absolute;
+      right: 80px;
+      top: 80px;
+      z-index: 3;
+      display: block;
+      padding: 20px 50px;
+      padding-bottom: 30px;
+      background-color: #ffffff; }
+      .map-label::before {
+        content: "";
+        position: absolute;
+        left: 7px;
+        top: 7px;
+        height: calc(100% - 14px);
+        width: calc(100% - 14px);
+        border: 2px solid #a97140; } }
+  .map-label__title {
+    margin-bottom: 30px;
+    color: #a97140;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase; }
+  .map-label__contact-title {
+    font-size: 1rem; }
+  .map-label__contact-value {
+    padding-bottom: 10px;
+    font-size: 1rem; }
+    .map-label__contact-value a {
+      color: #a97140;
+      text-decoration: none; }
+      .map-label__contact-value a:hover {
+        text-decoration: underline; }
 
 .page-footer {
   padding: 60px 25px;

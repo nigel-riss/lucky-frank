@@ -29,6 +29,11 @@
             // typography
             color: $white;
             text-decoration: none;
+
+            &:hover {
+                // typography
+                color: $brown;
+            }
         }
     }
 

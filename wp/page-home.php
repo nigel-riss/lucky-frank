@@ -46,7 +46,7 @@
             <div class="contact-item contact-item--phone">
                 <div class="contact-item__icon icon-phone"></div>
                 <div class="contact-item__content">
-                    <a href="#">+7 918 195 94 19</a>
+                    <a href="tel:+79181959419">+7 918 195-94-19</a>
                 </div>
             </div>
 
@@ -124,7 +124,7 @@
             <p class="hero__subtitle">Барбершоп для тех, кто разбирается в стиле</p>
         </header>
         <div class="hero__booking">
-            <a href="#">Онлайн запись</a>
+            <a class="ms_booking" href="#">Онлайн запись</a>
         </div>
         <div class="hero__quote">
             <blockquote class="quote quote--inversed">
@@ -144,7 +144,7 @@
         <div class="hero__deco"></div>
     </section>
 
-
+    <!-- About Barbershop -->
     <section class="section about">
         <header class="section__header">
             <p class="section__suptitle">О Барбершопе</p>
@@ -157,47 +157,50 @@
                 то место, где ты найдешь себя и свой стиль. Мужские стрижки и бритье — это наш профиль, и мы уверены,
                 что мы стрижем и бреем лучше всех.</p>
         </div>
-        <div class="about__more">
+        <!-- <div class="about__more">
             <a href="">узнай больше</a>
-        </div>
+        </div> -->
         <div class="about__deco">
             <img src="<?php bloginfo("stylesheet_directory"); ?>/img/about-deco.png" alt="" />
         </div>
     </section>
 
-
+    <!-- Services -->
     <section class="section services">
-        <div class="section__content section__content--wrapper">
+        <div class="section__content section__content--wrapper services__to-desktop">
             <article class="service">
                 <div class="service__icon">
                     <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-icon.svg" alt="Бритьё в барбершопе Lucky Frank" />
                 </div>
                 <h3 class="service__title">Бритьё</h3>
-                <p class="service__description">Профессиональный подход к каждому клиенту от наших лучших мастеров-барберов</p>
+                <p class="service__description">Профессиональный подход к каждому клиенту от наших лучших мастеров барберов</p>
                 <div class="service__more">
-                    <a href="#">Подробнее</a>
+                    <!-- <a href="#">Подробнее</a> -->
                 </div>
             </article>
+
             <article class="service">
                 <div class="service__icon">
                     <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-icon.svg" alt="Стрижки в барбершопе Lucky Frank" />
                 </div>
                 <h3 class="service__title">Стрижки</h3>
-                <p class="service__description">Профессиональный подход к каждому клиенту от наших лучших мастеров-барберов</p>
+                <p class="service__description">Модный тренд или вечная классика? Подберем именно то, что подходит Вам</p>
                 <div class="service__more">
                     <a href="#">Подробнее</a>
                 </div>
             </article>
+
             <article class="service">
                 <div class="service__icon">
                     <img src="<?php bloginfo("stylesheet_directory"); ?>/img/royal-icon.svg" alt="Королевское бритьё в барбершопе Lucky Frank" />
                 </div>
                 <h3 class="service__title">Королевское бритьё</h3>
-                <p class="service__description">Настоящий ритуал, состоящий из нескольких этапов</p>
+                <p class="service__description">Настоящий ритуал, состоящий из нескольких этапов, достойный королей</p>
                 <div class="service__more">
                     <a href="#">Подробнее</a>
                 </div>
             </article>
+
             <article class="service">
                 <div class="service__icon">
                     <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-icon.svg" alt="Профессиональные татуировки в барбершопе Lucky Frank" />
@@ -205,10 +208,12 @@
                 <h3 class="service__title">Татуировки</h3>
                 <p class="service__description">Наши тату мастера осуществят вашу самую смелую идею</p>
                 <div class="service__more">
-                    <a href="#">Подробнее</a>
+                    <!-- <a href="#">Подробнее</a> -->
                 </div>
             </article>
         </div>
+
+
         <div class="services__desktop">
             <article class="service-thumb">
                 <header class="service-thumb__header">
@@ -224,6 +229,7 @@
                     <img src="<?php bloginfo("stylesheet_directory"); ?>/img/services/haircut-bg.jpg" alt="" />
                 </div>
             </article>
+
             <article class="service-thumb">
                 <header class="service-thumb__header">
                     <h3 class="service-thumb__title">Королевское
@@ -239,12 +245,14 @@
                     <img src="<?php bloginfo("stylesheet_directory"); ?>/img/services/royal-bg.jpg" alt="" />
                 </div>
             </article>
+
             <br/>
+
             <article class="service-thumb">
                 <header class="service-thumb__header">
                     <h3 class="service-thumb__title">Бритьё</h3>
                     <div class="service-thumb__more">
-                        <a href="#">Подробнее</a>
+                        <!-- <a href="#">Подробнее</a> -->
                     </div>
                     <div class="service-thumb__icon">
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-icon-white.svg" alt="" />
@@ -254,11 +262,12 @@
                     <img src="<?php bloginfo("stylesheet_directory"); ?>/img/services/shaving-bg.jpg" alt="" />
                 </div>
             </article>
+
             <article class="service-thumb">
                 <header class="service-thumb__header">
                     <h3 class="service-thumb__title">Татуировки</h3>
                     <div class="service-thumb__more">
-                        <a href="#">Подробнее</a>
+                        <!-- <a href="#">Подробнее</a> -->
                     </div>
                     <div class="service-thumb__icon">
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-icon-white.svg" alt="" />
@@ -268,6 +277,7 @@
                     <img src="<?php bloginfo("stylesheet_directory"); ?>/img/services/tattoos-bg.jpg" alt="" />
                 </div>
             </article>
+
             <div class="services__quote">
                 <blockquote class="quote quote--inversed">
                     <div class="quote__deco"> </div>
@@ -286,8 +296,8 @@
         </div>
     </section>
 
-
-    <section class="section statistics">
+    <!-- Statistics -->
+    <!-- <section class="section statistics">
         <div class="section__content">
             <article class="stat">
                 <header class="stat__header">
@@ -338,9 +348,10 @@
                 </div>
             </article>
         </div>
-    </section>
+    </section> -->
 
 
+    <!-- Prices -->
     <section class="section prices">
         <header class="section__header section__header--inversed">
             <p class="section__suptitle">Прайс Lucky Frank</p>
@@ -348,9 +359,9 @@
                 <br>на услуги</h2>
             <p class="section__subtitle">Позволь себе настоящий стиль</p>
         </header>
-        <div class="prices__more">
+        <!-- <div class="prices__more">
             <a class="button" href="">Все услуги</a>
-        </div>
+        </div> -->
         <div class="prices__content">
             <div class="prices__column prices__column--left">
                 <table class="prices-table">
@@ -455,15 +466,15 @@
         </div>
     </section>
 
-
-    <section class="section team">
+    <!-- Team -->
+    <!-- <section class="section team">
         <header class="section__header">
             <p class="section__suptitle">Барберы Lucky Frank</p>
             <h2 class="section__title">Наши мастера</h2>
             <p class="section__subtitle">Мы знаем, что такое стиль</p>
         </header>
         <div class="team__more">
-            <a class="button button--inverse" href="">Онлайн запись</a>
+            <a class="ms_booking button button--inverse" href="#">Онлайн запись</a>
         </div>
         <div class="team__content">
             <article class="member">
@@ -519,7 +530,7 @@
                 </div>
             </blockquote>
         </div>
-    </section>
+    </section> -->
 
     <?php get_footer(); ?>
 </body>

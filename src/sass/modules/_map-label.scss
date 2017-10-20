@@ -1,0 +1,72 @@
+.map-label {
+    // box model
+    display: none;
+
+    @include atTabletsLandscape {
+        // positioning
+        position: absolute;
+        right: 80px;
+        top: 80px;
+        z-index: 3;
+
+        // box model
+        display: block;
+        padding: 20px 50px;
+        padding-bottom: 30px;
+
+        // visual
+        background-color: $white;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            left: 7px;
+            top: 7px;
+
+            // box model
+            height: calc(100% - 14px);
+            width: calc(100% - 14px);
+
+            // visual
+            border: 2px solid $brown;
+        }
+    }
+
+    &__title {
+        // box model
+        margin-bottom: 30px;
+        
+        // typography
+        color: $brown;
+        font-family: $titleFont;
+        text-transform: uppercase;
+    }
+
+    &__contact-title {
+        // box model
+
+        // typography
+        font-size: 1rem;
+    }
+
+    &__contact-value {
+        // box model
+        padding-bottom: 10px;
+
+        // typography
+        font-size: 1rem;
+        
+        a {
+            // typography
+            color: $brown;
+            text-decoration: none;
+
+            &:hover {
+                // typography
+                text-decoration: underline;
+            }
+        }
+    }
+}

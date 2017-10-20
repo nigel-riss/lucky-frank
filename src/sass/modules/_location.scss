@@ -1,0 +1,21 @@
+.location {
+    // positioning
+    position: relative;
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        z-index: 3;
+
+        
+    }
+
+    &__map {
+        @include atTabletsLandscape {
+            // box model
+            height: 500px;
+        }
+    }
+}

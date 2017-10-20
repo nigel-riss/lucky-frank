@@ -49,33 +49,20 @@
                     <div class="footer-info">
                         <div class="footer-info__icon icon-clock"></div>
                         <p class="footer-info__text footer-info__text--schedule">
-                            Понедельник: 10
-                            <sup>00</sup> - 22
-                            <sup>00</sup>
-                            <br>Вторник: 10
-                            <sup>00</sup> - 22
-                            <sup>00</sup>
-                            <br> Среда: 10
-                            <sup>00</sup> - 22
-                            <sup>00</sup>
-                            <br> Четверг: 10
-                            <sup>00</sup> - 22
-                            <sup>00</sup>
-                            <br> Пятница: 10
-                            <sup>00</sup> - 22
-                            <sup>00</sup>
-                            <br> Суббота: 10
-                            <sup>00</sup> - 22
-                            <sup>00</sup>
-                            <br> Воскресенье: 10
-                            <sup>00</sup> - 22
-                            <sup>00</sup>
-                            <br>
+                            Понедельник: 10<sup>00</sup> - 22<sup>00</sup><br>
+                            Вторник: 10<sup>00</sup> - 22<sup>00</sup><br>
+                            Среда: 10<sup>00</sup> - 22<sup>00</sup><br>
+                            Четверг: 10<sup>00</sup> - 22<sup>00</sup><br>
+                            Пятница: 10<sup>00</sup> - 22<sup>00</sup><br>
+                            Суббота: 10<sup>00</sup> - 22<sup>00</sup><br>
+                            Воскресенье: 10<sup>00</sup> - 22<sup>00</sup>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="//w87814.yclients.com/widgetJS" charset="UTF-8"></script>
     <script src="menu.js"></script>
     <?php wp_footer(); ?>

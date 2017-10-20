@@ -66,9 +66,9 @@
             <div class="contact-item contact-item--social">
                 <div class="contact-item__content">
                     <div class="social social--header">
-                        <a class="social-icon icon-instagram" href="https:/www.instagram.com/truemanbarbershop/">Instagram</a>
-                        <a class="social-icon icon-facebook" href="https:/www.facebook.com/truemanbarbershop/">Facebook</a>
-                        <a class="social-icon icon-vkontakte" href="https:/vk.com/truemanbarbershop">Vkontakte</a>
+                        <a class="social-icon icon-instagram" href="https://www.instagram.com/lucky.frank.barber/">Instagram</a>
+                        <!-- <a class="social-icon icon-facebook" href="https:/www.facebook.com/truemanbarbershop/">Facebook</a> -->
+                        <a class="social-icon icon-vkontakte" href="https://vk.com/lucky.frank.barber">Vkontakte</a>
                     </div>
                 </div>
             </div>
@@ -94,22 +94,22 @@
                     <a href="#">Главная</a>
                 </li>
                 <li>
-                    <a href="#">О нас</a>
+                    <a href="#about">О нас</a>
                 </li>
                 <li>
-                    <a href="#">Услуги</a>
+                    <a href="#services">Услуги</a>
                 </li>
                 <li>
-                    <a href="#">Прайс</a>
+                    <a href="#prices">Прайс</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#">Советы</a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a href="#">Мастера</a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="#">Контакты</a>
+                    <a href="#contacts">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -145,7 +145,7 @@
     </section>
 
     <!-- About Barbershop -->
-    <section class="section about">
+    <section class="section about" id="about">
         <header class="section__header">
             <p class="section__suptitle">О Барбершопе</p>
             <h2 class="section__title">Добро пожаловать
@@ -166,7 +166,7 @@
     </section>
 
     <!-- Services -->
-    <section class="section services">
+    <section class="section services" id="services">
         <div class="section__content section__content--wrapper services__to-desktop">
             <article class="service">
                 <div class="service__icon">
@@ -186,7 +186,7 @@
                 <h3 class="service__title">Стрижки</h3>
                 <p class="service__description">Модный тренд или вечная классика? Подберем именно то, что подходит Вам</p>
                 <div class="service__more">
-                    <a href="#">Подробнее</a>
+                    <!-- <a href="#">Подробнее</a> -->
                 </div>
             </article>
 
@@ -197,7 +197,7 @@
                 <h3 class="service__title">Королевское бритьё</h3>
                 <p class="service__description">Настоящий ритуал, состоящий из нескольких этапов, достойный королей</p>
                 <div class="service__more">
-                    <a href="#">Подробнее</a>
+                    <!-- <a href="#">Подробнее</a> -->
                 </div>
             </article>
 
@@ -219,7 +219,7 @@
                 <header class="service-thumb__header">
                     <h3 class="service-thumb__title">Стрижки</h3>
                     <div class="service-thumb__more">
-                        <a href="#">Подробнее</a>
+                        <!-- <a href="#">Подробнее</a> -->
                     </div>
                     <div class="service-thumb__icon">
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-icon-white.svg" alt="" />
@@ -235,7 +235,7 @@
                     <h3 class="service-thumb__title">Королевское
                         <br>бритьё</h3>
                     <div class="service-thumb__more">
-                        <a href="#">Подробнее</a>
+                        <!-- <a href="#">Подробнее</a> -->
                     </div>
                     <div class="service-thumb__icon">
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/royal-icon-white.svg" alt="" />
@@ -352,7 +352,7 @@
 
 
     <!-- Prices -->
-    <section class="section prices">
+    <section class="section prices" id="prices">
         <header class="section__header section__header--inversed">
             <p class="section__suptitle">Прайс Lucky Frank</p>
             <h2 class="section__title">Прайс-лист
@@ -531,6 +531,28 @@
             </blockquote>
         </div>
     </section> -->
+
+    <!-- Contacts and Map -->
+    <section class="location" id="contacts">
+        <div class="map-label">
+            <h2 class="map-label__title">Контакты</h2>
+            <h3 class="map-label__contact-title">Адрес</h3>
+            <p class="map-label__contact-value">г. Краснодар, ул. Мира 54</p>
+            <h3 class="map-label__contact-title">Электронная почта</h3>
+            <p class="map-label__contact-value">
+                <a href="mailto:info@luckyfrank.ru">info@luckyfrank.ru</a>
+            </p>
+            <h3 class="map-label__contact-title">Телефон</h3>
+            <p class="map-label__contact-value">
+                <a href="tel:+79181959419">+7 918 195-94-19</a>
+            </p>
+            <div class="map-label__logo">
+                <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo.svg" alt="Lucky Frank Barbershop logo" />
+            </div>
+        </div>
+
+        <div class="location__map" id="map"></div>
+    </section>
 
     <?php get_footer(); ?>
 </body>

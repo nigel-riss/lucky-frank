@@ -60,5 +60,10 @@
         // visual
         visibility: visible;
         opacity: 1;
+
+        @include atDesktop {
+            // positioning
+            left: auto;
+        }
     }
 }

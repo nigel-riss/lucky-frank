@@ -606,6 +606,9 @@ body {
     left: 0;
     visibility: visible;
     opacity: 1; }
+    @media (min-width: 1200px) {
+      .main-nav--shown {
+        left: auto; } }
 
 .main-menu {
   margin: 0;

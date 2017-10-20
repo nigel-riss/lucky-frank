@@ -33,9 +33,9 @@
                     </div>
                     <div class="footer-info">
                         <div class="social social--footer">
-                            <a class="social-icon icon-instagram" href="https://www.instagram.com/truemanbarbershop/">Instagram</a>
-                            <a class="social-icon icon-facebook" href="https://www.facebook.com/truemanbarbershop/">Facebook</a>
-                            <a class="social-icon icon-vkontakte" href="https://vk.com/truemanbarbershop">Vkontakte</a>
+                        <a class="social-icon icon-instagram" href="https://www.instagram.com/lucky.frank.barber/">Instagram</a>
+                        <!-- <a class="social-icon icon-facebook" href="https:/www.facebook.com/truemanbarbershop/">Facebook</a> -->
+                        <a class="social-icon icon-vkontakte" href="https://vk.com/lucky.frank.barber">Vkontakte</a>
                         </div>
                     </div>
                 </div>
@@ -64,5 +64,7 @@
     </footer>
 
     <script type="text/javascript" src="//w87814.yclients.com/widgetJS" charset="UTF-8"></script>
-    <script src="menu.js"></script>
+    <script src="<?php bloginfo("stylesheet_directory"); ?>/menu.js"></script>
+    <script src="<?php bloginfo("stylesheet_directory"); ?>/map.js"></script>
+    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap"></script>
     <?php wp_footer(); ?>

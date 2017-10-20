@@ -1575,14 +1575,31 @@ body {
         width: 45%; } }
 
 .location {
-  position: relative; }
+  position: relative;
+  display: none; }
+  @media (min-width: 900px) {
+    .location {
+      display: block; } }
   .location::before {
     content: "";
     position: absolute;
-    z-index: 3; }
+    bottom: 0;
+    left: 40px;
+    z-index: 3;
+    height: 400px;
+    width: 500px;
+    background-image: url("./img/frank.png");
+    background-repeat: no-repeat;
+    background-size: contain; }
+    @media (min-width: 1200px) {
+      .location::before {
+        height: 450px; } }
   @media (min-width: 900px) {
     .location__map {
       height: 500px; } }
+  @media (min-width: 1200px) {
+    .location__map {
+      height: 600px; } }
 
 .map-label {
   display: none; }
@@ -1590,7 +1607,7 @@ body {
     .map-label {
       position: absolute;
       right: 80px;
-      top: 80px;
+      top: 35px;
       z-index: 3;
       display: block;
       padding: 20px 50px;
@@ -1604,6 +1621,9 @@ body {
         height: calc(100% - 14px);
         width: calc(100% - 14px);
         border: 2px solid #a97140; } }
+  @media (min-width: 1200px) {
+    .map-label {
+      top: 90px; } }
   .map-label__title {
     margin-bottom: 30px;
     color: #a97140;
@@ -1619,6 +1639,10 @@ body {
       text-decoration: none; }
       .map-label__contact-value a:hover {
         text-decoration: underline; }
+  .map-label__logo {
+    position: relative;
+    z-index: 3;
+    margin-bottom: -90px; }
 
 .page-footer {
   padding: 60px 25px;

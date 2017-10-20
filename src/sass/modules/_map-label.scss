@@ -6,7 +6,7 @@
         // positioning
         position: absolute;
         right: 80px;
-        top: 80px;
+        top: 35px;
         z-index: 3;
 
         // box model
@@ -34,10 +34,15 @@
         }
     }
 
+    @include atDesktop {
+        // positioning
+        top: 90px;
+    }
+
     &__title {
         // box model
         margin-bottom: 30px;
-        
+
         // typography
         color: $brown;
         font-family: $titleFont;
@@ -68,5 +73,14 @@
                 text-decoration: underline;
             }
         }
+    }
+
+    &__logo {
+        // positioning
+        position: relative;
+        z-index: 3;
+
+        // box model
+        margin-bottom: -90px;
     }
 }

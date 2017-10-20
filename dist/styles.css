@@ -1046,7 +1046,9 @@ body {
       padding: 0 80px; } }
   @media (min-width: 1200px) {
     .inner-section {
-      padding: 0 80px; } }
+      padding: 0 80px;
+      max-width: 1400px;
+      margin: 60px auto; } }
   .inner-section::after {
     content: "";
     display: table;
@@ -1174,6 +1176,7 @@ body {
       background-image: url("./img/about-bg-t.jpg"); } }
   @media (min-width: 900px) {
     .inner-about {
+      margin-bottom: 120px;
       padding: 80px;
       padding-right: 44%;
       background-image: url("./img/about-bg.jpg"); } }
@@ -1198,6 +1201,10 @@ body {
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase; }
+  @media (min-width: 1200px) {
+    .inner-about__image {
+      position: absolute;
+      right: 80px; } }
   .inner-about__description {
     line-height: 1.5; }
     .inner-about__description em {

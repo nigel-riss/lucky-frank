@@ -28,7 +28,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=2" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -90,27 +90,13 @@
             </div>
 
             <ul class="main-menu">
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <a href="#about">О нас</a>
-                </li>
-                <li>
-                    <a href="#services">Услуги</a>
-                </li>
-                <li>
-                    <a href="#prices">Прайс</a>
-                </li>
-                <!-- <li>
-                    <a href="#">Советы</a>
-                </li> -->
-                <!-- <li>
-                    <a href="#">Мастера</a>
-                </li> -->
-                <li>
-                    <a href="#contacts">Контакты</a>
-                </li>
+                <li><a href="<?php echo esc_url(home_url("/")); ?>#">Главная</a></li>
+                <li><a href="<?php echo esc_url(home_url("/")); ?>#about">О нас</a></li>
+                <li><a href="<?php echo esc_url(home_url("/")); ?>#services">Услуги</a></li>
+                <li><a href="<?php echo esc_url(home_url("/")); ?>#prices">Прайс</a></li>
+                <!-- <li><a href="<?php echo esc_url(home_url("/")); ?>#">Советы</a></li> -->
+                <!-- <li><a href="<?php echo esc_url(home_url("/")); ?>#">Мастера</a></li> -->
+                <li><a href="<?php echo esc_url(home_url("/")); ?>#contacts">Контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -186,7 +172,7 @@
                 <h3 class="service__title">Стрижки</h3>
                 <p class="service__description">Модный тренд или вечная классика? Подберем именно то, что подходит Вам</p>
                 <div class="service__more">
-                    <!-- <a href="#">Подробнее</a> -->
+                    <a href="<?php echo esc_url(home_url("/")); ?>/haircuts">Подробнее</a>
                 </div>
             </article>
 
@@ -197,7 +183,7 @@
                 <h3 class="service__title">Королевское бритьё</h3>
                 <p class="service__description">Настоящий ритуал, состоящий из нескольких этапов, достойный королей</p>
                 <div class="service__more">
-                    <!-- <a href="#">Подробнее</a> -->
+                    <a href="<?php echo esc_url(home_url("/")); ?>/royal-shaving">Подробнее</a>
                 </div>
             </article>
 
@@ -219,7 +205,7 @@
                 <header class="service-thumb__header">
                     <h3 class="service-thumb__title">Стрижки</h3>
                     <div class="service-thumb__more">
-                        <!-- <a href="#">Подробнее</a> -->
+                        <a href="<?php echo esc_url(home_url("/")); ?>/haircuts">Подробнее</a>
                     </div>
                     <div class="service-thumb__icon">
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-icon-white.svg" alt="" />
@@ -232,10 +218,9 @@
 
             <article class="service-thumb">
                 <header class="service-thumb__header">
-                    <h3 class="service-thumb__title">Королевское
-                        <br>бритьё</h3>
+                    <h3 class="service-thumb__title">Королевское<br>бритьё</h3>
                     <div class="service-thumb__more">
-                        <!-- <a href="#">Подробнее</a> -->
+                        <a href="<?php echo esc_url(home_url("/")); ?>/royal-shaving">Подробнее</a>
                     </div>
                     <div class="service-thumb__icon">
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/royal-icon-white.svg" alt="" />

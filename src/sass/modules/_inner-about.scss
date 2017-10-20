@@ -23,11 +23,17 @@
     
     @include atTabletsLandscape {
         // box model
+        margin-bottom: 120px;
         padding: 80px;
         padding-right: 44%;
 
         // visual
         background-image: url("./img/about-bg.jpg");
+    }
+
+    @include atDesktop {
+        // box model
+
     }
 
     &__header {
@@ -69,6 +75,14 @@
         font-weight: 700;
         letter-spacing: 3px;
         text-transform: uppercase;
+    }
+
+    &__image {
+        @include atDesktop {
+            // positioning
+            position: absolute;
+            right: 80px;
+        }
     }
 
     &__description {

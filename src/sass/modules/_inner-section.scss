@@ -19,6 +19,8 @@
     @include atDesktop {
         // box model
         padding: 0 80px;
+        max-width: 1400px;
+        margin: 60px auto;
     }
 
     &::after {

@@ -1,9 +1,10 @@
 .inner-logo {
     // positioning
     position: relative;
-    z-index: 3;
+    z-index: 5;
     
     // box model
+    width: 100%;
     max-width: 300px;
     margin: 0 auto;
     padding: 20px;
@@ -19,7 +20,7 @@
 
     @include atDesktop {
         // box model
-        max-width: 300px;
+        width: 300px;
         padding-top: 60px;
     }
 

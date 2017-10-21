@@ -15,6 +15,9 @@
     }
 
     &__wrapper {
+        // positioning
+        position: relative;
+
         // box model
         display: flex;
         justify-content: space-around;
@@ -33,6 +36,27 @@
 
             // visual
             border: 2px solid $brown;
+        }
+    }
+
+    &__quote {
+        // box model
+        display: none;
+
+        @media (min-width: 1600px) {
+            // positioning
+            position: absolute;
+            right: 0;
+            top: 167px;
+
+            // box model
+            display: block;
+            width: 31%;
+            padding-right: 30px;
+            padding-left: 30px;
+
+            // visual
+            border-left: 2px solid $brown;
         }
     }
 }

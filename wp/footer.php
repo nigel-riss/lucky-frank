@@ -60,6 +60,21 @@
                     </div>
                 </div>
             </div>
+
+            <div class="page-footer__quote">
+                <blockquote class="quote quote--inversed">
+                    <div class="quote__deco"> </div>
+                    <h3 class="quote__title">Frank
+                        <em>Says:</em>
+                    </h3>
+                    <p class="quote__text">
+                        <strong>Любовь</strong> — это когда хочется петь и днем и ночью. Без гонорара и менеджера.</p>
+                    <div class="quote__signature">
+                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/sign.png" alt="" />
+                    </div>
+                </blockquote>
+            </div>
+
         </div>
     </footer>
 

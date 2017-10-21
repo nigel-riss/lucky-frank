@@ -14,10 +14,19 @@
         &::before {
             // box model
             padding-right: 30px;
+
             // typography
             color: $white;
             font-size: 1rem;
             text-decoration: none;
+
+            // visual
+            transition: all 0.3s ease-out;
+        }
+
+        &:hover::before {
+            // typography
+            color: $brown;
         }
     }
 

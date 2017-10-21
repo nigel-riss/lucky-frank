@@ -632,13 +632,17 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
     @media (min-width: 1200px) {
       .main-menu a {
         font-size: 1.25rem; } }
     @media (min-width: 1400px) {
       .main-menu a {
         padding: 5px 30px; } }
+    .main-menu a:hover {
+      color: #a97140; }
 
 .menu-icon {
   position: fixed;
@@ -1996,7 +2000,11 @@ a.button {
     padding-right: 30px;
     color: #ffffff;
     font-size: 1rem;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .social a:hover::before {
+    color: #a97140; }
 
 .social--header {
   padding-top: 5px;

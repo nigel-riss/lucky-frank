@@ -79,7 +79,7 @@
     </footer>
 
     <script type="text/javascript" src="//w87814.yclients.com/widgetJS" charset="UTF-8"></script>
-    <script src="<?php bloginfo("stylesheet_directory"); ?>/menu.js"></script>
-    <script src="<?php bloginfo("stylesheet_directory"); ?>/map.js"></script>
-    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap"></script>
+    <script src="<?php bloginfo("stylesheet_directory"); ?>/menu.js?v=3"></script>
+    <script src="<?php bloginfo("stylesheet_directory"); ?>/map.js?v=3"></script>
+    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap&amp;language=ru"></script>
     <?php wp_footer(); ?>

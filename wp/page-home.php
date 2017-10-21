@@ -28,7 +28,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=2" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=3" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -136,16 +136,14 @@
             <p class="section__suptitle">О Барбершопе</p>
             <h2 class="section__title">Добро пожаловать
                 <br>в Lucky Frank Barbershop</h2>
-            <p class="section__subtitle">Мы ждём тебя в гости</p>
+            <p class="section__subtitle">Мы всегда рады видеть тебя</p>
         </header>
         <div class="section__content">
-            <p class="section__text">Мы намного больше чем просто мужская парикмахерская, это даже больше чем мужской клуб по интересам, это именно
-                то место, где ты найдешь себя и свой стиль. Мужские стрижки и бритье — это наш профиль, и мы уверены,
-                что мы стрижем и бреем лучше всех.</p>
+            <p class="section__text">Lucky Frank Barbershop это то самое место, которого так давно ждали мужчины. Классический стиль, безупречные стрижки, высококлассное бритьё, и конечно атмосфера мужского братства, где тебя примут с распростертыми объятиями. Заходи к нам в гости. Здесь всё проникнуто духом гостеприимности как в старые добрые времена. </p>
         </div>
-        <!-- <div class="about__more">
-            <a href="">узнай больше</a>
-        </div> -->
+        <div class="about__more">
+            <a href="<?php echo esc_url(home_url("/")); ?>about/">узнай больше</a>
+        </div>
         <div class="about__deco">
             <img src="<?php bloginfo("stylesheet_directory"); ?>/img/about-deco.png" alt="" />
         </div>

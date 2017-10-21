@@ -22,7 +22,7 @@ function initMap() {
         map: map,
         position: {lat: 45.01985, lng: 38.9742},
         draggable: false,
-        // icon: "./img/map-marker.png"
+        animation: google.maps.Animation.BOUNCE,
         icon: icon
     });
 

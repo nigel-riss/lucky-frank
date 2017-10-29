@@ -1,0 +1,13 @@
+.gallery {
+    // box model
+    margin-bottom: -20px;
+    padding-bottom: 40px;
+
+    // visual
+    background-color: $dark;
+    
+    @include atTabletsLandscape {
+        // box model
+        margin-top: -120px;
+    }
+}

@@ -28,7 +28,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=3" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=5" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -111,6 +111,7 @@
         </header>
         <div class="hero__booking">
             <a class="ms_booking" href="#">Онлайн запись</a>
+            <!-- <p class="hero__sale">В честь открытия! <br> До конца ноября, <br>на все услуги скидка 50%</p> -->
         </div>
         <div class="hero__quote">
             <blockquote class="quote quote--inversed">
@@ -118,12 +119,16 @@
                 <h3 class="quote__title">Frank
                     <em>Says:</em>
                 </h3>
-                <p class="quote__text">Костюм, шляпа, хорошая работа и одинокое пьянство по выходным
+                <!-- <p class="quote__text">Костюм, шляпа, хорошая работа и одинокое пьянство по выходным
                     <br>
                     <strong>— вот что украшает мужчину</strong>
+                </p> -->
+                <p class="quote__text">В честь открытия! <br> До конца ноября,
+                    <br>
+                    <strong>— на все услуги скидка 50%</strong>
                 </p>
                 <div class="quote__signature">
-                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/sign.png" alt="" />
+                    <!-- <img src="<?php bloginfo("stylesheet_directory"); ?>/img/sign.png" alt="" /> -->
                 </div>
             </blockquote>
         </div>

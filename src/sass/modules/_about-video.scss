@@ -1,0 +1,11 @@
+.about-video {
+    // box model
+    width: 100%;
+    height: 56vw;
+    max-width: 900px;
+    max-height: 520px;
+    padding: 6px;
+
+    // visual
+    border: 2px solid $brown;
+}

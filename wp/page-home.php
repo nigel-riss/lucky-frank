@@ -28,7 +28,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=5" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=6" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -455,7 +455,7 @@
     </section>
 
     <!-- Team -->
-    <!-- <section class="section team">
+    <section class="section team" id="team">
         <header class="section__header">
             <p class="section__suptitle">Барберы Lucky Frank</p>
             <h2 class="section__title">Наши мастера</h2>
@@ -464,34 +464,40 @@
         <div class="team__more">
             <a class="ms_booking button button--inverse" href="#">Онлайн запись</a>
         </div>
+
         <div class="team__content">
+            <?php
+                $args = array(
+                    "category_name" => "team"
+                );
+
+                query_posts($args);
+
+                if (have_posts()) {
+                    while(have_posts()) {
+                        the_post();
+
+                        // vars
+                        $member_position    = get_field("member-position");
+                        $member_name        = get_field("member-name");
+                        $member_photo       = get_field("member-photo");
+            ?>
+
             <article class="member">
                 <header class="member__header">
-                    <p class="member__position">Барбер</p>
-                    <h3 class="member__name">Олег</h3>
+                    <p class="member__position"><?php echo $member_position; ?></p>
+                    <h3 class="member__name"><?php echo $member_name; ?></h3>
                 </header>
                 <div class="member__photo">
-                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/team/barber1.jpg" alt="" />
+                    <img src="<?php echo $member_photo;?>" alt="<?php echo $member_name; ?> барбер барбершопа Lucky Frank" />
                 </div>
             </article>
-            <article class="member">
-                <header class="member__header">
-                    <p class="member__position">Барбер</p>
-                    <h3 class="member__name">Дмитрий</h3>
-                </header>
-                <div class="member__photo">
-                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/team/barber2.jpg" alt="" />
-                </div>
-            </article>
-            <article class="member">
-                <header class="member__header">
-                    <p class="member__position">Барбер</p>
-                    <h3 class="member__name">Юрий</h3>
-                </header>
-                <div class="member__photo">
-                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/team/barber3.jpg" alt="" />
-                </div>
-            </article>
+
+            <?php
+                    }
+                }
+            ?>
+
             <article class="join">
                 <header class="join__header">
                     <h3 class="join__title">Присоединяйся
@@ -518,7 +524,7 @@
                 </div>
             </blockquote>
         </div>
-    </section> -->
+    </section>
 
     <!-- Contacts and Map -->
     <section class="location" id="contacts">

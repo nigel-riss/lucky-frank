@@ -28,7 +28,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=6" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=7" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -146,11 +146,13 @@
         <div class="section__content">
             <p class="section__text">Lucky Frank Barbershop это то самое место, которого так давно ждали мужчины. Классический стиль, безупречные стрижки, высококлассное бритьё, и конечно атмосфера мужского братства, где тебя примут с распростертыми объятиями. Заходи к нам в гости. Здесь всё проникнуто духом гостеприимности как в старые добрые времена. </p>
         </div>
+
+        <div class="about__video">
+            <iframe class="about-video-1" src="https://www.youtube.com/embed/hgiaf5ew3kM?showinfo=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+        </div>
+
         <div class="about__more">
             <a href="<?php echo esc_url(home_url("/")); ?>about/">узнай больше</a>
-        </div>
-        <div class="about__deco">
-            <img src="<?php bloginfo("stylesheet_directory"); ?>/img/about-deco.png" alt="" />
         </div>
     </section>
 

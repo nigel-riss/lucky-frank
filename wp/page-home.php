@@ -119,14 +119,14 @@
                 <h3 class="quote__title">Frank
                     <em>Says:</em>
                 </h3>
-                <!-- <p class="quote__text">Костюм, шляпа, хорошая работа и одинокое пьянство по выходным
+                <p class="quote__text">Костюм, шляпа, хорошая работа и одинокое пьянство по выходным
                     <br>
                     <strong>— вот что украшает мужчину</strong>
-                </p> -->
-                <p class="quote__text">В честь открытия! <br> До конца ноября,
+                </p>
+                <!-- <p class="quote__text">В честь открытия! <br> До конца ноября,
                     <br>
                     <strong>— на все услуги скидка 50%</strong>
-                </p>
+                </p> -->
                 <div class="quote__signature">
                     <!-- <img src="<?php bloginfo("stylesheet_directory"); ?>/img/sign.png" alt="" /> -->
                 </div>

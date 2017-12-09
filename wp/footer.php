@@ -18,24 +18,25 @@
                     <div class="footer-info">
                         <div class="footer-info__icon icon-phone"></div>
                         <p class="footer-info__text">
-                            <a href="tel:+79111234567">+7 918 195 94 19</a>
+                            <a href="tel:<?php the_field("phone-link", 5); ?>">
+                                <?php the_field("phone-vsl", 5); ?>
+                            </a>
                         </p>
                     </div>
                     <div class="footer-info">
                         <div class="footer-info__icon icon-location"></div>
-                        <p class="footer-info__text">г. Краснодар, ул. Мира 54</p>
+                        <p class="footer-info__text"><?php the_field("address", 5); ?></p>
                     </div>
                     <div class="footer-info">
                         <div class="footer-info__icon icon-mail-alt"></div>
                         <p class="footer-info__text">
-                            <a href="mailto:info@luckyfrank.ru">info@luckyfrank.ru</a>
+                            <a href="mailto:<?php the_field("e-mail", 5); ?>"><?php the_field("e-mail", 5); ?></a>
                         </p>
                     </div>
                     <div class="footer-info">
                         <div class="social social--footer">
-                        <a class="social-icon icon-instagram" href="https://www.instagram.com/lucky.frank.barber/">Instagram</a>
-                        <!-- <a class="social-icon icon-facebook" href="https:/www.facebook.com/truemanbarbershop/">Facebook</a> -->
-                        <a class="social-icon icon-vkontakte" href="https://vk.com/lucky.frank.barber">Vkontakte</a>
+                        <a class="social-icon icon-instagram" href="<?php the_field("social-inst", 5); ?> ">Instagram</a>
+                        <a class="social-icon icon-vkontakte" href="<?php the_field("social-vk", 5); ?> ">Vkontakte</a>
                         </div>
                     </div>
                 </div>
@@ -49,13 +50,7 @@
                     <div class="footer-info">
                         <div class="footer-info__icon icon-clock"></div>
                         <p class="footer-info__text footer-info__text--schedule">
-                            Понедельник: 10<sup>00</sup> - 22<sup>00</sup><br>
-                            Вторник: 10<sup>00</sup> - 22<sup>00</sup><br>
-                            Среда: 10<sup>00</sup> - 22<sup>00</sup><br>
-                            Четверг: 10<sup>00</sup> - 22<sup>00</sup><br>
-                            Пятница: 10<sup>00</sup> - 22<sup>00</sup><br>
-                            Суббота: 10<sup>00</sup> - 22<sup>00</sup><br>
-                            Воскресенье: 10<sup>00</sup> - 22<sup>00</sup>
+                            <?php the_field("work-time-long", 5); ?>
                         </p>
                     </div>
                 </div>
@@ -68,7 +63,8 @@
                         <em>Says:</em>
                     </h3>
                     <p class="quote__text">
-                        <strong>Любовь</strong> — это когда хочется петь и днем и ночью. Без гонорара и менеджера.</p>
+                        <?php the_field("quote-footer", 5); ?>
+                    </p>
                     <div class="quote__signature">
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/sign.png" alt="" />
                     </div>

@@ -2,6 +2,37 @@
     /*
         Template Name: Home Page
     */
+
+    // contacts and schedule
+    $phone_vsl          = get_field("phone-vsl");
+    $phone_link         = get_field("phone-link");
+    $work_time_short    = get_field("work-time-short");
+    $work_time_long     = get_field("work-time-long");
+    $address            = get_field("address");
+    $social_inst        = get_field("social-inst");
+    $social_vk          = get_field("social-vk");
+    $e_mail             = get_field("e-mail");
+
+    // quotes
+    $quote_hero         = get_field("quote-hero");
+    $quote_services     = get_field("quote-services");
+    $quote_team         = get_field("quote-team");
+    $quote_footer       = get_field("quote-footer");
+
+    // about barbershop
+    $about_description  = get_field("about-description");
+    $about_video        = get_field("about-video");
+
+    // statistics
+    $stats_show         = get_field("stats-show");
+    $stats_haircuts     = get_field("stats-haircuts");
+    $stats_beards       = get_field("stats-beards");
+    $stats_tatooes      = get_field("stats-tatooes");
+
+    // price
+    $price_main         = get_field("price-main");
+    $price_additional   = get_field("price-additional");
+    $price_complex      = get_field("price-complex");
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +59,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=7" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=8" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -46,29 +77,29 @@
             <div class="contact-item contact-item--phone">
                 <div class="contact-item__icon icon-phone"></div>
                 <div class="contact-item__content">
-                    <a href="tel:+79181959419">+7 918 195-94-19</a>
+                    <a href="tel:<?php echo $phone_link; ?>">
+                        <?php echo $phone_vsl; ?>
+                    </a>
                 </div>
             </div>
 
             <div class="contact-item contact-item--schedule">
                 <div class="contact-item__icon icon-clock"></div>
-                <div class="contact-item__content">Пон.-Вос.: 10
-                    <sup>00</sup>-22
-                    <sup>00</sup>
+                <div class="contact-item__content">
+                    <?php echo $work_time_short; ?>
                 </div>
             </div>
 
             <div class="contact-item contact-item--address">
                 <div class="contact-item__icon icon-location"></div>
-                <div class="contact-item__content">г. Краснодар, ул. Мира 54</div>
+                <div class="contact-item__content"><?php echo $address; ?></div>
             </div>
 
             <div class="contact-item contact-item--social">
                 <div class="contact-item__content">
                     <div class="social social--header">
-                        <a class="social-icon icon-instagram" href="https://www.instagram.com/lucky.frank.barber/">Instagram</a>
-                        <!-- <a class="social-icon icon-facebook" href="https:/www.facebook.com/truemanbarbershop/">Facebook</a> -->
-                        <a class="social-icon icon-vkontakte" href="https://vk.com/lucky.frank.barber">Vkontakte</a>
+                        <a class="social-icon icon-instagram" href="<?php echo $social_inst; ?>">Instagram</a>
+                        <a class="social-icon icon-vkontakte" href="<?php echo $social_vk; ?>">Vkontakte</a>
                     </div>
                 </div>
             </div>
@@ -94,8 +125,7 @@
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#about">О нас</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#services">Услуги</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#prices">Прайс</a></li>
-                <!-- <li><a href="<?php echo esc_url(home_url("/")); ?>#">Советы</a></li> -->
-                <!-- <li><a href="<?php echo esc_url(home_url("/")); ?>#">Мастера</a></li> -->
+                <li><a href="<?php echo esc_url(home_url("/")); ?>#team">Команда</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#contacts">Контакты</a></li>
             </ul>
         </nav>
@@ -109,29 +139,27 @@
                 <br>Barbershop</h1>
             <p class="hero__subtitle">Барбершоп для тех, кто разбирается в стиле</p>
         </header>
+
         <div class="hero__booking">
             <a class="ms_booking" href="#">Онлайн запись</a>
-            <!-- <p class="hero__sale">В честь открытия! <br> До конца ноября, <br>на все услуги скидка 50%</p> -->
         </div>
+
         <div class="hero__quote">
             <blockquote class="quote quote--inversed">
                 <div class="quote__deco"> </div>
                 <h3 class="quote__title">Frank
                     <em>Says:</em>
                 </h3>
-                <p class="quote__text">Костюм, шляпа, хорошая работа и одинокое пьянство по выходным
-                    <br>
-                    <strong>— вот что украшает мужчину</strong>
+                <p class="quote__text">
+                    <?php echo $quote_hero; ?>
                 </p>
-                <!-- <p class="quote__text">В честь открытия! <br> До конца ноября,
-                    <br>
-                    <strong>— на все услуги скидка 50%</strong>
-                </p> -->
+
                 <div class="quote__signature">
-                    <!-- <img src="<?php bloginfo("stylesheet_directory"); ?>/img/sign.png" alt="" /> -->
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/sign.png" alt="" />
                 </div>
             </blockquote>
         </div>
+
         <div class="hero__deco"></div>
     </section>
 
@@ -144,11 +172,13 @@
             <p class="section__subtitle">Мы всегда рады видеть тебя</p>
         </header>
         <div class="section__content">
-            <p class="section__text">Lucky Frank Barbershop это то самое место, которого так давно ждали мужчины. Классический стиль, безупречные стрижки, высококлассное бритьё, и конечно атмосфера мужского братства, где тебя примут с распростертыми объятиями. Заходи к нам в гости. Здесь всё проникнуто духом гостеприимности как в старые добрые времена. </p>
+            <p class="section__text">
+                <?php echo $about_description; ?>
+            </p>
         </div>
 
         <div class="about__video">
-            <iframe class="about-video-1" src="https://www.youtube.com/embed/hgiaf5ew3kM?showinfo=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+            <iframe class="about-video-1" src="<?php echo $about_video; ?>" frameborder="0" gesture="media" allowfullscreen></iframe>
         </div>
 
         <div class="about__more">
@@ -274,9 +304,8 @@
                     <h3 class="quote__title">Frank
                         <em>Says:</em>
                     </h3>
-                    <p class="quote__text">Если Вы обладаете чем-то, но Вы не можете это отдать, то Вы не обладаете этим...
-                        <br>
-                        <strong>это обладает Вами.</strong>
+                    <p class="quote__text">
+                        <?php echo $quote_services; ?>
                     </p>
                     <div class="quote__signature">
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/sign-white.png" alt="" />
@@ -287,58 +316,63 @@
     </section>
 
     <!-- Statistics -->
-    <!-- <section class="section statistics">
-        <div class="section__content">
-            <article class="stat">
-                <header class="stat__header">
-                    <div class="stat__icon">
-                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-icon.svg" alt="Стрижки в барбершопе Lucky Frank" />
+    <?php
+        if ($stats_show[0] == "show") {
+    ?>
+
+        <section class="section statistics">
+            <div class="section__content">
+                <article class="stat">
+                    <header class="stat__header">
+                        <div class="stat__icon">
+                            <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-icon.svg" alt="Стрижки в барбершопе Lucky Frank" />
+                        </div>
+                        <div class="stat__count"><?php echo $stats_haircuts; ?></div>
+                        <div class="stat__name">идеальных<br>причёсок</div>
+                    </header>
+                    <div class="stat__photo">
+                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-photo.png" alt="" />
                     </div>
-                    <div class="stat__count">35</div>
-                    <div class="stat__name">идеальных
-                        <br>причёсок</div>
-                </header>
-                <div class="stat__photo">
-                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-photo.png" alt="" />
-                </div>
-                <div class="stat__background stat__background--hair">
-                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-bg.jpg" alt="" />
-                </div>
-            </article>
-            <article class="stat">
-                <header class="stat__header">
-                    <div class="stat__icon">
-                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-icon.svg" alt="Бритьё в барбершопе Lucky Frank" />
+                    <div class="stat__background stat__background--hair">
+                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-bg.jpg" alt="" />
                     </div>
-                    <div class="stat__count">25</div>
-                    <div class="stat__name">подстриженых
-                        <br>бород</div>
-                </header>
-                <div class="stat__photo">
-                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-photo.png" alt="" />
-                </div>
-                <div class="stat__background">
-                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-bg.jpg" alt="" />
-                </div>
-            </article>
-            <article class="stat">
-                <header class="stat__header">
-                    <div class="stat__icon">
-                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-icon.svg" alt="Профессиональные татуировки в барбершопе Lucky Frank" />
+                </article>
+                <article class="stat">
+                    <header class="stat__header">
+                        <div class="stat__icon">
+                            <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-icon.svg" alt="Бритьё в барбершопе Lucky Frank" />
+                        </div>
+                        <div class="stat__count"><?php echo $stats_beards; ?></div>
+                        <div class="stat__name">подстриженых<br>бород</div>
+                    </header>
+                    <div class="stat__photo">
+                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-photo.png" alt="" />
                     </div>
-                    <div class="stat__count">15</div>
-                    <div class="stat__name">набитых
-                        <br>татуировок</div>
-                </header>
-                <div class="stat__photo">
-                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-photo.png" alt="" />
-                </div>
-                <div class="stat__background">
-                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-bg.jpg" alt="" />
-                </div>
-            </article>
-        </div>
-    </section> -->
+                    <div class="stat__background">
+                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-bg.jpg" alt="" />
+                    </div>
+                </article>
+                <article class="stat">
+                    <header class="stat__header">
+                        <div class="stat__icon">
+                            <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-icon.svg" alt="Профессиональные татуировки в барбершопе Lucky Frank" />
+                        </div>
+                        <div class="stat__count"><?php echo $stats_tatooes; ?></div>
+                        <div class="stat__name">набитых<br>татуировок</div>
+                    </header>
+                    <div class="stat__photo">
+                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-photo.png" alt="" />
+                    </div>
+                    <div class="stat__background">
+                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-bg.jpg" alt="" />
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    <?php
+        }
+    ?>
 
 
     <!-- Prices -->
@@ -354,96 +388,11 @@
         </div> -->
         <div class="prices__content">
             <div class="prices__column prices__column--left">
-                <table class="prices-table">
-                    <thead>
-                        <caption>Основные услуги</caption>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Стрижка мужская
-                                <br>
-                                <small>подбор стиля, мытье головы, укладка</small>
-                            </td>
-                            <td>1500 </td>
-                        </tr>
-                        <tr>
-                            <td>Стрижка детская
-                                <br>
-                                <small>от 5 до 14 лет</small>
-                            </td>
-                            <td>1200 </td>
-                        </tr>
-                        <tr>
-                            <td>Стрижка под машинку
-                                <br>
-                                <small>одна насадка</small>
-                            </td>
-                            <td>600 </td>
-                        </tr>
-                        <tr>
-                            <td>Коррекция бороды</td>
-                            <td>600 </td>
-                        </tr>
-                        <tr>
-                            <td>Королевское бритьё бороды
-                                <br>
-                                <small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small>
-                            </td>
-                            <td>1500 </td>
-                        </tr>
-                        <tr>
-                            <td>Королевское бритьё головы
-                                <br>
-                                <small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small>
-                            </td>
-                            <td>2000 </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <?php echo $price_main; ?>
             </div>
             <div class="prices__column">
-                <table class="prices-table">
-                    <thead>
-                        <caption>Дополнительные услуги</caption>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Камуфляж седых волос</td>
-                            <td>1100 </td>
-                        </tr>
-                        <tr>
-                            <td>Окантовка с подбриванием</td>
-                            <td>500 </td>
-                        </tr>
-                        <tr>
-                            <td>Мытьё и укладка волос</td>
-                            <td>400 </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="prices-table">
-                    <thead>
-                        <caption>Комплексные услуги</caption>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Стрижка мужская + Коррекция бороды</td>
-                            <td>1800 </td>
-                        </tr>
-                        <tr>
-                            <td>Стрижка мужская + Королевское бритьё</td>
-                            <td>2700 </td>
-                        </tr>
-                        <tr>
-                            <td>Отец + сын</td>
-                            <td>2200 </td>
-                        </tr>
-                        <tr>
-                            <td>Друг + друг</td>
-                            <td>2600 </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <?php echo $price_additional; ?>
+                <?php echo $price_complex; ?>
             </div>
         </div>
 
@@ -517,9 +466,8 @@
                 <h3 class="quote__title">Frank
                     <em>Says:</em>
                 </h3>
-                <p class="quote__text">Чтобы иметь успех, нужно иметь друзей; но чтобы поддерживать большой успех,
-                    <br>
-                    <strong>нужно иметь много друзей.</strong>
+                <p class="quote__text">
+                    <?php echo $quote_team; ?>
                 </p>
                 <div class="quote__signature">
                     <img src="<?php bloginfo("stylesheet_directory"); ?>/img/sign.png" alt="" />
@@ -532,16 +480,20 @@
     <section class="location" id="contacts">
         <div class="map-label">
             <h2 class="map-label__title">Контакты</h2>
+
             <h3 class="map-label__contact-title">Адрес</h3>
-            <p class="map-label__contact-value">г. Краснодар, ул. Мира 54</p>
+            <p class="map-label__contact-value"><?php echo $address; ?></p>
+
             <h3 class="map-label__contact-title">Электронная почта</h3>
             <p class="map-label__contact-value">
-                <a href="mailto:info@luckyfrank.ru">info@luckyfrank.ru</a>
+                <a href="mailto:<?php echo $e_mail; ?>"><?php echo $e_mail; ?></a>
             </p>
+
             <h3 class="map-label__contact-title">Телефон</h3>
             <p class="map-label__contact-value">
-                <a href="tel:+79181959419">+7 918 195-94-19</a>
+                <a href="tel:<?php echo $phone_link; ?>"><?php echo $phone_vsl; ?></a>
             </p>
+
             <div class="map-label__logo">
                 <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo.svg" alt="Lucky Frank Barbershop logo" />
             </div>

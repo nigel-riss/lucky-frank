@@ -1699,7 +1699,8 @@ body {
         top: 7px;
         height: calc(100% - 14px);
         width: calc(100% - 14px);
-        border: 2px solid #a97140; } }
+        border: 2px solid #a97140;
+        pointer-events: none; } }
   @media (min-width: 1200px) {
     .map-label {
       top: 90px; } }

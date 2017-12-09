@@ -46,7 +46,7 @@
 
             <div class="contact-item contact-item--schedule">
                 <div class="contact-item__icon icon-clock"></div>
-                <div class="contact-item__content">Пон.-Вос.: 10
+                <div class="contact-item__content">Пн.-Вс.: 10
                     <sup>00</sup>-22
                     <sup>00</sup>
                 </div>
@@ -83,8 +83,7 @@
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#about">О нас</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#services">Услуги</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#prices">Прайс</a></li>
-                <!-- <li><a href="<?php echo esc_url(home_url("/")); ?>#">Советы</a></li> -->
-                <!-- <li><a href="<?php echo esc_url(home_url("/")); ?>#">Мастера</a></li> -->
+                <li><a href="<?php echo esc_url(home_url("/")); ?>#team">Команда</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#contacts">Контакты</a></li>
             </ul>
         </nav>

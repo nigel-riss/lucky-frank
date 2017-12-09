@@ -5,9 +5,12 @@
 
     get_header();
 
+    //  vars
     $ip_title       = get_field("ip_title");
     $ip_subtitle    = get_field("ip_subtitle");
     $ip_image       = get_field("ip_image");
+
+    $about_video    = get_field("about-video");
 ?>
 
     <section class="inner-about">
@@ -19,11 +22,12 @@
             <div class="inner-about__image">
                 <img src="<?php echo $ip_image; ?>" alt="Барбершоп Lucky Frank интерьер" />
             </div>
-            <p class="inner-about__description">Lucky Frank Barbershop это то самое место, которого так давно ждали мужчины. Классический стиль, безупречные стрижки, высококлассное бритьё, и конечно атмосфера мужского братства, где тебя примут с распростертыми объятиями. Заходи к нам в гости. Здесь всё проникнуто духом гостеприимности как в старые добрые времена. </p>
-            <p class="inner-about__description">Приводи друзей, братьев и сыновей — для каждого у нас найдется что-то по вкусу. Профессиональные цирюльники вне времени — наши мастера знают толк в своём деле и готовы проявить всё своё мастерство. Однажды оценив качество барбершопа Lucky Frank на собственном опыте, ты уже не захочешь опускать планку. И помни: классика всегда в моде.</p>
+            <?php
+                the_post();
+                the_content();
+            ?>
 
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/TcbLdR7Rw3w" frameborder="0" gesture="media" allowfullscreen showinfo="0"></iframe> -->
-            <iframe class="about-video" src="https://www.youtube.com/embed/TcbLdR7Rw3w?showinfo=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+            <iframe class="about-video" src="<?php echo $about_video; ?>" frameborder="0" gesture="media" allowfullscreen></iframe>
         </div>
 
         <div class="partners">

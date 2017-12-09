@@ -28,6 +28,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-watch": "^4.3.11",
+    "jquery-smooth-scroll": "^2.2.0",
     "sass-module-importer": "^1.4.0",
     "webpack-stream": "^4.0.0"
   },

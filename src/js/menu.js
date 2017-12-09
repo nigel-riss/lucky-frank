@@ -1,4 +1,5 @@
 var $ = require("jquery");
+var smoothScroll = require("jquery-smooth-scroll");
 
 class MobileMenu {
     constructor() {
@@ -7,6 +8,7 @@ class MobileMenu {
         this.menuLinks = $(".main-menu a");
 
         this.events();
+        this.addSmoothScroll();
     }
 
     events() {
@@ -27,6 +29,10 @@ class MobileMenu {
     toggleMenu() {
         this.mainNav.toggleClass("main-nav--shown");
         this.menuIcon.toggleClass("menu-icon--close-x");
+    }
+
+    addSmoothScroll() {
+        this.menuLinks.smoothScroll();
     }
 }
 

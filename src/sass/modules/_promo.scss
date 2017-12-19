@@ -1,0 +1,195 @@
+.promo {
+    // positioning
+    position: relative;
+
+    // box model
+    // padding: 25px;
+    margin: 25px 25px;
+    
+    // typography
+    text-align: center;
+
+    @include atTabletsLandscape {
+        // box model
+        height: 380px;
+        padding-left: 220px;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        width: 46%;
+        padding-left: 160px;
+    }
+    
+    &__image {
+        // box model
+        display: none;
+
+        @include atTabletsLandscape {
+            // positioning
+            position: absolute;
+            left: 0;
+            top: -15px;
+
+            // box model
+            display: block;
+            height: 360px;
+            width: 360px;
+        }
+
+        @include atDesktopLarge {
+            // positioning
+            z-index: 2;
+            top: 35px;
+
+            // box model
+            height: 260px;
+            width: 260px;
+        }
+
+        img {
+            // box model
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        // positioning
+        position: relative;
+        z-index: 2;
+
+        // box model
+        padding: 25px;
+
+        // visual
+        border: 2px solid $brown;
+
+        @include atTabletsLandscape {
+            // box model
+            height: 330px;
+            padding-left: 160px;
+        }
+
+        @include atDesktopLarge {
+            // positioning
+            z-index: 1;
+
+            // box model
+            padding-left: 120px;
+        }
+    }
+
+    &__header {
+        // positioning
+        position: relative;
+
+        // box model
+        margin-bottom: 35px;
+
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            // box model
+            height: 2px;
+            width: 60px;
+
+            // visual
+            background-color: $brown;
+        }
+    }
+
+    &__suptitle {
+        // box model
+        margin-bottom: 10px;
+
+        // typography
+        letter-spacing: 1px;
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &::before {
+            content: "X ";
+
+            // typography
+            font-size: 0.75rem;
+        }
+
+        &::after {
+            content: " X";
+
+            // typography
+            font-size: 0.75rem;
+        }
+    }
+
+    &__title {
+        // box model
+        margin-top: 0;
+
+        // typography
+        color: $brown;
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        // typography
+        letter-spacing: 2px;
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        // box model
+        margin-bottom: 20px;
+
+        // typography
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    &__more {
+        // typography
+        text-align: center;
+
+        @include atTabletsLandscape {
+            // positioning
+            position: absolute;
+            bottom: 25px;
+
+            // box model
+            width: calc(100% - 180px);
+            display: block;
+        }
+
+        a {
+            // box model
+            display: inline-block;
+            padding: 10px 20px;
+
+            // typography
+            color: $brown;
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+            // visual
+            border: 1px solid $brown;
+
+            &:hover {
+
+            }
+        }
+    }
+}

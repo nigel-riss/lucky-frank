@@ -1315,7 +1315,9 @@ body {
         top: -15px;
         display: block;
         height: 360px;
-        width: 360px; } }
+        width: 360px;
+        -webkit-box-shadow: 0 0 24px rgba(51, 51, 51, 0.75);
+                box-shadow: 0 0 24px rgba(51, 51, 51, 0.75); } }
     @media (min-width: 1400px) {
       .promo__image {
         z-index: 2;

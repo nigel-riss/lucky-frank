@@ -59,7 +59,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=8" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=9" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -184,6 +184,65 @@
         <div class="about__more">
             <a href="<?php echo esc_url(home_url("/")); ?>about/">узнай больше</a>
         </div>
+    </section>
+
+    <!-- Promos -->
+    <section class="promos">
+        <?php
+            $args = array(
+                "category_name" => "promo"
+            );
+
+            query_posts($args);
+            if (have_posts()) {
+                while(have_posts()) {
+                    the_post();
+
+                    // vars
+                    $promo_title        = get_field("promo-title");
+                    $promo_subtitle     = get_field("promo-subtitle");
+                    $promo_image        = get_field("promo-image");
+                    $promo_text         = get_field("promo-text");
+                    $promo_link         = get_field("promo-link");
+        ?>
+
+        <article class="promo">
+            <div class="promo__image">
+                <img src="<?php echo $promo_image; ?>" alt="<?php echo $promo_title; ?>" />
+            </div>
+            <div class="promo__content">
+                <header class="promo__header">
+                    <p class="promo__suptitle">Акция</p>
+                    <h3 class="promo__title">
+                        <?php echo $promo_title; ?>
+                    </h3>
+                    <p class="promo__subtitle">
+                        <?php echo $promo_subtitle; ?>
+                    </p>
+                </header>
+                <p class="promo__text">
+                    <?php echo $promo_text; ?>
+                </p>
+
+        <?php
+                    if ($promo_link != "") {
+        ?>
+
+                        <div class="promo__more">
+                            <a href="<?php echo $promo_link; ?>">Подробнее об акции</a>
+                        </div>
+
+        <?php
+                    }
+        ?>
+
+            </div>
+        </article>
+
+        <?php
+                }
+            }
+        ?>
     </section>
 
     <!-- Services -->

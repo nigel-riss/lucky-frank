@@ -510,12 +510,12 @@ body {
         color: #a97140; }
   .contact-item--phone {
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    border-left: 1px solid #a97140; }
   @media (min-width: 700px) {
     .contact-item--address {
       display: inline-block;
-      vertical-align: top;
-      border-left: 1px solid #a97140; } }
+      vertical-align: top; } }
   @media (min-width: 900px) {
     .contact-item--schedule {
       display: inline-block;
@@ -1260,11 +1260,14 @@ body {
   @media (min-width: 1200px) {
     .inner-about__content {
       min-height: 340px; } }
+  .inner-about__content p,
+  .inner-about__content ol {
+    line-height: 1.75; }
   .inner-about__description {
     line-height: 1.75; }
     @media (min-width: 1200px) {
       .inner-about__description {
-        padding-right: 560px; } }
+        padding-right: 900px; } }
     .inner-about__description em {
       color: #a97140; }
 
@@ -1386,7 +1389,7 @@ body {
       .promo__more {
         position: absolute;
         bottom: 25px;
-        width: calc(100% - 180px);
+        width: calc(100% - 150px);
         display: block; } }
     .promo__more a {
       display: inline-block;
@@ -1396,7 +1399,12 @@ body {
       font-weight: 700;
       text-decoration: none;
       text-transform: uppercase;
-      border: 1px solid #a97140; }
+      border: 1px solid #a97140;
+      -webkit-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out; }
+      .promo__more a:hover {
+        color: #ffffff;
+        background-color: #a97140; }
 
 .services {
   padding: 60px 25px;

@@ -171,7 +171,7 @@
             bottom: 25px;
 
             // box model
-            width: calc(100% - 180px);
+            width: calc(100% - 150px);
             display: block;
         }
 
@@ -189,9 +189,14 @@
             
             // visual
             border: 1px solid $brown;
+            transition: all 0.25s ease-out;
 
             &:hover {
+                // typography
+                color: $white;
 
+                // visual
+                background-color: $brown;
             }
         }
     }

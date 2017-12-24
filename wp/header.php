@@ -22,7 +22,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=6" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=10" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -37,11 +37,10 @@
     <!-- Header -->
     <header class="page-header">
         <div class="header-contacts">
-            <div class="contact-item contact-item--phone">
-                <div class="contact-item__icon icon-phone"></div>
-                <div class="contact-item__content">
-                    <a href="tel:+79181959419">+7 918 195-94-19</a>
-                </div>
+            
+            <div class="contact-item contact-item--address">
+                <div class="contact-item__icon icon-location"></div>
+                <div class="contact-item__content">г. Краснодар, ул. Мира 54</div>
             </div>
 
             <div class="contact-item contact-item--schedule">
@@ -52,9 +51,11 @@
                 </div>
             </div>
 
-            <div class="contact-item contact-item--address">
-                <div class="contact-item__icon icon-location"></div>
-                <div class="contact-item__content">г. Краснодар, ул. Мира 54</div>
+            <div class="contact-item contact-item--phone">
+                <div class="contact-item__icon icon-phone"></div>
+                <div class="contact-item__content">
+                    <a href="tel:+79181959419">+7 918 195-94-19</a>
+                </div>
             </div>
 
             <div class="contact-item contact-item--social">
@@ -81,6 +82,7 @@
             <ul class="main-menu">
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#">Главная</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#about">О нас</a></li>
+                <li><a href="<?php echo esc_url(home_url("/")); ?>#promos">Акции</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#services">Услуги</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#prices">Прайс</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#team">Команда</a></li>

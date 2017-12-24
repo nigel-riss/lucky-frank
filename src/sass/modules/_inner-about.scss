@@ -125,6 +125,12 @@
             // box model
             min-height: 340px;
         }
+
+        p,
+        ol {
+            // typography
+            line-height: 1.75;
+        }
     }
 
     &__description {
@@ -133,7 +139,7 @@
 
         @include atDesktop {
             // box model
-            padding-right: 560px;
+            padding-right: 900px;
         }
 
         em {

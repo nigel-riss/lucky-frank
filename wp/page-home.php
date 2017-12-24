@@ -59,7 +59,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=9" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=10" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -74,13 +74,10 @@
     <!-- Header -->
     <header class="page-header">
         <div class="header-contacts">
-            <div class="contact-item contact-item--phone">
-                <div class="contact-item__icon icon-phone"></div>
-                <div class="contact-item__content">
-                    <a href="tel:<?php echo $phone_link; ?>">
-                        <?php echo $phone_vsl; ?>
-                    </a>
-                </div>
+
+            <div class="contact-item contact-item--address">
+                <div class="contact-item__icon icon-location"></div>
+                <div class="contact-item__content"><?php echo $address; ?></div>
             </div>
 
             <div class="contact-item contact-item--schedule">
@@ -89,10 +86,14 @@
                     <?php echo $work_time_short; ?>
                 </div>
             </div>
-
-            <div class="contact-item contact-item--address">
-                <div class="contact-item__icon icon-location"></div>
-                <div class="contact-item__content"><?php echo $address; ?></div>
+            
+            <div class="contact-item contact-item--phone">
+                <div class="contact-item__icon icon-phone"></div>
+                <div class="contact-item__content">
+                    <a href="tel:<?php echo $phone_link; ?>">
+                        <?php echo $phone_vsl; ?>
+                    </a>
+                </div>
             </div>
 
             <div class="contact-item contact-item--social">
@@ -123,6 +124,7 @@
             <ul class="main-menu">
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#">Главная</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#about">О нас</a></li>
+                <li><a href="<?php echo esc_url(home_url("/")); ?>#promos">Акции</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#services">Услуги</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#prices">Прайс</a></li>
                 <li><a href="<?php echo esc_url(home_url("/")); ?>#team">Команда</a></li>
@@ -187,7 +189,7 @@
     </section>
 
     <!-- Promos -->
-    <section class="promos">
+    <section class="promos" id="promos">
         <?php
             $args = array(
                 "category_name" => "promo"
@@ -229,7 +231,7 @@
         ?>
 
                         <div class="promo__more">
-                            <a href="<?php echo $promo_link; ?>">Подробнее об акции</a>
+                            <a href="<?php echo esc_url(home_url("/")); ?><?php echo $promo_link; ?>">Подробнее об акции</a>
                         </div>
 
         <?php

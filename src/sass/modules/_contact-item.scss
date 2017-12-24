@@ -41,6 +41,9 @@
         // box model
         display: inline-block;
         vertical-align: top;
+
+        // visual
+        border-left: 1px solid $brown;
     }
     
     &--address {
@@ -48,9 +51,6 @@
             // box model
             display: inline-block;
             vertical-align: top;
-            
-            // visual
-            border-left: 1px solid $brown;
         }
     }
     

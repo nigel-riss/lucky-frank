@@ -16,6 +16,10 @@ html(lang="en")
     body
         header.page-header
             .header-contacts
+                .contact-item.contact-item--address
+                    .contact-item__icon.icon-location
+                    .contact-item__content г. Краснодар, ул. Мира 54
+
                 .contact-item.contact-item--phone
                     .contact-item__icon.icon-phone
                     .contact-item__content
@@ -25,9 +29,27 @@ html(lang="en")
                     .contact-item__icon.icon-clock
                     .contact-item__content Пон.-Вос.: 10<sup>00</sup>-22<sup>00</sup>
 
+                .contact-item.contact-item--social
+                    .contact-item__content
+                        .social.social--header
+                            a(href="https://www.instagram.com/truemanbarbershop/").social-icon.icon-instagram Instagram
+                            a(href="https://vk.com/truemanbarbershop").social-icon.icon-vkontakte Vkontakte
+
+                .menu-icon: .menu-icon__middle
+
+            .header-contacts
                 .contact-item.contact-item--address
                     .contact-item__icon.icon-location
-                    .contact-item__content г. Краснодар, ул. Мира 54
+                    .contact-item__content г. Москва, ул. Комсомольская 4
+
+                .contact-item.contact-item--phone
+                    .contact-item__icon.icon-phone
+                    .contact-item__content
+                        a(href="#") +7 918 195 94 19
+
+                .contact-item.contact-item--schedule
+                    .contact-item__icon.icon-clock
+                    .contact-item__content Пон.-Вос.: 10<sup>00</sup>-22<sup>00</sup>
 
                 .contact-item.contact-item--social
                     .contact-item__content
@@ -369,7 +391,7 @@ html(lang="en")
                         img(src="/img/sign.png", alt="")
 
         section.location#contacts
-            .map-label
+            //- .map-label
                 h2.map-label__title Контакты
                 h3.map-label__contact-title Адрес
                 p.map-label__contact-value г. Краснодар, ул. Мира 54
@@ -390,28 +412,50 @@ html(lang="en")
 
                 .footer-block
                     header.footer-block__header
-                        h3.footer-block__title Контакты
+                        h3.footer-block__title Краснодар
 
                     .footer-block__content
-                        .footer-info
-                            .footer-info__icon.icon-phone
-                            p.footer-info__text: a(href="tel:+79111234567") +7 918 195 94 19
-
                         .footer-info
                             .footer-info__icon.icon-location
                             p.footer-info__text г. Краснодар, ул. Мира 54
 
                         .footer-info
+                            .footer-info__icon.icon-phone
+                            p.footer-info__text: a(href="tel:+79111234567") +7 918 195 94 19
+
+                        .footer-info
                             .footer-info__icon.icon-mail-alt
                             p.footer-info__text: a(href="mailto:info@luckyfrank.ru") info@luckyfrank.ru
-
+                            
                         .footer-info
                             .social.social--footer
                                 a(href="https://www.instagram.com/truemanbarbershop/").social-icon.icon-instagram Instagram
-                                a(href="https://www.facebook.com/truemanbarbershop/").social-icon.icon-facebook Facebook
                                 a(href="https://vk.com/truemanbarbershop").social-icon.icon-vkontakte Vkontakte
 
                 .footer-block
+                    header.footer-block__header
+                        h3.footer-block__title Москва
+
+                    .footer-block__content
+                        .footer-info
+                            .footer-info__icon.icon-location
+                            p.footer-info__text г. Краснодар, ул. Мира 54
+
+                        .footer-info
+                            .footer-info__icon.icon-phone
+                            p.footer-info__text: a(href="tel:+79111234567") +7 918 195 94 19
+
+                        .footer-info
+                            .footer-info__icon.icon-mail-alt
+                            p.footer-info__text: a(href="mailto:info@luckyfrank.ru") info@luckyfrank.ru
+                            
+                        .footer-info
+                            .social.social--footer
+                                a(href="https://www.instagram.com/truemanbarbershop/").social-icon.icon-instagram Instagram
+                                a(href="https://vk.com/truemanbarbershop").social-icon.icon-vkontakte Vkontakte
+
+
+                //- .footer-block
                     header.footer-block__header
                         h3.footer-block__title Часы работы
                     

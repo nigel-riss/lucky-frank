@@ -12,7 +12,7 @@
 
             <div class="footer-block">
                 <header class="footer-block__header">
-                    <h3 class="footer-block__title">Контакты</h3>
+                    <h3 class="footer-block__title">Краснодар</h3>
                 </header>
                 <div class="footer-block__content">
                     <div class="footer-info">
@@ -44,6 +44,37 @@
 
             <div class="footer-block">
                 <header class="footer-block__header">
+                    <h3 class="footer-block__title">Москва</h3>
+                </header>
+                <div class="footer-block__content">
+                    <div class="footer-info">
+                        <div class="footer-info__icon icon-phone"></div>
+                        <p class="footer-info__text">
+                            <a href="tel:+79855729406">
+                                +7 985 572-94-06
+                            </a>
+                        </p>
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-info__icon icon-location"></div>
+                        <p class="footer-info__text">Волгоградский проспект 60к1</p>
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-info__icon icon-mail-alt"></div>
+                        <p class="footer-info__text">
+                            <a href="mailto:<?php the_field("e-mail", 5); ?>"><?php the_field("e-mail", 5); ?></a>
+                        </p>
+                    </div>
+                    <div class="footer-info">
+                        <div class="social social--footer">
+                        <a class="social-icon icon-instagram" href="https://www.instagram.com/lucky.frank.barbershop.msc/">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="footer-block">
+                <header class="footer-block__header">
                     <h3 class="footer-block__title">Часы работы</h3>
                 </header>
                 <div class="footer-block__content">
@@ -54,7 +85,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="page-footer__quote">
                 <blockquote class="quote quote--inversed">

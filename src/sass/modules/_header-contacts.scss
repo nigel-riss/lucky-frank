@@ -1,6 +1,7 @@
 .header-contacts {
-    // box model
+    // positioning
+    position: relative;
 
     // visual
-    border-bottom: 1px solid $brown;
+    border-bottom: 1px solid rgba($brown, 0.25);
 }

@@ -59,7 +59,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=10" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=11" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -80,19 +80,19 @@
                 <div class="contact-item__content"><?php echo $address; ?></div>
             </div>
 
-            <div class="contact-item contact-item--schedule">
-                <div class="contact-item__icon icon-clock"></div>
-                <div class="contact-item__content">
-                    <?php echo $work_time_short; ?>
-                </div>
-            </div>
-            
             <div class="contact-item contact-item--phone">
                 <div class="contact-item__icon icon-phone"></div>
                 <div class="contact-item__content">
                     <a href="tel:<?php echo $phone_link; ?>">
                         <?php echo $phone_vsl; ?>
                     </a>
+                </div>
+            </div>
+
+            <div class="contact-item contact-item--schedule">
+                <div class="contact-item__icon icon-clock"></div>
+                <div class="contact-item__content">
+                    <?php echo $work_time_short; ?>
                 </div>
             </div>
 
@@ -107,6 +107,39 @@
 
             <div class="menu-icon">
                 <div class="menu-icon__middle"></div>
+            </div>
+        </div>
+        <!-- remove for site per location -->
+        <div class="header-contacts">
+
+            <div class="contact-item contact-item--address">
+                <div class="contact-item__icon icon-location"></div>
+                <div class="contact-item__content"> Москва, Волгоградский пр. 60к1</div>
+            </div>
+
+            <div class="contact-item contact-item--phone">
+                <div class="contact-item__icon icon-phone"></div>
+                <div class="contact-item__content">
+                    <a href="tel:+79855729406">
+                        +7 985 572-94-06
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-item contact-item--schedule">
+                <div class="contact-item__icon icon-clock"></div>
+                <div class="contact-item__content">
+                    <?php echo $work_time_short; ?>
+                </div>
+            </div>
+
+            <div class="contact-item contact-item--social">
+                <div class="contact-item__content">
+                    <div class="social social--header">
+                        <a class="social-icon icon-instagram" href="https://www.instagram.com/lucky.frank.barbershop.msc/">Instagram</a>
+                        <!-- <a class="social-icon icon-vkontakte" href="<?php echo $social_vk; ?>">Vkontakte</a> -->
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -538,7 +571,7 @@
     </section>
 
     <!-- Contacts and Map -->
-    <section class="location" id="contacts">
+    <!-- <section class="location" id="contacts">
         <div class="map-label">
             <h2 class="map-label__title">Контакты</h2>
 
@@ -561,7 +594,7 @@
         </div>
 
         <div class="location__map" id="map"></div>
-    </section>
+    </section> -->
 
     <?php get_footer(); ?>
 </body>

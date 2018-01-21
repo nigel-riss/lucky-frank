@@ -3,6 +3,9 @@
         Template Name: Home Page
     */
 
+    // SEO vars
+    $meta_description   = get_field("meta-description");
+
     // contacts and schedule
     $phone_vsl          = get_field("phone-vsl");
     $phone_link         = get_field("phone-link");
@@ -42,8 +45,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="<?php echo $meta_description; ?>" />
 
     <!-- OG -->
+    <meta property="og:title" content="Lucky Frank Барбершоп">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/bg-d.jpg">
+    <meta propepty="og:url" content="<?php the_permalink(); ?>">
+    <meta property="og:description" content="<?php echo $meta_description; ?>">
+    <meta propepty="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Lucky Frank Барбершоп">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo("stylesheet_directory"); ?>/apple-touch-icon.png">

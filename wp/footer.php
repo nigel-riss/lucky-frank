@@ -8,6 +8,9 @@
                     <br>
                     <small>территория настоящих мужчин</small>
                 </h2>
+                <div class="footer-logo__cards">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/cards.png" alt="Платежи картой Lucky Frank"/>
+                </div>
             </div>
 
             <div class="footer-block">

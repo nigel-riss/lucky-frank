@@ -1959,6 +1959,14 @@ body {
         text-align: left; } }
     .footer-logo__title small {
       font-size: 0.9rem; }
+  .footer-logo__cards {
+    width: 250px;
+    margin: 0 auto; }
+    @media (min-width: 900px) {
+      .footer-logo__cards {
+        padding-right: 15px; } }
+    .footer-logo__cards img {
+      width: 100%; }
 
 .footer-block {
   padding-top: 10px; }

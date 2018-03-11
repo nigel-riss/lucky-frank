@@ -55,4 +55,20 @@
             font-size: 0.9rem;
         }
     }
+
+    &__cards {
+        // box model
+        width: 250px;
+        margin: 0 auto;
+
+        @include atTabletsLandscape {
+            // box model
+            padding-right: 15px;
+        }
+
+        img {
+            // box model
+            width: 100%;
+        }
+    }
 }

@@ -27,7 +27,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=11" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=12" />
 
     <title>Lucky Frank Barbershop</title>
 

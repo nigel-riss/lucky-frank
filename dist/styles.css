@@ -713,11 +713,12 @@ body {
   @media (min-width: 700px) {
     .hero {
       padding: 80px;
-      padding-bottom: 140px;
+      padding-bottom: 60px;
       background-image: url("./img/bg-t.jpg"); } }
   @media (min-width: 900px) {
     .hero {
-      padding: 80px; } }
+      padding: 80px;
+      padding-bottom: 10px; } }
   @media (min-width: 900px) {
     .hero {
       background-image: url("./img/bg-d.jpg");
@@ -802,18 +803,39 @@ body {
       .hero__subtitle {
         letter-spacing: 4px; } }
   .hero__booking a {
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 60px;
+    display: block;
+    margin-bottom: 20px;
     padding: 10px 20px;
+    max-width: 300px;
     color: #ffffff;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     border: 2px solid #a97140;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
+    @media (min-width: 700px) {
+      .hero__booking a {
+        width: 200px; } }
     .hero__booking a:hover {
       background-color: #a97140; }
+  .hero__app {
+    margin-bottom: 80px;
+    font-size: 0; }
+    .hero__app a {
+      display: block;
+      padding: 10px 0;
+      max-width: 300px; }
+      @media (min-width: 700px) {
+        .hero__app a {
+          padding-right: 20px;
+          width: 220px; } }
+      @media (min-width: 1200px) {
+        .hero__app a {
+          display: inline-block;
+          vertical-align: top; } }
+    .hero__app img {
+      width: 100%; }
   .hero__quote {
     margin-top: -10px;
     margin-bottom: -25px;

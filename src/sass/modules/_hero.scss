@@ -16,7 +16,8 @@
     @include atTabletsPortrait {
         // box model
         padding: 80px;
-        padding-bottom: 140px;
+        // padding-bottom: 140px;
+        padding-bottom: 60px;
 
         // visual
         background-image: url("./img/bg-t.jpg");
@@ -25,6 +26,7 @@
     @include atTabletsLandscape {
         // box model
         padding: 80px;
+        padding-bottom: 10px;
     }
 
     
@@ -172,24 +174,62 @@
     &__booking {
         a {
             // box model
-            display: inline-block;
-            vertical-align: top;
-            margin-bottom: 60px;
+            display: block;
+            margin-bottom: 20px;
             padding: 10px 20px;
-
+            max-width: 300px;
+            
             // typography
             color: $white;
+            text-align: center;
             text-decoration: none;
             text-transform: uppercase;
-
+            
             // visual
             border: 2px solid $brown;
             transition: all 0.3s ease-out;
+            
+            @include atTabletsPortrait {
+                // box model
+                width: 200px;
+            }
 
             &:hover {
                 // visual
                 background-color: $brown;
             }
+        }
+    }
+
+    &__app {
+        // box model
+        margin-bottom: 80px;
+
+        // typography
+        font-size: 0;
+        
+        a {
+            // box model
+            display: block;
+            padding: 10px 0;
+            max-width: 300px;
+            
+            @include atTabletsPortrait {
+                // box model
+                padding-right: 20px;
+                width: 220px;
+            }
+
+            @include atDesktop {
+                // box model
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+
+        img {
+            // box model
+            width: 100%;
         }
     }
 

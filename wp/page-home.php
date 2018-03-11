@@ -70,7 +70,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=11" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=12" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -188,6 +188,15 @@
 
         <div class="hero__booking">
             <a class="ms_booking" href="#">Онлайн запись</a>
+        </div>
+
+        <div class="hero__app">
+            <a href="https://itunes.apple.com/app/id1326142986">
+                <img src="<?php bloginfo("stylesheet_directory"); ?>/img/app-store.png" alt="ios приложение Lucky Frank"/>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.yclients.mobile.s90212">
+                <img src="<?php bloginfo("stylesheet_directory"); ?>/img/google-play.png" alt="android приложение Lucky Frank"/>
+            </a>
         </div>
 
         <div class="hero__quote">

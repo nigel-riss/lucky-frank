@@ -10,6 +10,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="google-site-verification" content="SLH7uaYiCfS9P3ib498kSMFIGw7TOdGDB13ZBwRQzcc" />
+	<meta name="yandex-verification" content="5c2f1df9488d2fdb" />
     <meta name="description" content="<?php echo $meta_description; ?>" />
     <!-- OG -->
 
@@ -27,13 +29,14 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=12" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=14" />
 
     <title>Lucky Frank Barbershop</title>
 
     <?php wp_head(); ?>
 
     <!-- TODO: yandex counter -->
+	<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -59,7 +62,7 @@
             
             <div class="contact-item contact-item--address">
                 <div class="contact-item__icon icon-location"></div>
-                <div class="contact-item__content">г. Краснодар, ул. Мира 54</div>
+                <div class="contact-item__content">Краснодар, ул. Мира 54</div>
             </div>
 
             <div class="contact-item contact-item--phone">
@@ -121,7 +124,7 @@
                 <div class="contact-item__content">
                     <div class="social social--header">
                         <a class="social-icon icon-instagram" href="https://www.instagram.com/lucky.frank.barbershop.msc/">Instagram</a>
-                        <!-- <a class="social-icon icon-vkontakte" href="<?php echo $social_vk; ?>">Vkontakte</a> -->
+                        <a class="social-icon icon-vkontakte" href="https://vk.com/luckyfrankmsk">Vkontakte</a>
                     </div>
                 </div>
             </div>

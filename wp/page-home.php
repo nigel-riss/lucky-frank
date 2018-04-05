@@ -46,6 +46,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="<?php echo $meta_description; ?>" />
+	<meta name="google-site-verification" content="SLH7uaYiCfS9P3ib498kSMFIGw7TOdGDB13ZBwRQzcc" />
+	<meta name="yandex-verification" content="5c2f1df9488d2fdb" />
 
     <!-- OG -->
     <meta property="og:title" content="Lucky Frank Барбершоп">
@@ -70,13 +72,14 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=12" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=14" />
 
     <title>Lucky Frank Barbershop</title>
 
     <?php wp_head(); ?>
 
     <!-- TODO: yandex counter -->
+	<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -162,7 +165,7 @@
                 <div class="contact-item__content">
                     <div class="social social--header">
                         <a class="social-icon icon-instagram" href="https://www.instagram.com/lucky.frank.barbershop.msc/">Instagram</a>
-                        <!-- <a class="social-icon icon-vkontakte" href="<?php echo $social_vk; ?>">Vkontakte</a> -->
+                        <a class="social-icon icon-vkontakte" href="https://vk.com/luckyfrankmsk">Vkontakte</a>
                     </div>
                 </div>
             </div>
@@ -352,16 +355,16 @@
                 </div>
             </article>
 
-            <article class="service">
+            <!-- <article class="service">
                 <div class="service__icon">
                     <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-icon.svg" alt="Профессиональные татуировки в барбершопе Lucky Frank" />
                 </div>
                 <h3 class="service__title">Татуировки</h3>
                 <p class="service__description">Наши тату мастера осуществят вашу самую смелую идею</p>
                 <div class="service__more">
-                    <!-- <a href="#">Подробнее</a> -->
+                    <a href="#">Подробнее</a>
                 </div>
-            </article>
+            </article> -->
         </div>
 
 
@@ -413,11 +416,11 @@
                 </div>
             </article>
 
-            <article class="service-thumb">
+            <!-- <article class="service-thumb">
                 <header class="service-thumb__header">
                     <h3 class="service-thumb__title">Татуировки</h3>
                     <div class="service-thumb__more">
-                        <!-- <a href="#">Подробнее</a> -->
+                        <a href="#">Подробнее</a>
                     </div>
                     <div class="service-thumb__icon">
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-icon-white.svg" alt="" />
@@ -426,7 +429,7 @@
                 <div class="service-thumb__background">
                     <img src="<?php bloginfo("stylesheet_directory"); ?>/img/services/tattoos-bg.jpg" alt="" />
                 </div>
-            </article>
+            </article> -->
 
             <div class="services__quote">
                 <blockquote class="quote quote--inversed">
@@ -482,7 +485,7 @@
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-bg.jpg" alt="" />
                     </div>
                 </article>
-                <article class="stat">
+                <!-- <article class="stat">
                     <header class="stat__header">
                         <div class="stat__icon">
                             <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-icon.svg" alt="Профессиональные татуировки в барбершопе Lucky Frank" />
@@ -496,7 +499,7 @@
                     <div class="stat__background">
                         <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-bg.jpg" alt="" />
                     </div>
-                </article>
+                </article> -->
             </div>
         </section>
 
@@ -633,5 +636,12 @@
     </section> -->
 
     <?php get_footer(); ?>
+    <script type="text/javascript">
+    try {
+      document.querySelector('section.hero .hero__booking').addEventListener('click', function () {
+        yaCounter48084299.reachGoal('knopka-zapis')
+      })
+    } catch (e) {}
+    </script>
 </body>
 </html>

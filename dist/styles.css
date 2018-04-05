@@ -1452,7 +1452,7 @@ body {
       .services__desktop {
         display: block;
         padding-bottom: 200px;
-        text-align: center; } }
+        text-align: left; } }
     @media (min-width: 1400px) {
       .services__desktop {
         padding-bottom: 260px;
@@ -1623,7 +1623,7 @@ body {
     .stat {
       display: inline-block;
       vertical-align: top;
-      width: 33.33%; } }
+      width: 50%; } }
   @media (min-width: 1200px) {
     .stat {
       padding-left: 20px; } }

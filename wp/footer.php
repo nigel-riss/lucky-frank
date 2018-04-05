@@ -1,4 +1,4 @@
-<footer class="page-footer">
+    <footer class="page-footer">
         <div class="page-footer__wrapper">
             <div class="footer-logo">
                 <div class="footer-logo__image">
@@ -112,4 +112,20 @@
     <script src="<?php bloginfo("stylesheet_directory"); ?>/menu.js?v=4"></script>
     <script src="<?php bloginfo("stylesheet_directory"); ?>/map.js?v=4"></script>
     <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap&amp;language=ru"></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter48084299 = new Ya.Metrika({ id:48084299, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/48084299" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<script type="text/javascript">
+(function () {
+  try {
+    var a = document
+    .querySelectorAll('.footer-info [href="tel:+79181959419"], .footer-info [href="tel:+79855729406"], .header-contacts [href="tel:+79181959419"], .header-contacts [href="tel:+79855729406"]')
+    if (a != null && a.length) {
+      for (var i = 0; i < a.length; i++) {
+        a[i].addEventListener('click', function () {
+          yaCounter48084299.reachGoal('klik-phone')
+        })
+      }
+    }
+  } catch (e) {}
+})()
+</script>
     <?php wp_footer(); ?>

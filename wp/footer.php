@@ -71,6 +71,7 @@
                     <div class="footer-info">
                         <div class="social social--footer">
                         <a class="social-icon icon-instagram" href="https://www.instagram.com/lucky.frank.barbershop.msc/">Instagram</a>
+                        <a class="social-icon icon-vkontakte" href="https://vk.com/luckyfrankmsk">Vkontakte</a>
                         </div>
                     </div>
                 </div>

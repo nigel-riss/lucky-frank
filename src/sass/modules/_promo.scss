@@ -72,6 +72,9 @@
             // box model
             height: 330px;
             padding-left: 160px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
 
         @include atDesktopLarge {
@@ -113,6 +116,7 @@
         margin-bottom: 10px;
 
         // typography
+        color: $white;
         letter-spacing: 1px;
         font-size: 0.875rem;
         font-weight: 700;
@@ -146,6 +150,7 @@
 
     &__subtitle {
         // typography
+        color: $white;
         letter-spacing: 2px;
         font-size: 0.875rem;
         font-weight: 700;
@@ -157,6 +162,7 @@
         margin-bottom: 20px;
 
         // typography
+        color: $white;
         font-size: 1rem;
         line-height: 1.5;
     }

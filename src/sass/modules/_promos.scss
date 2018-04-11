@@ -2,6 +2,9 @@
     // typography
     font-size: 0;
 
+    // visual
+    background-color: $dark;
+
     @include atTabletsPortrait {
         // box model
         padding: 60px;

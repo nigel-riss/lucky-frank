@@ -30,6 +30,7 @@
             position: absolute;
             left: 0;
             top: -15px;
+            z-index: 3;
 
             // box model
             display: block;
@@ -42,7 +43,6 @@
 
         @include atDesktopLarge {
             // positioning
-            z-index: 2;
             top: 35px;
 
             // box model

@@ -1,0 +1,32 @@
+.features {
+    // visual
+    background-color: $dark;
+    // background-image: url("./img/bg-inner-m.jpg");
+    
+    @include atTabletsPortrait {
+        // box model
+        padding: 80px;
+    }
+    
+    @include atDesktopLarge {
+        // visual
+        background-image: url("./img/bg-inner-d.jpg");
+        background-size: cover;
+
+        .section__header {
+            // box model
+            margin-right: 60px;
+            float: left;
+        }
+    }
+
+    &__content {
+        @include atTabletsPortrait {
+            // box model
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border: 1px solid $brown;
+        }
+    }
+}

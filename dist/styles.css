@@ -1210,6 +1210,8 @@ body {
       .about__more a:hover {
         color: #ffffff;
         background-color: #a97140; }
+  .about p {
+    line-height: 1.5; }
 
 .inner-about {
   position: relative;
@@ -1301,6 +1303,106 @@ body {
   max-height: 520px;
   padding: 6px;
   border: 2px solid #a97140; }
+
+.features {
+  background-color: #222222; }
+  @media (min-width: 700px) {
+    .features {
+      padding: 80px; } }
+  @media (min-width: 1400px) {
+    .features {
+      background-image: url("./img/bg-inner-d.jpg");
+      background-size: cover; }
+      .features .section__header {
+        margin-right: 60px;
+        float: left; } }
+  @media (min-width: 700px) {
+    .features__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      border: 1px solid #a97140; } }
+
+.feature {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center; }
+  @media (min-width: 700px) {
+    .feature {
+      display: inline-block;
+      vertical-align: bottom;
+      width: 49%;
+      max-width: unset;
+      padding: 30px;
+      margin-bottom: 10px;
+      text-align: left; } }
+  @media (min-width: 1200px) {
+    .feature {
+      width: 33%;
+      padding: 40px; } }
+  @media (min-width: 1400px) {
+    .feature--first {
+      width: 100%; } }
+  .feature__number {
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    bottom: 0;
+    color: rgba(169, 113, 64, 0.3);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 8rem;
+    font-weight: 700; }
+    @media (min-width: 900px) {
+      .feature__number {
+        bottom: 10px;
+        font-size: 10rem; } }
+  .feature__icon {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    height: 140px;
+    width: 140px; }
+    @media (min-width: 700px) {
+      .feature__icon {
+        height: 100px;
+        width: 100px; } }
+    @media (min-width: 900px) {
+      .feature__icon {
+        height: 140px;
+        width: 140px; } }
+    @media (min-width: 1200px) {
+      .feature__icon {
+        height: 120px;
+        width: 120px; } }
+    .feature__icon img {
+      max-height: 100%;
+      max-width: 100%; }
+  .feature__title {
+    position: relative;
+    z-index: 3;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .feature__title {
+        font-size: 0.9rem; } }
+    @media (min-width: 900px) {
+      .feature__title {
+        font-size: 1.25rem; } }
+    @media (min-width: 1200px) {
+      .feature__title {
+        max-width: 260px;
+        font-size: 0.9rem; } }
 
 .promos {
   padding: 40px 0;

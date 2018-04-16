@@ -72,7 +72,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=15" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=16" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -289,6 +289,70 @@
         </div>
     </section>
 
+    <!-- Features -->
+    <section class="section features">
+        <header class="section__header section__header--inversed">
+            <p class="section__suptitle">Преимущества Lucky&nbsp;Frank</p>
+            <h2 class="section__title">Почему нам доверяют</h2>
+            <div class="feature feature--first">
+                <div class="feature__number">01</div>
+                <div class="feature__icon">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/features/atmosphere.svg" alt="" />
+                </div>
+                <h3 class="feature__title">Незабываемая атмосфера и&nbsp;безупречный сервис</h3>
+            </div>
+        </header>
+
+        <div class="features__content">
+            <div class="feature">
+                <div class="feature__number">02</div>
+                <div class="feature__icon">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/features/pros.svg" alt="" />
+                </div>
+                <h3 class="feature__title">Профессиональные мастера</h3>
+            </div>
+
+            <div class="feature">
+                <div class="feature__number">03</div>
+                <div class="feature__icon">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/features/tools.svg" alt="" />
+                </div>
+                <h3 class="feature__title">Импортные инструменты для&nbsp;стрижек и косметика</h3>
+            </div>
+
+            <div class="feature">
+                <div class="feature__number">04</div>
+                <div class="feature__icon">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/features/parking.svg" alt="" />
+                </div>
+                <h3 class="feature__title">Удобная парковка</h3>
+            </div>
+
+            <div class="feature">
+                <div class="feature__number">05</div>
+                <div class="feature__icon">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/features/drinks.svg" alt="" />
+                </div>
+                <h3 class="feature__title">Большой ассортимент бесплатных напитков</h3>
+            </div>
+
+            <div class="feature">
+                <div class="feature__number">06</div>
+                <div class="feature__icon">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/features/games.svg" alt="" />
+                </div>
+                <h3 class="feature__title">Можно хорошо провести время с друзьями за игрой</h3>
+            </div>
+
+            <div class="feature">
+                <div class="feature__number">07</div>
+                <div class="feature__icon">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/features/cards.svg" alt="" />
+                </div>
+                <h3 class="feature__title">Безналичный расчёт</h3>
+            </div>
+        </div>
+    </section>
 
     <!-- Services -->
     <section class="section services" id="services">

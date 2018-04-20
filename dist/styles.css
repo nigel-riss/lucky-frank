@@ -501,9 +501,13 @@ body {
   .contact-item__content {
     display: inline-block;
     vertical-align: middle;
+    max-width: 80%;
     color: #ffffff;
     font-weight: 400;
     font-size: 16px; }
+    @media (min-width: 700px) {
+      .contact-item__content {
+        max-width: unset; } }
     .contact-item__content a {
       color: #ffffff;
       text-decoration: none; }
@@ -1835,6 +1839,12 @@ body {
       width: calc(50% - 21px); }
       .prices__column--left {
         margin-right: 40px; } }
+  .prices__city {
+    color: #a97140;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
   .prices__more {
     margin-top: 60px;
     text-align: center; }

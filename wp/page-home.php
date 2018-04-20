@@ -72,7 +72,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=16" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=17" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -171,7 +171,7 @@
 
             <div class="contact-item contact-item--address">
                 <div class="contact-item__icon icon-location"></div>
-                <div class="contact-item__content"> Москва, Волгоградский пр. 60к1</div>
+                <div class="contact-item__content"> Москва, Волгоградский пр. 60к1 (м.&nbsp;Кузьминки и&nbsp;Текстильщики)</div>
             </div>
 
             <div class="contact-item contact-item--phone">
@@ -617,11 +617,13 @@
         </div> -->
         <div class="prices__content">
             <div class="prices__column prices__column--left">
+                <h3 class="prices__city">Москва</h3>
                 <?php echo $price_main; ?>
             </div>
             <div class="prices__column">
+                <h3 class="prices__city">Краснодар</h3>
                 <?php echo $price_additional; ?>
-                <?php echo $price_complex; ?>
+                <!-- <?php echo $price_complex; ?> -->
             </div>
         </div>
 

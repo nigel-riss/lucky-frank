@@ -19,11 +19,17 @@
         // box model
         display: inline-block;
         vertical-align: middle;
+        max-width: 80%;
 
         // typography
         color: $white;
         font-weight: 400;
         font-size: 16px;
+
+        @include atTabletsPortrait {
+            // box model
+            max-width: unset;
+        }
         
         a {
             // typography

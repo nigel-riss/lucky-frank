@@ -60,7 +60,7 @@
                     </div>
                     <div class="footer-info">
                         <div class="footer-info__icon icon-location"></div>
-                        <p class="footer-info__text">Волгоградский проспект 60к1 (м.&nbsp;Кузьминки и&nbsp;Текстильщики)</p>
+                        <p class="footer-info__text">Волгоградский проспект 60к1</p>
                     </div>
                     <div class="footer-info">
                         <div class="footer-info__icon icon-mail-alt"></div>

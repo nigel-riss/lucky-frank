@@ -5,18 +5,46 @@
     // visual
     background-color: $dark;
 
+    @include atDesktop {
+        // box model
+        padding: 80px;
+        
+        // visual
+        background-image: linear-gradient(to bottom, #989898, #ffffff);
+    }
+
     &__header {
         // positioning
         position: relative;
 
         // box model
         padding: 42px;
+        margin-bottom: 20px;
         height: calc(100vw - 50px);
 
         // visual
         background-color: $dark;
-        background-image: url("./img/haircuts/undercut.jpg");
+        background-image: url("./img/feedback.jpg");
         background-size: cover;
+        
+        @include atTabletsPortrait {
+            // box model
+            height: calc(50vw - 50px);
+            // visual
+            background-image: url("./img/feedback2.jpg");
+        }
+        
+        @include atDesktop {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+            height: calc(40vw - 85px);
+            width: calc(40vw - 85px);
+            margin-right: 20px;
+
+            // visual
+            background-image: url("./img/feedback.jpg");
+        }
 
         &::before {
             content: "";
@@ -45,7 +73,8 @@
         // typography
         color: $white;
         font-weight: 700;
-        letter-spacing: 2px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
         text-transform: uppercase;
 
         @include atTabletsPortrait {
@@ -53,7 +82,8 @@
             padding-bottom: 40px;
 
             // typography
-            font-size: 1.25rem;
+            font-size: 1.125rem;
+            letter-spacing: 2px;
         }
     }
     
@@ -74,6 +104,7 @@
 
             // typography
             font-size: 2rem;
+            letter-spacing: 2px;
         }
     }
     
@@ -87,14 +118,18 @@
         
         // typography
         color: $white;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 700;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         text-transform: uppercase;
 
         @include atTabletsPortrait {
             // box model
             padding-bottom: 20px;
+
+            // typography
+            font-size: 1.125rem;
+            letter-spacing: 2px;
         }
 
         &::after {
@@ -110,7 +145,26 @@
             width: 50px;
             
             // visual
-            background-color: $brown;
+            background-color: $white;
+        }
+    }
+
+    &__more {
+        // positioning
+        position: absolute;
+        bottom: 40px;
+        z-index: 3;
+    }
+    
+    &__content {
+        // box model
+        margin-right: -20px;
+
+        @include atDesktop {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+            width: calc(60vw - 110px);
         }
     }
 }

@@ -29,7 +29,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=17" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=18" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -128,7 +128,7 @@
        <div class="header-contacts">
             <div class="contact-item contact-item--address">
                 <div class="contact-item__icon icon-location"></div>
-                <div class="contact-item__content"> Москва, Волгоградский пр. 60к1</div>
+                <div class="contact-item__content"> Москва, Волгоградский пр. 60к1 (м.&nbsp;Кузьминки и&nbsp;Текстильщики)</div>
             </div>
 
             <div class="contact-item contact-item--phone">

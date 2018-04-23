@@ -21,3 +21,20 @@ body {
     // typography
     font-family: inherit;
 }
+
+// hacks
+#envirabox-title-float-main {
+    // box model
+    display: none !important;
+}
+
+.envira-gallery-item-inner .caption {
+    // typo
+    color: transparent !important;
+    
+    // box model
+    height: 100%;
+
+    // visual
+    pointer-events: none;
+}

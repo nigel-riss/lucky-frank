@@ -482,6 +482,14 @@ body {
           box-sizing: inherit;
   font-family: inherit; }
 
+#envirabox-title-float-main {
+  display: none !important; }
+
+.envira-gallery-item-inner .caption {
+  color: transparent !important;
+  height: 100%;
+  pointer-events: none; }
+
 .page-header {
   position: relative;
   background-color: #222222; }
@@ -1887,13 +1895,31 @@ body {
 .feedback {
   padding: 60px 25px;
   background-color: #222222; }
+  @media (min-width: 1200px) {
+    .feedback {
+      padding: 80px;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#989898), to(#ffffff));
+      background-image: linear-gradient(to bottom, #989898, #ffffff); } }
   .feedback__header {
     position: relative;
     padding: 42px;
+    margin-bottom: 20px;
     height: calc(100vw - 50px);
     background-color: #222222;
-    background-image: url("./img/haircuts/undercut.jpg");
+    background-image: url("./img/feedback.jpg");
     background-size: cover; }
+    @media (min-width: 700px) {
+      .feedback__header {
+        height: calc(50vw - 50px);
+        background-image: url("./img/feedback2.jpg"); } }
+    @media (min-width: 1200px) {
+      .feedback__header {
+        display: inline-block;
+        vertical-align: top;
+        height: calc(40vw - 85px);
+        width: calc(40vw - 85px);
+        margin-right: 20px;
+        background-image: url("./img/feedback.jpg"); } }
     .feedback__header::before {
       content: "";
       position: absolute;
@@ -1909,12 +1935,14 @@ body {
     padding-bottom: 10px;
     color: #ffffff;
     font-weight: 700;
-    letter-spacing: 2px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
     text-transform: uppercase; }
     @media (min-width: 700px) {
       .feedback__suptitle {
         padding-bottom: 40px;
-        font-size: 1.25rem; } }
+        font-size: 1.125rem;
+        letter-spacing: 2px; } }
   .feedback__title {
     margin: 0;
     padding: 0;
@@ -1925,19 +1953,22 @@ body {
     @media (min-width: 700px) {
       .feedback__title {
         padding-bottom: 10px;
-        font-size: 2rem; } }
+        font-size: 2rem;
+        letter-spacing: 2px; } }
   .feedback__subtitle {
     position: relative;
     margin: 0;
     padding: 0;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase; }
     @media (min-width: 700px) {
       .feedback__subtitle {
-        padding-bottom: 20px; } }
+        padding-bottom: 20px;
+        font-size: 1.125rem;
+        letter-spacing: 2px; } }
     .feedback__subtitle::after {
       content: "";
       position: absolute;
@@ -1945,7 +1976,18 @@ body {
       left: 0;
       height: 2px;
       width: 50px;
-      background-color: #a97140; }
+      background-color: #ffffff; }
+  .feedback__more {
+    position: absolute;
+    bottom: 40px;
+    z-index: 3; }
+  .feedback__content {
+    margin-right: -20px; }
+    @media (min-width: 1200px) {
+      .feedback__content {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(60vw - 110px); } }
 
 .team {
   position: relative;

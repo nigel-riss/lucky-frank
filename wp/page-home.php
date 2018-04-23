@@ -72,7 +72,7 @@
     <link href="https:/fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=17" />
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>?v=18" />
 
     <title>Lucky Frank Barbershop</title>
 
@@ -127,6 +127,7 @@
             js2.parentNode.insertBefore(js, js2);
         })(window, document, 'script', 'cloud.roistat.com', 'dd06ef1b09acdaf925a93997606ae743');
     </script>
+
 
     <!-- Header -->
     <header class="page-header">
@@ -223,6 +224,7 @@
         </nav>
     </header>
 
+
     <!-- Hero -->
     <section class="hero">
         <header class="hero__header">
@@ -266,6 +268,7 @@
         <div class="hero__deco"></div>
     </section>
 
+
     <!-- About Barbershop -->
     <section class="section about" id="about">
         <header class="section__header">
@@ -288,6 +291,7 @@
             <a href="<?php echo esc_url(home_url("/")); ?>about/">узнай больше</a>
         </div>
     </section>
+
 
     <!-- Features -->
     <section class="section features">
@@ -353,6 +357,67 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Statistics -->
+    <?php
+        if ($stats_show[0] == "show") {
+    ?>
+
+    <section class="section statistics">
+        <div class="section__content">
+            <article class="stat">
+                <header class="stat__header">
+                    <div class="stat__icon">
+                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-icon.svg" alt="Стрижки в барбершопе Lucky Frank" />
+                    </div>
+                    <div class="stat__count"><?php echo $stats_haircuts; ?></div>
+                    <div class="stat__name">идеальных<br>причёсок</div>
+                </header>
+                <div class="stat__photo">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-photo.png" alt="" />
+                </div>
+                <div class="stat__background stat__background--hair">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-bg.jpg" alt="" />
+                </div>
+            </article>
+            <article class="stat">
+                <header class="stat__header">
+                    <div class="stat__icon">
+                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-icon.svg" alt="Бритьё в барбершопе Lucky Frank" />
+                    </div>
+                    <div class="stat__count"><?php echo $stats_beards; ?></div>
+                    <div class="stat__name">подстриженых<br>бород</div>
+                </header>
+                <div class="stat__photo">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-photo.png" alt="" />
+                </div>
+                <div class="stat__background">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-bg.jpg" alt="" />
+                </div>
+            </article>
+            <!-- <article class="stat">
+                <header class="stat__header">
+                    <div class="stat__icon">
+                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-icon.svg" alt="Профессиональные татуировки в барбершопе Lucky Frank" />
+                    </div>
+                    <div class="stat__count"><?php echo $stats_tatooes; ?></div>
+                    <div class="stat__name">набитых<br>татуировок</div>
+                </header>
+                <div class="stat__photo">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-photo.png" alt="" />
+                </div>
+                <div class="stat__background">
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-bg.jpg" alt="" />
+                </div>
+            </article> -->
+        </div>
+    </section>
+
+    <?php
+        }
+    ?>
+
 
     <!-- Services -->
     <section class="section services" id="services">
@@ -483,65 +548,6 @@
         </div>
     </section>
 
-    <!-- Statistics -->
-    <?php
-        if ($stats_show[0] == "show") {
-    ?>
-
-        <section class="section statistics">
-            <div class="section__content">
-                <article class="stat">
-                    <header class="stat__header">
-                        <div class="stat__icon">
-                            <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-icon.svg" alt="Стрижки в барбершопе Lucky Frank" />
-                        </div>
-                        <div class="stat__count"><?php echo $stats_haircuts; ?></div>
-                        <div class="stat__name">идеальных<br>причёсок</div>
-                    </header>
-                    <div class="stat__photo">
-                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-photo.png" alt="" />
-                    </div>
-                    <div class="stat__background stat__background--hair">
-                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/haircut-bg.jpg" alt="" />
-                    </div>
-                </article>
-                <article class="stat">
-                    <header class="stat__header">
-                        <div class="stat__icon">
-                            <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-icon.svg" alt="Бритьё в барбершопе Lucky Frank" />
-                        </div>
-                        <div class="stat__count"><?php echo $stats_beards; ?></div>
-                        <div class="stat__name">подстриженых<br>бород</div>
-                    </header>
-                    <div class="stat__photo">
-                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-photo.png" alt="" />
-                    </div>
-                    <div class="stat__background">
-                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/shaving-bg.jpg" alt="" />
-                    </div>
-                </article>
-                <!-- <article class="stat">
-                    <header class="stat__header">
-                        <div class="stat__icon">
-                            <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-icon.svg" alt="Профессиональные татуировки в барбершопе Lucky Frank" />
-                        </div>
-                        <div class="stat__count"><?php echo $stats_tatooes; ?></div>
-                        <div class="stat__name">набитых<br>татуировок</div>
-                    </header>
-                    <div class="stat__photo">
-                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-photo.png" alt="" />
-                    </div>
-                    <div class="stat__background">
-                        <img src="<?php bloginfo("stylesheet_directory"); ?>/img/tattoo-bg.jpg" alt="" />
-                    </div>
-                </article> -->
-            </div>
-        </section>
-
-    <?php
-        }
-    ?>
-
 
     <!-- Promos -->
     <a id="prices"></a>
@@ -636,6 +642,23 @@
         </div>
     </section>
 
+
+    <!-- Feedback -->
+    <section class="feedback">
+        <header class="feedback__header">
+            <p class="feedback__suptitle">Стрижки от Lucky Frank</p>
+            <h2 class="feedback__title">Примеры наших работ</h2>
+            <p class="feedback__subtitle">Громче любых отзывов</p>
+            <div class="feedback__more">
+                <a class="button" href="<?php echo esc_url(home_url("/feedback")); ?>">Еще работы</a>
+            </div>
+        </header>
+        <div class="feedback__content">
+            <?php echo do_shortcode('[robo-gallery id="483"]'); ?>
+        </div>
+    </section>
+
+
     <!-- Team -->
     <section class="section team" id="team">
         <header class="section__header">
@@ -706,6 +729,7 @@
             </blockquote>
         </div>
     </section>
+
 
     <!-- Contacts and Map -->
     <!-- <section class="location" id="contacts">

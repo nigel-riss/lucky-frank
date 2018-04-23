@@ -47,11 +47,6 @@
 
         // visual
         border: 2px solid $white;
-
-        @include atDesktop {
-            // visual
-            // border: 7px solid $white;
-        }
     }
 
     &__position {

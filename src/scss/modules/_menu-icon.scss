@@ -1,89 +1,81 @@
 .menu-icon {
+  // positioning
+  position: relative;
+
+  // box model
+  height: 40px;
+  width: 40px;
+}
+
+.menu-icon::before {
+  content: "";
+
+  // positioning
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  transform-origin: 0 50%;
+
+  // box model
+  height: 3px;
+  width: 26px;
+
+  // visual
+  background-color: $brown;
+  transition: all 0.3s ease-out;
+}
+
+.menu-icon__middle {
+  // positioning
+  position: absolute;
+  top: 17px;
+  left: 6px;
+
+  // box model
+  height: 3px;
+  width: 26px;
+
+  // visual
+  background-color: $brown;
+  transition: all 0.3s ease-out;
+}
+
+.menu-icon::after {
+  content: "";
+
+  // positioning
+  position: absolute;
+  top: 24px;
+  left: 6px;
+  transform-origin: 0 50%;
+
+  // box model
+  height: 3px;
+  width: 26px;
+
+  // visual
+  background-color: $brown;
+  transition: all 0.3s ease-out;
+}
+
+.menu-icon--close-x {
+  &::before {
     // positioning
-    position: fixed;
-    right: 8px;
     top: 8px;
-    z-index: 9999;
+    transform: rotate(45deg);
+  }
 
+  .menu-icon__middle {
     // box model
-    height: 40px;
-    width: 40px;
+    width: 0;
 
-    @include atDesktop {
-        // box model
-        display: none;
-    }
+    // visual
+    opacity: 0;
+  }
 
-    &::before {
-        content: "";
-
-        // positioning
-        position: absolute;
-        top: 10px;
-        left: 6px;
-        transform-origin: 0 50%;
-
-        // box model
-        height: 3px;
-        width: 26px;
-
-        // visual
-        background-color: $brown;
-        transition: all 0.3s ease-out;
-    }
-
-    &__middle {
-        // positioning
-        position: absolute;
-        top: 17px;
-        left: 6px;
-
-        // box model
-        height: 3px;
-        width: 26px;
-
-        // visual
-        background-color: $brown;
-        transition: all 0.3s ease-out;
-    }
-    
-    &::after {
-        content: "";
-
-        // positioning
-        position: absolute;
-        top: 24px;
-        left: 6px;
-        transform-origin: 0 50%;
-    
-        // box model
-        height: 3px;
-        width: 26px;
-    
-        // visual
-        background-color: $brown;
-        transition: all 0.3s ease-out;
-    }
-
-    &--close-x {
-        &::before {
-            // positioning
-            top: 8px;
-            transform: rotate(45deg);
-        }
-
-        .menu-icon__middle {
-            // box model
-            width: 0;
-
-            // visual
-            opacity: 0;
-        }
-
-        &::after {
-            // positioning
-            top: 26px;
-            transform: rotate(-45deg);
-        }
-    }
+  &::after {
+    // positioning
+    top: 26px;
+    transform: rotate(-45deg);
+  }
 }

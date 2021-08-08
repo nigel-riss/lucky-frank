@@ -1,59 +1,35 @@
 .main-menu {
-    // box model
-    margin: 0;
-    padding: 0;
+  // typography
+  font-size: 0;
+}
 
+.main-menu li {
+  // box model
+  margin: 0;
+  padding: 0.125rem;
+
+  // typography
+  text-align: center;
+}
+
+.main-menu a {
+  // box model
+  display: block;
+  padding: 0.25rem;
+
+  // typography
+  color: $white;
+  font-family: $titleFont;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  // visual
+  transition: all 0.25s ease-out;
+
+  &:hover {
     // typography
-    font-size: 0;
-
-    // visual
-    list-style: none;
-
-    li {
-        // box model
-        margin: 0;
-        padding: 0;
-        
-        // typography
-        text-align: center;
-        
-        @include atDesktop {
-            // box model
-            display: inline-block;
-            vertical-align: top;
-        }
-    }
-    
-    a {
-        // box model
-        display: block;
-        padding: 5px 15px;
-        // border: 1px solid green;
-
-        // typography
-        color: $white;
-        font-family: $titleFont;
-        font-size: 1.5rem;
-        font-weight: 700;
-        text-decoration: none;
-        text-transform: uppercase;
-
-        // visual
-        transition: all 0.2s ease-out;
-
-        @include atDesktop {
-            // typography
-            font-size: 1.25rem;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            padding: 5px 30px;
-        }
-
-        &:hover {
-            // typography
-            color: $brown;
-        }
-    }
+    color: $brown;
+  }
 }

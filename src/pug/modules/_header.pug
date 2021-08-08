@@ -23,15 +23,14 @@ header.header
             a(href="https://www.instagram.com/truemanbarbershop/").social-icon.icon-instagram Instagram
             a(href="https://vk.com/truemanbarbershop").social-icon.icon-vkontakte Vkontakte
 
-    .header__button
-      .menu-icon: .menu-icon__middle
+    .header__button 
+      #menu-icon.menu-icon: .menu-icon__middle 
 
 
-  //- .header__nav
-    .logo
-      a(href="index.html"): img(src="img/logo-white.svg", alt="Lucky Frank Barbershop logo")
-
+  .header__nav 
     nav.main-nav
+      .main-nav__icon
+        #menu-close.menu-icon.menu-icon--close-x: .menu-icon__middle 
       .main-nav__logo: img(src="/img/logo-white.svg", alt="")
       ul.main-menu
         li: a(href="#") Главная

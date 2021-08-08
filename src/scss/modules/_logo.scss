@@ -1,24 +1,26 @@
 .logo {
-    // positioning
-    position: relative;
-    z-index: 3;
-    
-    // box model
-    max-width: 300px;
-    margin: 0 auto;
-    margin-bottom: -70px;
-    padding: 20px;
-    
-    @include atTabletsPortrait {
-        max-width: 380px;
-        margin: 0;
-        margin-bottom: -120px;
-        padding-left: 60px;
-        padding-top: 40px;
-    }
+  // positioning
+  position: relative;
+  z-index: 3;
 
-    img {
-        // box model
-        width: 100%;
-    }
+  // box model
+  display: block;
+  width: 12rem;
+  margin: 0 auto;
+  // margin-bottom: -70px;
+  // padding: 20px;
+
+  // @include atTabletsPortrait {
+  //   max-width: 380px;
+  //   margin: 0;
+  //   margin-bottom: -120px;
+  //   padding-left: 60px;
+  //   padding-top: 40px;
+  // }
+}
+
+.logo svg,
+.logo img {
+  // box model
+  width: 100%;
 }

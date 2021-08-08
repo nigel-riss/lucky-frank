@@ -1,281 +1,281 @@
 .hero {
+  // positioning
+  position: relative;
+  z-index: 2;
+
+  // box model
+  padding: 2rem 1rem;
+
+  // visual
+  background-color: $chocolate;
+  // background-image: url("./img/bg-m.jpg");
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
+
+  // @include atTabletsPortrait {
+  //   // box model
+  //   padding: 80px;
+  //   // padding-bottom: 140px;
+  //   padding-bottom: 60px;
+
+  //   // visual
+  //   background-image: url("./img/bg-t.jpg");
+  // }
+
+  // @include atTabletsLandscape {
+  //   // box model
+  //   padding: 80px;
+  //   padding-bottom: 10px;
+  // }
+
+
+  // @include atTabletsLandscape {
+  //   // visual
+  //   background-image: url("./img/bg-d.jpg");
+  //   background-position: right center;
+  // }
+
+  // @include atDesktop {
+  //   // visual
+  //   background-position: right top;
+  // }
+
+  // @include atDesktopLarge {
+  //   // box model
+  //   min-height: 800px;
+  // }
+}
+
+.hero__header {
+  // positioning
+  position: relative;
+
+  // box model
+  padding-top: 60px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+
+  // @include atTabletsPortrait {
+  //   // box model
+  //   margin-bottom: 60px;
+  // }
+
+  // @include atDesktop {
+  //   // box model
+  //   margin-bottom: 60px;
+  // }
+
+  // @include atDesktopLarge {
+  //   // box model
+  //   padding-top: 110px;
+  // }
+
+  &::after {
+    content: "";
+
     // positioning
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
     // box model
-    padding: 25px;
+    height: 2px;
+    width: 50px;
 
     // visual
-    background-color: $chocolate;
-    background-image: url("./img/bg-m.jpg");
-    background-position: center center;
-    background-size: cover;
-    box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
+    background-color: $brown;
 
-    @include atTabletsPortrait {
-        // box model
-        padding: 80px;
-        // padding-bottom: 140px;
-        padding-bottom: 60px;
+    // @include atTabletsPortrait {
+    //   // positioning
+    //   bottom: -10px;
+    // }
+  }
+}
 
-        // visual
-        background-image: url("./img/bg-t.jpg");
+.hero__welcome {
+  // box model
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+
+  // typography
+  color: $brown;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  // @include atTabletsPortrait {
+  //   // typography
+  //   font-size: 1.25rem;
+  // }
+
+  // @include atDesktop {
+  //   // typography
+  //   font-size: 1.5rem;
+  // }
+}
+
+.hero__title {
+  // box model
+  margin: 0;
+  margin-left: -2px;
+  padding: 0;
+  padding-bottom: 20px;
+
+  // typography
+  color: $white;
+  font-family: $titleFont;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+
+  // @include atTabletsPortrait {
+  //   // box model
+  //   margin-left: -4px;
+  //   padding-bottom: 20px;
+
+  //   // typography
+  //   font-size: 5rem;
+  //   line-height: 0.9;
+  // }
+
+  // @include atDesktop {
+  //   // box model
+  //   margin-left: -6px;
+
+  //   // typography
+  //   font-size: 7rem;
+  // }
+
+  // @include atDesktopLarge {
+  //   // typography
+  //   font-size: 8rem;
+  // }
+}
+
+.hero__subtitle {
+  // box model
+  margin: 0;
+  padding: 0;
+
+  // typography
+  color: $white;
+  font-family: $mainFont;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  // @include atDesktop {
+  //   // typography
+  //   letter-spacing: 4px;
+  // }
+}
+
+.hero__booking {
+  a {
+    // box model
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    max-width: 300px;
+
+    // typography
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    // visual
+    border: 2px solid $brown;
+    transition: all 0.3s ease-out;
+
+    // @include atTabletsPortrait {
+    //   // box model
+    //   width: 200px;
+    // }
+
+    &:hover {
+      // visual
+      background-color: $brown;
     }
+  }
+}
 
-    @include atTabletsLandscape {
-        // box model
-        padding: 80px;
-        padding-bottom: 10px;
-    }
+.hero__app {
+  // box model
+  margin-bottom: 80px;
 
-    
-    @include atTabletsLandscape {
-        // visual
-        background-image: url("./img/bg-d.jpg");
-        background-position: right center;
-    }
-    
-    @include atDesktop {
-        // visual
-        background-position: right top;
-    }
-    
-    @include atDesktopLarge {
-        // box model
-        min-height: 800px;
-    }
+  // typography
+  font-size: 0;
 
-    &__header {
-        // positioning
-        position: relative;
+  a {
+    // box model
+    display: block;
+    padding: 10px 0;
+    max-width: 300px;
 
-        // box model
-        padding-top: 60px;
-        padding-bottom: 20px;
-        margin-bottom: 40px;
+    // @include atTabletsPortrait {
+    //   // box model
+    //   padding-right: 20px;
+    //   width: 220px;
+    // }
 
-        @include atTabletsPortrait {
-            // box model
-            margin-bottom: 60px;
-        }
+    // @include atDesktop {
+    //   // box model
+    //   display: inline-block;
+    //   vertical-align: top;
+    // }
+  }
 
-        @include atDesktop {
-            // box model
-            margin-bottom: 60px;
-        }
+  img {
+    // box model
+    width: 100%;
+  }
+}
 
-        @include atDesktopLarge {
-            // box model
-            padding-top: 110px;
-        }
+.hero__quote {
+  // box model
+  margin-top: -10px;
+  margin-bottom: -25px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 
-        &::after {
-            content: "";
+  // visual
+  border-left: 1px solid $white;
 
-            // positioning
-            position: absolute;
-            bottom: 0;
-            left: 0;
+  // @include atTabletsPortrait {
+  //   // positioning
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
 
-            // box model
-            height: 2px;
-            width: 50px;
+  //   // box model
+  //   width: 55%;
+  //   padding: 30px;
+  //   padding-bottom: 40px;
+  //   padding-top: 10px;
+  // }
 
-            // visual
-            background-color: $brown;
+  // @include atDesktop {
+  //   // box model
+  //   padding-right: calc(50% - 500px);
+  // }
 
-            @include atTabletsPortrait {
-                // positioning
-                bottom: -10px;
-            }
-        }
-    }
+  // @include atDesktopLarge {
+  //   // box model
+  //   width: 45%;
+  //   padding-right: calc(45% - 500px);
+  // }
+}
 
-    &__welcome {
-        // box model
-        margin: 0;
-        padding: 0;
-        padding-bottom: 10px;
+.hero__sale {
+  // box model
+  margin-top: -40px;
+  margin-bottom: 80px;
 
-        // typography
-        color: $brown;
-        font-size: 1rem;
-        font-weight: 600;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+  // typography
+  color: $white;
+  line-height: 1.5;
 
-        @include atTabletsPortrait {
-            // typography
-            font-size: 1.25rem;
-        }
-
-        @include atDesktop {
-            // typography
-            font-size: 1.5rem;
-        }
-    }
-
-    &__title {
-        // box model
-        margin: 0;
-        margin-left: -2px;
-        padding: 0;
-        padding-bottom: 20px;
-        
-        // typography
-        color: $white;
-        font-family: $titleFont;
-        font-size: 2.5rem;
-        text-transform: uppercase;
-
-        @include atTabletsPortrait {
-            // box model
-            margin-left: -4px;
-            padding-bottom: 20px;
-
-            // typography
-            font-size: 5rem;
-            line-height: 0.9;
-        }
-
-        @include atDesktop {
-            // box model
-            margin-left: -6px;
-
-            // typography
-            font-size: 7rem;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 8rem;
-        }
-    }
-
-    &__subtitle {
-        // box model
-        margin: 0;
-        padding: 0;
-
-        // typography
-        color: $white;
-        font-family: $mainFont;
-        letter-spacing: 1px;
-        line-height: 1.5;
-        text-transform: uppercase;
-
-        @include atDesktop {
-            // typography
-            letter-spacing: 4px;
-        }
-    }
-
-    &__booking {
-        a {
-            // box model
-            display: block;
-            margin-bottom: 20px;
-            padding: 10px 20px;
-            max-width: 300px;
-            
-            // typography
-            color: $white;
-            text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
-            
-            // visual
-            border: 2px solid $brown;
-            transition: all 0.3s ease-out;
-            
-            @include atTabletsPortrait {
-                // box model
-                width: 200px;
-            }
-
-            &:hover {
-                // visual
-                background-color: $brown;
-            }
-        }
-    }
-
-    &__app {
-        // box model
-        margin-bottom: 80px;
-
-        // typography
-        font-size: 0;
-        
-        a {
-            // box model
-            display: block;
-            padding: 10px 0;
-            max-width: 300px;
-            
-            @include atTabletsPortrait {
-                // box model
-                padding-right: 20px;
-                width: 220px;
-            }
-
-            @include atDesktop {
-                // box model
-                display: inline-block;
-                vertical-align: top;
-            }
-        }
-
-        img {
-            // box model
-            width: 100%;
-        }
-    }
-
-    &__quote {
-        // box model
-        margin-top: -10px;
-        margin-bottom: -25px;
-        padding-left: 20px;
-        padding-bottom: 20px;
-
-        // visual
-        border-left: 1px solid $white;
-
-        @include atTabletsPortrait {
-            // positioning
-            position: absolute;
-            bottom: 0;
-            right: 0;
-
-            // box model
-            width: 55%;
-            padding: 30px;
-            padding-bottom: 40px;
-            padding-top: 10px;
-        }
-
-        @include atDesktop {
-            // box model
-            padding-right: calc(50% - 500px);
-        }
-        
-        @include atDesktopLarge {
-            // box model
-            width: 45%;
-            padding-right: calc(45% - 500px);
-        }
-    }
-
-    &__sale {
-        // box model
-        margin-top: -40px;
-        margin-bottom: 80px;
-
-        // typography
-        color: $white;
-        line-height: 1.5;
-
-    }
 }

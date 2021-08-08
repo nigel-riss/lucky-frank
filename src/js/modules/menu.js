@@ -1,39 +1,28 @@
-var $ = require("jquery");
-var smoothScroll = require("jquery-smooth-scroll");
+export class MobileMenu {
+  constructor() {
+    this.mainNav = document.querySelector(`.main-nav`);
+    this.menuIcon = document.querySelector(`#menu-icon`);
+    this.menuClose = document.querySelector(`#menu-close`);
+    this.menuLinks = document.querySelectorAll(`.main-menu a`);
 
-class MobileMenu {
-    constructor() {
-        this.mainNav = $(".main-nav");
-        this.menuIcon = $(".menu-icon");
-        this.menuLinks = $(".main-menu a");
+    this.menuIcon?.addEventListener(`click`, () => {
+      this.toggleMenu();
+    });
 
-        this.events();
-        this.addSmoothScroll();
-    }
+    this.menuClose?.addEventListener(`click`, () => {
+      this.mainNav?.classList.remove(`main-nav--shown`);
+      this.menuIcon?.classList.remove(`menu-icon--close-x`);
+    });
 
-    events() {
-        this.menuIcon.on("click", () => { 
-            this.toggleMenu();
-        });
-        this.menuIcon.on("tap", () => { 
-            this.toggleMenu();
-        });
-        this.menuLinks.on("click", () => { 
-            this.toggleMenu();
-        });
-        this.menuLinks.on("tap", () => { 
-            this.toggleMenu();
-        });
-    }
+    this.menuLinks?.forEach((link) => {
+      link.addEventListener(`click`, () => {
+        this.toggleMenu();
+      })
+    });
+  }
 
-    toggleMenu() {
-        this.mainNav.toggleClass("main-nav--shown");
-        this.menuIcon.toggleClass("menu-icon--close-x");
-    }
-
-    addSmoothScroll() {
-        this.menuLinks.smoothScroll();
-    }
+  toggleMenu() {
+    this.mainNav?.classList.toggle(`main-nav--shown`);
+    this.menuIcon?.classList.toggle(`menu-icon--close-x`);
+  }
 }
-
-let mobileMenu = new MobileMenu();

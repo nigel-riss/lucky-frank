@@ -1,85 +1,73 @@
 .service {
-    // box model
-    padding-bottom: 60px;
+  // box model
+  padding-bottom: 3rem;
 
-    @include atTabletsPortrait {
-        // box model
-        display: inline-block;
-        vertical-align: top;
-        width: 49%;
-        padding: 30px;
-        padding-bottom: 60px;
-    }
+  // typography
+  text-align: center;
 
-    @include atDesktop {
-        // box model
-        width: 25%;
-    }
+  // @include atTabletsPortrait {
+  //   // box model
+  //   display: inline-block;
+  //   vertical-align: top;
+  //   width: 49%;
+  //   padding: 30px;
+  //   padding-bottom: 60px;
+  // }
 
-    &__icon {
-        // box model
-        height: 64px;
-        width: 64px;
-        margin: 0 auto;
-        margin-bottom: 15px;
+  // @include atDesktop {
+  //   // box model
+  //   width: 25%;
+  // }
+}
 
-        img {
-            // box model
-            max-height: 100%;
-            max-width: 100%;
-        }
-    }
+.service__icon {
+  // box model
+  height: 4rem;
+  width: 4rem;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
 
-    &__title {
-        // box model
-        margin: 0;
-        padding: 0;
-        padding-bottom: 10px;
+.service svg,
+.service img {
+  // box model
+  max-height: 100%;
+  max-width: 100%;
+}
 
-        // typography
-        font-family: $titleFont;
-        font-size: 1.75rem;
-        text-align: center;
-        text-transform: uppercase;
-    }
+.service__title {
+  // box model
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.5rem;
 
-    &__description {
-        // box model
-        margin: 0;
-        padding: 0;
-        padding-bottom: 20px;
+  // typography
+  color: $dark;
+  font-family: $titleFont;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
 
-        // typography
-        color: $brown;
-        font-size: 1rem;
-        font-weight: 600;
-        line-height: 1.5;
-        text-align: center;
-    }
+.service__description {
+  // box model
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rem;
 
-    &__more {
-        // typography
-        text-align: center;
+  // typography
+  color: $brown;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
 
-        a {
-            // box model
-            display: inline-block;
-            vertical-align: top;
-            padding: 5px 20px;
+.service__more {
+  // box model
+  width: 60%;
+  margin: 0 auto;
 
-            // typography
-            color: $brown;
-            font-size: 0.875rem;
-            text-decoration: none;
-            text-transform: uppercase;
-
-            // visual
-            border: 2px solid $brown;
-        }
-
-        @include atDesktop {
-            // box model
-            display: none;
-        }
-    }
+  // @include atDesktop {
+  //   // box model
+  //   display: none;
+  // }
 }

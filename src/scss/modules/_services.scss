@@ -1,70 +1,71 @@
 .services {
-    // box model
-    padding: 60px 25px;
-    padding-bottom: 0;
+  // box model
 
-    @include atTabletsPortrait {
-        // box model
-        padding: 60px 25px;
-        padding-bottom: 10px;
-        
-        // typography
-        font-size: 0;
-        text-align: center;
-    }
+  // visual
+  background-color: $white;
 
-    @include atDesktop {
-        // box model
-        padding: 80px;
+  // @include atTabletsPortrait {
+  //   // box model
+  //   padding: 60px 25px;
+  //   padding-bottom: 10px;
 
-        // visual
-        background-image: url("./img/services-bg.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: right bottom;
-    }
+  //   // typography
+  //   font-size: 0;
+  //   text-align: center;
+  // }
 
-    &__desktop {
-        // positioning
-        position: relative;
+  // @include atDesktop {
+  //   // box model
+  //   padding: 80px;
 
-        // box model
-        display: none;
+  //   // visual
+  //   background-image: url("./img/services-bg.jpg");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: right bottom;
+  // }
+}
 
-        @include atDesktop {
-            // box model
-            display: block;
-            padding-bottom: 200px;
 
-            // typography
-            text-align: left;
-        }
-        
-        @include atDesktopLarge {
-            // box model
-            padding-bottom: 260px;
+.services__content {
+  // positioning
+  position: relative;
 
-            // typography
-            text-align: left;
-        }
+  // box model
 
-        @media (min-width: 1800px) {
-            // box model
-            padding-bottom: 80px;
-        }
-    }
+  // @include atDesktop {
+  //   // box model
+  //   display: block;
+  //   padding-bottom: 200px;
 
-    &__quote {
-        // positioning
-        position: absolute;
-        right: 0;
-        bottom: 0;
+  //   // typography
+  //   text-align: left;
+  // }
 
-        // box model
-        width: 550px;
-        padding-top: 30px;
+  // @include atDesktopLarge {
+  //   // box model
+  //   padding-bottom: 260px;
 
-        // typography
-        text-align: left;
-    }
+  //   // typography
+  //   text-align: left;
+  // }
+
+  // @media (min-width: 1800px) {
+  //   // box model
+  //   padding-bottom: 80px;
+  // }
+}
+
+.services__quote {
+  // positioning
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  // box model
+  width: 550px;
+  padding-top: 30px;
+
+  // typography
+  text-align: left;
 }

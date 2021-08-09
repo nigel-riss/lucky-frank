@@ -4,11 +4,11 @@
   z-index: 2;
 
   // box model
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
 
   // visual
   background-color: $chocolate;
-  // background-image: url("./img/bg-m.jpg");
+  background-image: url("./img/bg-m.jpg");
   background-position: center center;
   background-size: cover;
   box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
@@ -47,14 +47,19 @@
   // }
 }
 
-.hero__header {
+.hero__caption {
   // positioning
   position: relative;
 
   // box model
-  padding-top: 60px;
-  padding-bottom: 20px;
-  margin-bottom: 40px;
+  margin: 3rem 0;
+  // margin-top: 2rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1rem;
+
+  // border
+  border-left: 2px solid rgba($white, 0.75);
 
   // @include atTabletsPortrait {
   //   // box model
@@ -71,39 +76,33 @@
   //   padding-top: 110px;
   // }
 
-  &::after {
-    content: "";
+  // &::after {
+  //   content: "";
 
-    // positioning
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  //   // positioning
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
 
-    // box model
-    height: 2px;
-    width: 50px;
+  //   // box model
+  //   height: 2px;
+  //   width: 50%;
 
-    // visual
-    background-color: $brown;
-
-    // @include atTabletsPortrait {
-    //   // positioning
-    //   bottom: -10px;
-    // }
-  }
+  //   // visual
+  //   background-color: $brown;
+  // }
 }
 
 .hero__welcome {
   // box model
-  margin: 0;
-  padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 0.25rem;
 
   // typography
   color: $brown;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-family: $titleFont;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 
   // @include atTabletsPortrait {
@@ -119,15 +118,13 @@
 
 .hero__title {
   // box model
-  margin: 0;
-  margin-left: -2px;
-  padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 0.5rem;
 
   // typography
   color: $white;
   font-family: $titleFont;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  line-height: 1;
   text-transform: uppercase;
 
   // @include atTabletsPortrait {
@@ -156,13 +153,13 @@
 
 .hero__subtitle {
   // box model
-  margin: 0;
-  padding: 0;
+  padding-right: 2rem;
 
   // typography
   color: $white;
-  font-family: $mainFont;
-  letter-spacing: 1px;
+  font-family: $titleFont;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
   line-height: 1.5;
   text-transform: uppercase;
 
@@ -172,70 +169,24 @@
   // }
 }
 
-.hero__booking {
-  a {
-    // box model
-    display: block;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    max-width: 300px;
-
-    // typography
-    color: $white;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    // visual
-    border: 2px solid $brown;
-    transition: all 0.3s ease-out;
-
-    // @include atTabletsPortrait {
-    //   // box model
-    //   width: 200px;
-    // }
-
-    &:hover {
-      // visual
-      background-color: $brown;
-    }
-  }
+.hero__cta {
+  // box model
+  margin-bottom: 1rem;
 }
 
-.hero__app {
+.hero__apps {
   // box model
-  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
 
   // typography
   font-size: 0;
-
-  a {
-    // box model
-    display: block;
-    padding: 10px 0;
-    max-width: 300px;
-
-    // @include atTabletsPortrait {
-    //   // box model
-    //   padding-right: 20px;
-    //   width: 220px;
-    // }
-
-    // @include atDesktop {
-    //   // box model
-    //   display: inline-block;
-    //   vertical-align: top;
-    // }
-  }
-
-  img {
-    // box model
-    width: 100%;
-  }
 }
 
 .hero__quote {
   // box model
+  display: none;
   margin-top: -10px;
   margin-bottom: -25px;
   padding-left: 20px;

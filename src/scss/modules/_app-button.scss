@@ -1,0 +1,26 @@
+.app-button {
+  // box model
+  display: block;
+  flex-basis: calc(50% - 0.5rem);
+
+  // @include atTabletsPortrait {
+  //   // box model
+  //   padding-right: 20px;
+  //   width: 220px;
+  // }
+
+  // @include atDesktop {
+  //   // box model
+  //   display: inline-block;
+  //   vertical-align: top;
+  // }
+}
+
+.app-button svg,
+.app-button img {
+  // box model
+  width: 100%;
+
+  // visual
+  fill: $white;
+}

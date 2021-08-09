@@ -1,119 +1,89 @@
 .about {
-    // positioning
-    position: relative;
-    z-index: 1;
+  // positioning
+  position: relative;
+  z-index: 1;
 
-    // visual
-    background-image: url("./img/about-bg-m.jpg");
-    background-position: center center;
-    background-size: cover;
-    box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
-    
-    @include atTabletsPortrait {
-        // box model
-        padding: 80px;
-        
-        // visual
-        background-image: url("./img/about-bg-t.jpg");
-    }
-    
-    @include atDesktop {
-        // box model
-        padding-right: 56%;
-        min-height: 680px;
+  // visual
+  background-color: $white;
+  // background-image: url("./img/about-bg-m.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
 
-        // visual
-        background-image: url("./img/about-bg.jpg");
-    }
+  // @include atTabletsPortrait {
+  //   // box model
+  //   padding: 80px;
 
-    &__video {
-        // box model
-        width: 100%;
-        height: 56vw;
-        max-width: 900px;
-        max-height: 520px;
-        padding: 6px;
-    
-        // visual
-        border: 2px solid $brown;
+  //   // visual
+  //   background-image: url("./img/about-bg-t.jpg");
+  // }
 
-        @include atDesktop {
-            // positioning
-            position: absolute;
-            right: 80px;
-            top: 80px;
+  // @include atDesktop {
+  //   // box model
+  //   padding-right: 56%;
+  //   min-height: 680px;
 
-            // box model
-            display: block;
-            width: 44%;
-            // max-width: 500px;
-            // width: 35%;
-        }
+  //   // visual
+  //   background-image: url("./img/about-bg.jpg");
+  // }
+}
 
-        iframe {
-            // box model
-            height: 100%;
-            width: 100%;
-        }
-    }
+.about__video {
+  // box model
+  width: 100%;
+  height: 56vw;
+  max-width: 900px;
+  max-height: 520px;
+  padding: 6px;
 
-    &__deco {
-        // box model
-        display: none;
-        
-        @include atTabletsLandscape {
-            // positioning
-            position: absolute;
-            bottom: 60px;
-            right: 60px;
+  // visual
+  border: 2px solid $brown;
 
-            // box model
-            display: block;
-            max-width: 500px;
-            width: 35%;
+  // @include atDesktop {
+  //   // positioning
+  //   position: absolute;
+  //   right: 80px;
+  //   top: 80px;
 
-            img {
-                // box model
-                width: 100%;
-            }
-        }
-    }
+  //   // box model
+  //   display: block;
+  //   width: 44%;
+  //   // max-width: 500px;
+  //   // width: 35%;
+  // }
 
-    &__more {
-        // box model
-        padding-top: 20px;
+  iframe {
+    // box model
+    height: 100%;
+    width: 100%;
+  }
+}
 
-        // typography
-        text-align: left;
+.about__deco {
+  // box model
+  display: none;
 
-        a {
-            // box model
-            display: inline-block;
-            vertical-align: top;
-            padding: 10px 20px;
+  // @include atTabletsLandscape {
+  //   // positioning
+  //   position: absolute;
+  //   bottom: 60px;
+  //   right: 60px;
 
-            // typography
-            color: $brown;
-            font-weight: 600;
-            text-decoration: none;
-            text-transform: uppercase;
+  //   // box model
+  //   display: block;
+  //   max-width: 500px;
+  //   width: 35%;
 
-            // visual
-            border: 2px solid $brown;
-            transition: all 0.3s ease-out;
+  //   img {
+  //     // box model
+  //     width: 100%;
+  //   }
+  // }
+}
 
-            &:hover {
-                // typography
-                color: $white;
-                
-                // visual
-                background-color: $brown;
-            }
-        }
-    }
-
-    p {
-        // typography
-        line-height: 1.5;
-    }
+.about__more {
+  // box model
+  margin-top: 2rem;
+  padding: 0 1rem;
 }

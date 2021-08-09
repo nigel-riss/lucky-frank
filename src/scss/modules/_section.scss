@@ -1,138 +1,90 @@
 .section {
+  // box model
+  padding: 3rem 1rem;
+}
+
+.section__header {
+  // positioning
+  position: relative;
+
+  // box model
+  margin-bottom: 2rem;
+  padding-bottom: 0.125rem;
+  padding-left: 1rem;
+
+  // border
+  border-left: 2px solid $brown;
+
+  // &--inversed {
+  //   .section__suptitle {
+  //     // typography
+  //     color: $white;
+  //   }
+
+  //   .section__subtitle {
+  //     // typography
+  //     color: $white;
+  //   }
+  // }
+}
+
+.section__content {
+  // box model
+  padding: 0 1rem;
+
+  ul {
     // box model
-    padding: 60px 25px;
+    padding: 0;
 
-    &__header {
-        // positioning
-        position: relative;
+    // visual
+    list-style: none;
+  }
 
-        // box model
-        margin-bottom: 40px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        
-        &::after {
-            content: "";
-            
-            // positioning
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            
-            // box model
-            height: 2px;
-            width: 50px;
-            
-            // visual
-            background-color: $brown;
-        }
-        
-        &--inversed {
-            .section__suptitle {
-                // typography
-                color: $white;
-            }
-            
-            .section__subtitle {
-                // typography
-                color: $white;
-            }
-        }
+  p, li {
+    // box model
+    margin: 1rem 0;
+
+    // typography
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  li {
+    // box model
+    padding: 0;
+
+    &::before {
+      content: "— ";
+
+      // typography
+      color: $brown;
     }
-    
-    &__suptitle {
-        // box model
-        margin: 0;
-        padding: 0;
-        padding-bottom: 10px;
-        
-        // typography
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+  }
 
-        @include atTabletsPortrait {
-            // box model
-            padding-bottom: 40px;
+  &--wrapper {
+    // box model
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
 
-            // typography
-            font-size: 1.25rem;
-        }
-    }
-    
-    &__title {
-        // box model
-        margin: 0;
-        padding: 0;
-        padding-bottom: 30px;
-        
-        // typography
-        color: $brown;
-        font-weight: 400;
-        text-transform: uppercase;
+.section__more {
+  // box model
+  padding-top: 20px;
 
-        @include atTabletsPortrait {
-            // box model
-            padding-bottom: 10px;
+  // @include atTabletsPortrait {
+  //   // box model
+  //   padding-top: 40px;
+  // }
 
-            // typography
-            font-size: 2rem;
-        }
-    }
-    
-    &__subtitle {
-        // box model
-        margin: 0;
-        padding: 0;
-        
-        // typography
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+  a {
+    // box model
+    display: inline-block;
 
-        @include atTabletsPortrait {
-            // box model
-            padding-bottom: 20px;
-        }
-    }
-    
-    &__content {
-        &--wrapper {
-            // box model
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-    }
-
-    &__text {
-        // typography
-        line-height: 1.75;
-
-        @include atTabletsLandscape {
-            // typography
-            font-size: 1.125rem;
-        }
-    }
-
-    &__more {
-        // box model
-        padding-top: 20px;
-
-        @include atTabletsPortrait {
-            // box model
-            padding-top: 40px;
-        }
-
-        a {
-            // box model
-            display: inline-block;
-
-            // typography
-            color: $brown;
-            font-size: 1rem;
-            font-weight: 700;
-            // letter-spacing: 1px;
-        }
-    }
+    // typography
+    color: $brown;
+    font-size: 1rem;
+    font-weight: 700;
+    // letter-spacing: 1px;
+  }
 }

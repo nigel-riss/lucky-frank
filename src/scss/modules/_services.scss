@@ -57,15 +57,18 @@
 }
 
 .services__quote {
-  // positioning
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
   // box model
-  width: 550px;
-  padding-top: 30px;
+  display: none;
 
-  // typography
-  text-align: left;
+  // // positioning
+  // position: absolute;
+  // right: 0;
+  // bottom: 0;
+
+  // // box model
+  // width: 550px;
+  // padding-top: 30px;
+
+  // // typography
+  // text-align: left;
 }

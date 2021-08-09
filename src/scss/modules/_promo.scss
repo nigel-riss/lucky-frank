@@ -1,209 +1,178 @@
 .promo {
+  // positioning
+  position: relative;
+
+  // box model
+  // padding: 25px;
+  // margin: 25px 25px;
+  margin-bottom: 2rem;
+
+  // typography
+  text-align: center;
+
+  // @include atTabletsLandscape {
+  //   // box model
+  //   height: 380px;
+  //   padding-left: 220px;
+  // }
+
+  // @include atDesktopLarge {
+  //   // box model
+  //   width: 46%;
+  //   padding-left: 160px;
+  // }
+}
+
+
+.promo__image {
+  // box model
+  display: none;
+
+  // @include atTabletsLandscape {
+  //   // positioning
+  //   position: absolute;
+  //   left: 0;
+  //   top: -15px;
+  //   z-index: 3;
+
+  //   // box model
+  //   display: block;
+  //   height: 360px;
+  //   width: 360px;
+
+  //   // visual
+  //   box-shadow: 0 0 24px rgba(#333333, 0.75);
+  // }
+
+  // @include atDesktopLarge {
+  //   // positioning
+  //   top: 35px;
+
+  //   // box model
+  //   height: 260px;
+  //   width: 260px;
+  // }
+
+}
+
+.promo img {
+  // box model
+  height: 100%;
+  width: 100%;
+}
+
+.promo__content {
+  // positioning
+  position: relative;
+  z-index: 2;
+
+  // box model
+  padding: 1.5rem;
+
+  // visual
+  border: 2px solid $brown;
+
+  // @include atTabletsLandscape {
+  //   // box model
+  //   height: 330px;
+  //   padding-left: 160px;
+  //   display: flex;
+  //   justify-content: center;
+  //   flex-direction: column;
+  // }
+
+  // @include atDesktopLarge {
+  //   // positioning
+  //   z-index: 1;
+
+  //   // box model
+  //   padding-left: 120px;
+  // }
+}
+
+.promo__header {
+  // positioning
+  position: relative;
+
+  // box model
+  margin-bottom: 3rem;
+
+  &::after {
+    content: "";
+
     // positioning
-    position: relative;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
 
     // box model
-    // padding: 25px;
-    margin: 25px 25px;
-    
+    height: 2px;
+    width: 4rem;
+
+    // visual
+    background-color: $brown;
+  }
+}
+
+.promo__suptitle {
+  // box model
+  margin-bottom: 1rem;
+
+  // typography
+  color: $white;
+  font-family: $titleFont;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  &::before {
+    content: "X ";
+
     // typography
-    text-align: center;
+    font-size: 0.75em;
+  }
 
-    @include atTabletsLandscape {
-        // box model
-        height: 380px;
-        padding-left: 220px;
-    }
+  &::after {
+    content: " X";
 
-    @include atDesktopLarge {
-        // box model
-        width: 46%;
-        padding-left: 160px;
-    }
-    
-    &__image {
-        // box model
-        display: none;
+    // typography
+    font-size: 0.75em;
+  }
+}
 
-        @include atTabletsLandscape {
-            // positioning
-            position: absolute;
-            left: 0;
-            top: -15px;
-            z-index: 3;
+.promo__title {
+  // box model
+  margin-bottom: 0.25rem;
 
-            // box model
-            display: block;
-            height: 360px;
-            width: 360px;
+  // typography
+  color: $brown;
+  font-family: $titleFont;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
 
-            // visual
-            box-shadow: 0 0 24px rgba(#333333, 0.75);
-        }
+.promo__subtitle {
+  // typography
+  color: $white;
+  font-family: $titleFont;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
 
-        @include atDesktopLarge {
-            // positioning
-            top: 35px;
+.promo__text {
+  // typography
+  color: $white;
+  font-size: 0.85rem;
+  line-height: 1.75;
+}
 
-            // box model
-            height: 260px;
-            width: 260px;
-        }
-
-        img {
-            // box model
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    &__content {
-        // positioning
-        position: relative;
-        z-index: 2;
-
-        // box model
-        padding: 25px;
-
-        // visual
-        border: 2px solid $brown;
-
-        @include atTabletsLandscape {
-            // box model
-            height: 330px;
-            padding-left: 160px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        @include atDesktopLarge {
-            // positioning
-            z-index: 1;
-
-            // box model
-            padding-left: 120px;
-        }
-    }
-
-    &__header {
-        // positioning
-        position: relative;
-
-        // box model
-        margin-bottom: 35px;
-
-        &::after {
-            content: "";
-
-            // positioning
-            position: absolute;
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-
-            // box model
-            height: 2px;
-            width: 60px;
-
-            // visual
-            background-color: $brown;
-        }
-    }
-
-    &__suptitle {
-        // box model
-        margin-bottom: 10px;
-
-        // typography
-        color: $white;
-        letter-spacing: 1px;
-        font-size: 0.875rem;
-        font-weight: 700;
-        text-transform: uppercase;
-
-        &::before {
-            content: "X ";
-
-            // typography
-            font-size: 0.75rem;
-        }
-
-        &::after {
-            content: " X";
-
-            // typography
-            font-size: 0.75rem;
-        }
-    }
-
-    &__title {
-        // box model
-        margin-top: 0;
-
-        // typography
-        color: $brown;
-        font-size: 1.25rem;
-        font-weight: 400;
-        text-transform: uppercase;
-    }
-
-    &__subtitle {
-        // typography
-        color: $white;
-        letter-spacing: 2px;
-        font-size: 0.875rem;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    &__text {
-        // box model
-        margin-bottom: 20px;
-
-        // typography
-        color: $white;
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-
-    &__more {
-        // typography
-        text-align: center;
-
-        @include atTabletsLandscape {
-            // positioning
-            position: absolute;
-            bottom: 25px;
-
-            // box model
-            width: calc(100% - 150px);
-            display: block;
-        }
-
-        a {
-            // box model
-            display: inline-block;
-            padding: 10px 20px;
-
-            // typography
-            color: $brown;
-            font-size: 0.875rem;
-            font-weight: 700;
-            text-decoration: none;
-            text-transform: uppercase;
-            
-            // visual
-            border: 1px solid $brown;
-            transition: all 0.25s ease-out;
-
-            &:hover {
-                // typography
-                color: $white;
-
-                // visual
-                background-color: $brown;
-            }
-        }
-    }
+.promo__more {
+  // box model
+  display: none;
 }

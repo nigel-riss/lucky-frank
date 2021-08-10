@@ -17,27 +17,27 @@
   backdrop-filter: blur(4px);
   transition: all 0.25s ease-in-out;
 
-  @include atDesktopS {
-    // positioning
-    position: absolute;
-    left: auto;
-    right: 50px;
-    // bottom: 0px;
-    top: 133px;
-    // top: 95px;
+  // @include atDesktopS {
+  //   // positioning
+  //   position: absolute;
+  //   left: auto;
+  //   right: 50px;
+  //   // bottom: 0px;
+  //   top: 133px;
+  //   // top: 95px;
 
-    // box model
-    height: auto;
-    width: auto;
-    padding: 0;
-    // border: 1px solid red;
+  //   // box model
+  //   height: auto;
+  //   width: auto;
+  //   padding: 0;
+  //   // border: 1px solid red;
 
-    // visual
-    background-color: transparent;
-    box-shadow: none;
-    visibility: visible;
-    opacity: 1;
-  }
+  //   // visual
+  //   background-color: transparent;
+  //   box-shadow: none;
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
 
 }
 
@@ -55,10 +55,10 @@
   margin: 0 auto;
   padding-bottom: 2rem;
 
-  @include atDesktopS {
-    // box model
-    display: none;
-  }
+  // @include atDesktopS {
+  //   // box model
+  //   display: none;
+  // }
 }
 
 .main-nav--shown {

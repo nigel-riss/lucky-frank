@@ -1,170 +1,171 @@
 .feedback {
+  // box model
+  padding: 60px 25px;
+
+  // visual
+  background-color: $dark;
+
+  // @include atDesktop {
+  //   // box model
+  //   padding: 80px;
+
+  //   // visual
+  //   background-image: linear-gradient(to bottom, #989898, #ffffff);
+  // }
+}
+
+
+.feedback__header {
+  // positioning
+  position: relative;
+
+  // box model
+  padding: 42px;
+  margin-bottom: 20px;
+  height: calc(100vw - 50px);
+
+  // visual
+  background-color: $dark;
+  background-image: url("./img/feedback.jpg");
+  background-size: cover;
+
+  // @include atTabletsPortrait {
+  //   // box model
+  //   height: calc(50vw - 50px);
+  //   // visual
+  //   background-image: url("./img/feedback2.jpg");
+  // }
+
+  // @include atDesktop {
+  //   // box model
+  //   display: inline-block;
+  //   vertical-align: top;
+  //   height: calc(40vw - 85px);
+  //   width: calc(40vw - 85px);
+  //   margin-right: 20px;
+
+  //   // visual
+  //   background-image: url("./img/feedback.jpg");
+  // }
+
+  &::before {
+    content: "";
+
+    // positioning
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+
     // box model
-    padding: 60px 25px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
 
     // visual
-    background-color: $dark;
+    border: 2px solid $white;
+  }
+}
 
-    @include atDesktop {
-        // box model
-        padding: 80px;
-        
-        // visual
-        background-image: linear-gradient(to bottom, #989898, #ffffff);
-    }
+.feedback__suptitle {
+  // box model
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
 
-    &__header {
-        // positioning
-        position: relative;
+  // typography
+  color: $white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
-        // box model
-        padding: 42px;
-        margin-bottom: 20px;
-        height: calc(100vw - 50px);
+  // @include atTabletsPortrait {
+  //   // box model
+  //   padding-bottom: 40px;
 
-        // visual
-        background-color: $dark;
-        background-image: url("./img/feedback.jpg");
-        background-size: cover;
-        
-        @include atTabletsPortrait {
-            // box model
-            height: calc(50vw - 50px);
-            // visual
-            background-image: url("./img/feedback2.jpg");
-        }
-        
-        @include atDesktop {
-            // box model
-            display: inline-block;
-            vertical-align: top;
-            height: calc(40vw - 85px);
-            width: calc(40vw - 85px);
-            margin-right: 20px;
+  //   // typography
+  //   font-size: 1.125rem;
+  //   letter-spacing: 2px;
+  // }
+}
 
-            // visual
-            background-image: url("./img/feedback.jpg");
-        }
+.feedback__title {
+  // box model
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
 
-        &::before {
-            content: "";
+  // typography
+  color: $white;
+  font-weight: 400;
+  text-transform: uppercase;
 
-            // positioning
-            position: absolute;
-            left: 10px;
-            top: 10px;
-            z-index: 2;
-    
-            // box model
-            width: calc(100% - 20px);
-            height: calc(100% - 20px);
-    
-            // visual
-            border: 2px solid $white;
-        }
-    }
+  // @include atTabletsPortrait {
+  //   // box model
+  //   padding-bottom: 10px;
 
-    &__suptitle {
-        // box model
-        margin: 0;
-        padding: 0;
-        padding-bottom: 10px;
-        
-        // typography
-        color: $white;
-        font-weight: 700;
-        font-size: 0.9rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+  //   // typography
+  //   font-size: 2rem;
+  //   letter-spacing: 2px;
+  // }
+}
 
-        @include atTabletsPortrait {
-            // box model
-            padding-bottom: 40px;
+.feedback__subtitle {
+  // positioning
+  position: relative;
 
-            // typography
-            font-size: 1.125rem;
-            letter-spacing: 2px;
-        }
-    }
-    
-    &__title {
-        // box model
-        margin: 0;
-        padding: 0;
-        padding-bottom: 30px;
-        
-        // typography
-        color: $white;
-        font-weight: 400;
-        text-transform: uppercase;
+  // box model
+  margin: 0;
+  padding: 0;
 
-        @include atTabletsPortrait {
-            // box model
-            padding-bottom: 10px;
+  // typography
+  color: $white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
-            // typography
-            font-size: 2rem;
-            letter-spacing: 2px;
-        }
-    }
-    
-    &__subtitle {
-        // positioning
-        position: relative;
+  // @include atTabletsPortrait {
+  //   // box model
+  //   padding-bottom: 20px;
 
-        // box model
-        margin: 0;
-        padding: 0;
-        
-        // typography
-        color: $white;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+  //   // typography
+  //   font-size: 1.125rem;
+  //   letter-spacing: 2px;
+  // }
 
-        @include atTabletsPortrait {
-            // box model
-            padding-bottom: 20px;
+  &::after {
+    content: "";
 
-            // typography
-            font-size: 1.125rem;
-            letter-spacing: 2px;
-        }
+    // positioning
+    position: absolute;
+    bottom: -20px;
+    left: 0;
 
-        &::after {
-            content: "";
-            
-            // positioning
-            position: absolute;
-            bottom: -20px;
-            left: 0;
-            
-            // box model
-            height: 2px;
-            width: 50px;
-            
-            // visual
-            background-color: $white;
-        }
-    }
+    // box model
+    height: 2px;
+    width: 50px;
 
-    &__more {
-        // positioning
-        position: absolute;
-        bottom: 40px;
-        z-index: 3;
-    }
-    
-    &__content {
-        // box model
-        margin-right: -20px;
+    // visual
+    background-color: $white;
+  }
+}
 
-        @include atDesktop {
-            // box model
-            display: inline-block;
-            vertical-align: top;
-            width: calc(60vw - 110px);
-        }
-    }
+.feedback__more {
+  // positioning
+  position: absolute;
+  bottom: 40px;
+  z-index: 3;
+}
+
+.feedback__content {
+  // box model
+  margin-right: -20px;
+
+  // @include atDesktop {
+  //   // box model
+  //   display: inline-block;
+  //   vertical-align: top;
+  //   width: calc(60vw - 110px);
+  // }
 }

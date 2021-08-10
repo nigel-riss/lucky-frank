@@ -14,7 +14,7 @@
 
 
 // Modules
-//      page header
+//----- Page Header
 @import 'modules/header';
 @import 'modules/contact';
 @import 'modules/logo';
@@ -23,12 +23,12 @@
 @import 'modules/main-nav';
 @import 'modules/main-menu';
 
-//      Hero
+//----- Hero
 @import 'modules/hero';
-// @import 'modules/quote';
+@import 'modules/quote';
 // @import 'modules/inner-hero';
 
-// //      section
+//----- Sections
 @import 'modules/section';
 @import 'modules/about';
 @import 'modules/feature';
@@ -40,32 +40,26 @@
 @import 'modules/price-table';
 @import 'modules/partners';
 @import 'modules/partner';
+@import 'modules/feedback';
 
 // @import 'modules/inner-section';
 // @import 'modules/inner-about';
 // @import 'modules/about-video';
-// @import 'modules/statistics';
-// @import 'modules/stat';
 // @import 'modules/advices';
-// @import 'modules/feedback';
-// @import 'modules/team';
 // @import 'modules/location';
 // @import 'modules/map-label';
 // @import 'modules/gallery';
 
-// //      footer
+//----- Footer
 @import 'modules/footer';
 @import 'modules/footer-logo';
 @import 'modules/footer-menu';
-// @import 'modules/footer-info';
 
-//      Elements
+//----- Elements
 @import 'modules/cta-button';
 @import 'modules/app-button';
 @import 'modules/button';
 @import 'modules/title';
 @import 'modules/subtitle';
 @import 'modules/section-text';
-// @import 'modules/member';
-// @import 'modules/join';
 // @import 'modules/social';

@@ -132,9 +132,10 @@ const copyAssets = (cb) => {
       base: `src`,
     })
     .pipe(gulp.dest(dirs.public))
-    .pipe(syncServer.stream({
-      once: true,
-    }));
+    .pipe(syncServer.stream());
+    // .pipe(syncServer.stream({
+    //   once: true,
+    // }));
 
   cb();
 };

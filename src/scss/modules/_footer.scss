@@ -1,6 +1,6 @@
 .footer {
   // box model
-  padding: 2rem 1rem;
+  padding: 1rem;
   padding-bottom: 0;
 
   // visual
@@ -19,7 +19,8 @@
   position: relative;
 
   // box model
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
+  padding-bottom: 0.125rem;
 
   // border
   border: 2px solid $brown;
@@ -43,7 +44,7 @@
 
 .footer__header {
   // box model
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .footer__cards {
@@ -54,16 +55,24 @@
 
 .footer__block {
   // box model
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
 }
 
 .footer__title {
+  // box model
+  margin-bottom: 1rem;
 
+  // typography
+  color: $brown;
+  font-family: $titleFont;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .footer__quote {
   // box model
-  // display: none;
+  display: none;
 
   // @media (min-width: 1600px) {
   //   // positioning

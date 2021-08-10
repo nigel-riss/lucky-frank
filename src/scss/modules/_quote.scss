@@ -1,138 +1,127 @@
 .quote {
-    // positioning
-    position: relative;
+  // positioning
+  position: relative;
 
+  // box model
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px;
+
+  // @include atTabletsPortrait {
+  //   // box model
+  //   padding-bottom: 100px;
+  // }
+
+  // @include atTabletsLandscape {
+  //   // box model
+  //   padding-bottom: 40px;
+  // }
+}
+
+
+.quote__deco {
+  // positioning
+  position: absolute;
+  top: -30px;
+  left: 0;
+
+  // box model
+  width: 40px;
+  height: 16px;
+
+  // visual
+  background-image: url('./img/mustache.svg');
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  // @include atTabletsLandscape {
+  //   // positioning
+  //   top: -38px;
+
+  //   // box model
+  //   width: 50px;
+  //   height: 20px;
+  // }
+}
+
+.quote__title {
+  // box model
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+
+  // typography
+  font-family: $titleFont;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+
+  // @include atDesktopLarge {
+  //   // typography
+  //   font-size: 2.25rem;
+  // }
+
+  em {
+    // typography
+    color: $brown;
+    font-style: normal;
+  }
+}
+
+.quote__text {
+  // box model
+  margin: 0;
+  padding: 0;
+
+  // typography
+  font-style: italic;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  // @include atTabletsPortrait {
+  //   // typography
+  //   font-size: 1.125rem;
+  // }
+
+  // @include atTabletsLandscape {
+  //   // typography
+  //   font-size: 1.25rem;
+  // }
+
+  // @include atDesktopLarge {
+  //   // typography
+  //   font-size: 1.5rem;
+  // }
+}
+
+.quote__signature {
+  // positioning
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  // box model
+  width: 140px;
+
+  // @include atTabletsLandscape {
+  //   // positioning
+  //   bottom: -40px;
+
+  //   // box model
+  //   width: 200px;
+  // }
+
+  // @include atDesktopLarge {
+  //   // positioning
+  //   bottom: auto;
+  //   top: -140px;
+  //   // bottom: -60px;
+
+  //   // box model
+  //   width: 250px;
+  // }
+
+  img {
     // box model
-    margin: 0;
-    padding: 0;
-    padding-bottom: 80px;
-
-    @include atTabletsPortrait {
-        // box model
-        padding-bottom: 100px;
-    }
-
-    @include atTabletsLandscape {
-        // box model
-        padding-bottom: 40px;
-    }
-
-    &__deco {
-        // positioning
-        position: absolute;
-        top: -30px;
-        left: 0;
-
-        // box model
-        width: 40px;
-        height: 16px;
-        
-        // visual
-        background-image: url('./img/mustache.svg');
-        background-repeat: no-repeat;
-        background-position: center left;
-        
-        @include atTabletsLandscape {
-            // positioning
-            top: -38px;
-
-            // box model
-            width: 50px;
-            height: 20px;
-        }
-    }
-
-    &__title {
-        // box model
-        margin: 0;
-        padding: 0;
-        padding-bottom: 20px;
-
-        // typography
-        font-family: $titleFont;
-        font-size: 1.75rem;
-        text-transform: uppercase;
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 2.25rem;
-        }
-
-        em {
-            // typography
-            color: $brown;
-            font-style: normal;
-        }
-    }
-
-    &__text {
-        // box model
-        margin: 0;
-        padding: 0;
-
-        // typography
-        font-style: italic;
-        line-height: 1.5;
-        text-transform: uppercase;
-
-        @include atTabletsPortrait {
-            // typography
-            font-size: 1.125rem;
-        }
-
-        @include atTabletsLandscape {
-            // typography
-            font-size: 1.25rem;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 1.5rem;
-        }
-    }
-
-    &__signature {
-        // positioning
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        // box model
-        width: 140px;
-
-        @include atTabletsLandscape {
-            // positioning
-            bottom: -40px;
-
-            // box model
-            width: 200px;
-        }
-
-        @include atDesktopLarge {
-            // positioning
-            bottom: auto;
-            top: -140px;
-            // bottom: -60px;
-
-            // box model
-            width: 250px;
-        }
-
-        img {
-            // box model
-            width: 100%;
-        }
-    }
-
-    &--inversed {
-        .quote__title {
-            // typography
-            color: $white;
-        }
-
-        .quote__text {
-            // typography
-            color: $white;
-        }
-    }
+    width: 100%;
+  }
 }

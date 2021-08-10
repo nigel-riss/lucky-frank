@@ -37,7 +37,7 @@
 @import 'modules/promos';
 @import 'modules/promo';
 @import 'modules/prices';
-@import 'modules/prices-table';
+@import 'modules/price-table';
 @import 'modules/partners';
 @import 'modules/partner';
 
@@ -54,9 +54,9 @@
 // @import 'modules/gallery';
 
 // //      footer
-// @import 'modules/page-footer';
-// @import 'modules/footer-logo';
-// @import 'modules/footer-block';
+@import 'modules/footer';
+@import 'modules/footer-logo';
+@import 'modules/footer-menu';
 // @import 'modules/footer-info';
 
 //      Elements

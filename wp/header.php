@@ -162,7 +162,7 @@
         <!-- Main Navigation -->
         <nav class="main-nav">
             <div class="main-nav__logo">
-                <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo-white.svg" alt="" />
+                <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo.svg" alt="" />
             </div>
 
             <ul class="main-menu">
@@ -181,7 +181,7 @@
     <section class="inner-hero">
         <div class="inner-logo">
             <a href="<?php echo esc_url(home_url("/")); ?>">
-                <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo-white.svg" alt="Lucky Frank Barbershop logo" />
+                <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo.svg" alt="Lucky Frank Barbershop logo" />
             </a>
         </div>
         <header class="inner-hero__header">

@@ -1,15 +1,19 @@
 .partners {
   // box model
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  // align-items: center;
-  padding: 3rem 1rem;
-  padding-top: 4rem;
+  display: none;
 
-  // visual
-  background-color: $white;
-  // background-image: linear-gradient(to bottom, transparent, rgba($white, 0.5), $white);
+  @include atTablet {
+    // box model
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem 1rem;
+    padding-top: 4rem;
+    // visual
+
+    background-color: $white;
+    // background-image: linear-gradient(to bottom, transparent, rgba($white, 0.5), $white);
+  }
 
   @include atDesktopS {
     // box model

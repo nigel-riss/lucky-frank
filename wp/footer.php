@@ -2,7 +2,7 @@
         <div class="page-footer__wrapper">
             <div class="footer-logo">
                 <div class="footer-logo__image">
-                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo-white.svg" alt="" />
+                    <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo.svg" alt="" />
                 </div>
                 <h2 class="footer-logo__title">Lucky Frank
                     <br>

@@ -1,74 +1,61 @@
 .footer-logo {
-    // box model
-    width: 100%;
-    
-    @include atTabletsLandscape {
-        // box model
-        display: inline-block;
-        vertical-align: top;
-        width: 250px;
-    }
+  // box model
+  margin-bottom: 2rem;
 
-    @include atDesktop {
-        // box model
-        margin-right: 35px;
-        // padding-top: 20px;
-    }
+  // typography
+  text-align: center;
 
-    &__image {
-        // positioning
-        position: relative;
-        left: -5px;
-        z-index: 2;
+  // @include atTabletsLandscape {
+  //   // box model
+  //   display: inline-block;
+  //   vertical-align: top;
+  //   width: 250px;
+  // }
 
-        // box model
-        max-width: 250px;
-        margin: 0 auto;
+  // @include atDesktop {
+  //   // box model
+  //   margin-right: 35px;
+  //   // padding-top: 20px;
+  // }
+}
 
-        @include atTabletsLandscape {
-            // positioning
-            left: -15px;
-        }
-    
-        img {
-            // box model
-            width: 100%;
-        }
-    }
 
-    &__title {
-        // typography
-        color: $brown;
-        font-family: $titleFont;
-        font-size: 2.5rem;
-        line-height: 0.5;
-        text-align: center;
-        text-transform: uppercase;
+.footer-logo__image {
+  // box model
+  width: 10rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 
-        @include atTabletsLandscape {
-            // typography
-            text-align: left;
-        }
+  // @include atTabletsLandscape {
+  //   // positioning
+  //   left: -15px;
+  // }
+}
 
-        small {
-            // typography
-            font-size: 0.9rem;
-        }
-    }
+.footer-logo__image svg, 
+.footer-logo__image img {
+  // box model
+  width: 100%;
+}
 
-    &__cards {
-        // box model
-        width: 250px;
-        margin: 0 auto;
+.footer-logo__title {
+  // typography
+  color: $brown;
+  font-family: $titleFont;
+  font-size: 2.5rem;
+  line-height: 1;
+  text-transform: uppercase;
 
-        @include atTabletsLandscape {
-            // box model
-            padding-right: 15px;
-        }
+  // @include atTabletsLandscape {
+  //   // typography
+  //   text-align: left;
+  // }
+}
 
-        img {
-            // box model
-            width: 100%;
-        }
-    }
+.footer-logo__subtitle {
+  // typography
+  font-family: $titleFont;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }

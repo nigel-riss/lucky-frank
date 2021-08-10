@@ -1,74 +1,44 @@
-footer.page-footer
-  .page-footer__wrapper
-    .footer-logo
-      .footer-logo__image
-        img(src="/img/logo-white.svg", alt="")
-      h2.footer-logo__title Lucky Frank<br><small>территория настоящих мужчин</small>
-      .footer-logo__cards
+footer.footer
+  .footer__wrapper
+    .footer__header
+      .footer-logo
+        .footer-logo__image
+          img(src="/img/logo-white.svg", alt="")
+        h2.footer-logo__title Барбершоп Lucky Frank
+        p.footer-logo__subtitle территория настоящих мужчин
+      .footer__cards
         img(src="/img/cards.png", alt="Платежи картой Lucky Frank")
 
-    .footer-block
-      header.footer-block__header
-        h3.footer-block__title Краснодар
+    .footer__block
+      h3.footer__title Меню
 
-      .footer-block__content
-        .footer-info
-          .footer-info__icon.icon-location
-          p.footer-info__text г. Краснодар, ул. Мира 54
+      ul.footer-menu 
+        li.footer-menu__item: a(href="#") Главная
+        li.footer-menu__item: a(href="#") О нас
+        li.footer-menu__item: a(href="#") Услуги
+        li.footer-menu__item: a(href="#") Цены
+        li.footer-menu__item: a(href="#") Контакты
 
-        .footer-info
-          .footer-info__icon.icon-phone
-          p.footer-info__text: a(href="tel:+79111234567") +7 918 195 94 19
+    .footer__block
+      h3.footer__title Контакты
 
-        .footer-info
-          .footer-info__icon.icon-mail-alt
-          p.footer-info__text: a(href="mailto:info@luckyfrank.ru") info@luckyfrank.ru
+      .contact
+        .contact__icon
+          img(src="./img/icons/location.svg", alt="")
+        .contact__content Москва, Волгоградский проспект 60 к1
 
-        .footer-info
-          .social.social--footer
-            a(href="https://www.instagram.com/truemanbarbershop/").social-icon.icon-instagram Instagram
-            a(href="https://vk.com/truemanbarbershop").social-icon.icon-vkontakte Vkontakte
+      .contact
+        .contact__icon
+          img(src="./img/icons/phone.svg", alt="")
+        .contact__content
+          a(href="tel:+79855729406") +7 (985) 572–94–06
 
-    .footer-block
-      header.footer-block__header
-        h3.footer-block__title Москва
+      .contact
+        .contact__icon
+          img(src="./img/icons/clock.svg", alt="")
+        .contact__content Пн-Вс: 10<sup>00</sup> – 22<sup>00</sup>
 
-      .footer-block__content
-        .footer-info
-          .footer-info__icon.icon-location
-          p.footer-info__text г. Краснодар, ул. Мира 54
-
-        .footer-info
-          .footer-info__icon.icon-phone
-          p.footer-info__text: a(href="tel:+79111234567") +7 918 195 94 19
-
-        .footer-info
-          .footer-info__icon.icon-mail-alt
-          p.footer-info__text: a(href="mailto:info@luckyfrank.ru") info@luckyfrank.ru
-
-        .footer-info
-          .social.social--footer
-            a(href="https://www.instagram.com/truemanbarbershop/").social-icon.icon-instagram Instagram
-            a(href="https://vk.com/truemanbarbershop").social-icon.icon-vkontakte Vkontakte
-
-
-    //- .footer-block
-      header.footer-block__header
-        h3.footer-block__title Часы работы
-
-      .footer-block__content
-        .footer-info
-          .footer-info__icon.icon-clock
-          p.footer-info__text.footer-info__text--schedule Понедельник: 10<sup>00</sup> - 22<sup>00</sup> <br>
-            | Вторник: 10<sup>00</sup> - 22<sup>00</sup> <br>
-            | Среда: 10<sup>00</sup> - 22<sup>00</sup> <br>
-            | Четверг: 10<sup>00</sup> - 22<sup>00</sup> <br>
-            | Пятница: 10<sup>00</sup> - 22<sup>00</sup> <br>
-            | Суббота: 10<sup>00</sup> - 22<sup>00</sup> <br>
-            | Воскресенье: 10<sup>00</sup> - 22<sup>00</sup> <br>
-            //- | Воскресенье: <em>Выходной</em>
-
-    .page-footer__quote
+    .footer__quote
       blockquote.quote.quote--inversed
         .quote__deco 
         h3.quote__title Frank <em>Says:</em>

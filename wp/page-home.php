@@ -203,13 +203,13 @@
 
         <!-- Logo -->
         <div class="logo">
-            <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo-white.svg" alt="Lucky Frank Barbershop logo" />
+            <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo.svg" alt="Lucky Frank Barbershop logo" />
         </div>
 
         <!-- Main Navigation -->
         <nav class="main-nav">
             <div class="main-nav__logo">
-                <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo-white.svg" alt="" />
+                <img src="<?php bloginfo("stylesheet_directory"); ?>/img/logo.svg" alt="" />
             </div>
 
             <ul class="main-menu">

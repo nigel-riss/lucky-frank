@@ -1,73 +1,138 @@
 
-        section.section.prices
-            header.section__header.section__header--inversed
-                p.section__suptitle Прайс Lucky Frank
-                h2.section__title Прайс-лист <br>на услуги
-                p.section__subtitle Позволь себе настоящий стиль
-                        
-            .prices__more
-                a(href="").button Все услуги
+section.section.prices
+  header.section__header
+    p.subtitle Позволь себе настоящий стиль
+    h2.title.brown Прайс-лист салона–парикмахерской для&nbsp;мужчин
 
-            .prices__content
-                .prices__column.prices__column--left
-                    table.prices-table
-                        thead
-                            caption Основные услуги
-                        tbody
-                            tr
-                                td Стрижка мужская <br><small>подбор стиля, мытье головы, укладка</small>
-                                td 1500 
-                            tr
-                                td Стрижка детская <br><small>от 5 до 14 лет</small>
-                                td 1200 
-                            tr
-                                td Стрижка под машинку <br><small>одна насадка</small>
-                                td 600 
-                            tr
-                                td Коррекция бороды
-                                td 600 
-                            tr
-                                td Королевское бритьё бороды<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small>
-                                td 1500 
-                            tr
-                                td Королевское бритьё головы<br><small>c косметикой Truefitt&nbsp;&&nbsp;Hill</small>
-                                td 2000 
+    .prices__more
+      a.cta-button(href="#") Все услуги
 
-                .prices__column
-                    table.prices-table
-                        thead
-                            caption Дополнительные услуги
-                        tbody
-                            tr
-                                td Камуфляж седых волос
-                                td 1100 
-                            tr
-                                td Окантовка с подбриванием
-                                td 500 
-                            tr
-                                td Мытьё и укладка волос
-                                td 400 
+  .prices__content
+    .price-table
+      .price-table__head
+        h3.price-table__title Основные услуги
+      .price-table__body
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Стрижка мужская <small>со скидкой, для тех, кто впервые у нас</small>
+            p.price-table__price 1350 
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Стрижка мужская <small>подбор стиля, мытье головы, укладка</small>
+            p.price-table__price 1500 
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Стрижка детская <small>от 5 до 14 лет</small>
+            p.price-table__price 1200 
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Стрижка под машинку <small>одна насадка</small>
+            p.price-table__price 600 
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Коррекция бороды
+            p.price-table__price 600 
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Моделирование бороды
+            p.price-table__price 1000 
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Королевское бритьё бороды
+            p.price-table__price 1500 
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Королевское бритьё головы
+            p.price-table__price 2000 
+          p.price-table__description 
 
-                    table.prices-table
-                        thead
-                            caption Комплексные услуги
-                        tbody
-                            tr
-                                td Стрижка мужская + Коррекция бороды
-                                td 1800 
-                            tr
-                                td Стрижка мужская + Королевское бритьё
-                                td 2700 
-                            tr
-                                td Отец + сын
-                                td 2200 
-                            tr
-                                td Друг + друг
-                                td 2600
-                                
-            .partners
-                .partner: img(src="./img/partners/american-crew.png", alt="American Crew logo")
-                .partner: img(src="./img/partners/truefitt-and-hill.png", alt="Truefitt & Hill logo")
-                .partner: img(src="./img/partners/barber-wild.png", alt="Barber WILD logo")
-                .partner: img(src="./img/partners/wahl.png", alt="WAHL logo")
-                .partner: img(src="./img/partners/proraso.png", alt="Proraso logo")
+    .price-table
+      .price-table__head
+        h3.price-table__title Дополнительные услуги
+      .price-table__body
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Очищающая маска для&nbsp;лица <small>45 минут</small>
+            p.price-table__price 1200
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Горячий воск
+            p.price-table__price 500
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Камуфляж седых волос
+            p.price-table__price 1100
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Камуфляж бороды
+            p.price-table__price 1100
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Окантовка с&nbsp;подбриванием
+            p.price-table__price 500
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Мытьё и&nbsp;укладка волос
+            p.price-table__price 400
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Hair Tattoo в&nbsp;зависимости от&nbsp;сложности
+            p.price-table__price <small>от</small> 500
+          p.price-table__description 
+
+
+    .price-table
+      .price-table__head
+        h3.price-table__title Комплексные услуги
+      .price-table__body
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Стрижка мужская + Королевское бритьё
+            p.price-table__price 2700
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Стрижка мужская + Моделирование бороды <small>1 час 45 мин</small>
+            p.price-table__price 2150
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Коррекция + Горячий воск <small>45 минут</small>
+            p.price-table__price 950
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Стрижка + Очищающая маска для лица <small>1 час 15 мин</small>
+            p.price-table__price 2300
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Отец + Сын
+            p.price-table__price 2200
+          p.price-table__description 
+        .price-table__row
+          .price-table__caption
+            p.price-table__name Друг + Друг
+            p.price-table__price 2600
+          p.price-table__description 
+
+
+  .partners
+    .partner: img(src="./img/partners/american-crew.png", alt="American Crew logo")
+    .partner: img(src="./img/partners/truefitt-and-hill.png", alt="Truefitt & Hill logo")
+    .partner: img(src="./img/partners/barber-wild.png", alt="Barber WILD logo")
+    .partner: img(src="./img/partners/wahl.png", alt="WAHL logo")
+    .partner: img(src="./img/partners/proraso.png", alt="Proraso logo")

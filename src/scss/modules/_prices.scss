@@ -1,71 +1,52 @@
 .prices {
-    // positioning
-    position: relative;
 
-    // typography
-    font-size: 0;
+  // @include atTabletsPortrait {
+  //   // box model
+  //   padding: 80px;
+  // }
 
-    // visual
-    background-color: $dark;
+  // @include atDesktop {
 
-    @include atTabletsPortrait {
-        // box model
-        padding: 80px;
-    }
+  //   // visual
+  //   background-image: url("./img/prices-bg.jpg");
+  //   background-position: bottom center;
+  //   background-repeat: no-repeat;
+  //   // background-size: cover;
+  //   background-size: contain;
+  // }
 
-    @include atDesktop {
+  // &__header {}
 
-        // visual
-        background-image: url("./img/prices-bg.jpg");
-        background-position: bottom center;
-        background-repeat: no-repeat;
-        // background-size: cover;
-        background-size: contain;
-    }
+  // &__content {
+  //   // typography
+  //   font-size: 0;
+  // }
 
-    &__header {
+  // &__column {
+  //   @include atDesktop {
+  //     // box model
+  //     display: inline-block;
+  //     vertical-align: top;
+  //     width: calc(50% - 21px);
 
-    }
+  //     &--left {
+  //       // box model
+  //       margin-right: 40px;
+  //     }
+  //   }
+  // }
 
-    &__content {
-        // typography
-        font-size: 0;
-    }
+  // &__city {
+  //   // typography
+  //   color: $brown;
+  //   font-family: $titleFont;
+  //   font-size: 2rem;
+  //   letter-spacing: 2px;
+  //   text-transform: uppercase;
+  // }
+}
 
-    &__column {
-        @include atDesktop {
-            // box model
-            display: inline-block;
-            vertical-align: top;
-            width: calc(50% - 21px);
-    
-            &--left {
-                    // box model
-                    margin-right: 40px;
-            }
-        }
-    }
-
-    &__city {
-        // typography
-        color: $brown;
-        font-family: $titleFont;
-        font-size: 2rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-
-    &__more {
-        // box model
-        margin-top: 60px;
-
-        // typography
-        text-align: center;
-
-        @include atTabletsPortrait {
-            // typography
-            font-size: 1rem;
-            text-align: left;
-        }
-    }
+.prices__more {
+  // box model
+  display: none;
 }

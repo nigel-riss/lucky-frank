@@ -1,12 +1,18 @@
 .partners {
-    // box model
-    display: none;
+  // box model
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  // align-items: center;
+  padding: 3rem 1rem;
+  padding-top: 4rem;
 
-    @include atDesktop {
-        // box model
-        display: block;
-        display: flex;
-        justify-content: space-around;
-        padding-top: 80px;
-    }
+  // visual
+  background-color: $white;
+  // background-image: linear-gradient(to bottom, transparent, rgba($white, 0.5), $white);
+
+  @include atDesktopS {
+    // box model
+    justify-content: space-around;
+  }
 }

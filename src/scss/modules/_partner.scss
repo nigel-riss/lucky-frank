@@ -1,22 +1,17 @@
 .partner {
-    // box model
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 20px;
-    height: 120px;
-    // max-width: 22%;
-    max-width: 280px;
+  // box model
+  flex-basis: calc(33% - 1rem);
+  max-height: 4rem;
+  margin: 1rem 0;
+}
 
-    img {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+.partner img {
+  // box model
+  height: 100%;
+  width: 100%;
 
-        // box model
-        max-height: 100%;
-        max-width: 100%;
-
-        // visual
-        opacity: 0.5;
-    }
+  // visual
+  object-fit: contain;
+  object-position: center center;
+  opacity: 0.5;
 }

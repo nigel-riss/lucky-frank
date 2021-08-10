@@ -1,4 +1,6 @@
 .prices {
+  // box model
+  padding: 0;
 
   // @include atTabletsPortrait {
   //   // box model
@@ -13,13 +15,6 @@
   //   background-repeat: no-repeat;
   //   // background-size: cover;
   //   background-size: contain;
-  // }
-
-  // &__header {}
-
-  // &__content {
-  //   // typography
-  //   font-size: 0;
   // }
 
   // &__column {
@@ -49,4 +44,15 @@
 .prices__more {
   // box model
   display: none;
+}
+
+.prices__header {
+  // box model
+  padding: 3rem 1rem;
+  padding-bottom: 0;
+}
+
+.prices__content {
+  // box model
+  padding: 0 1rem;
 }

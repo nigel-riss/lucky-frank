@@ -124,21 +124,17 @@ const compileScripts = (cb) => {
 
 
 // Copy fonts and images
-const copyAssets = (cb) => {
-  gulp.src([
+const copyAssets = () => gulp
+  .src([
       dirs.fonts,
       dirs.images,
     ], {
       base: `src`,
     })
-    .pipe(gulp.dest(dirs.public))
-    .pipe(syncServer.stream());
-    // .pipe(syncServer.stream({
-    //   once: true,
-    // }));
-
-  cb();
-};
+  .pipe(gulp.dest(dirs.public))
+  .pipe(syncServer.stream({
+    once: true,
+  }));
 
 
 export const watch = () => {

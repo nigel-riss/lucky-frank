@@ -1,6 +1,11 @@
 .section {
   // box model
   padding: 3rem 1rem;
+
+  @include atTablet {
+    // box model
+    padding: 3rem;
+  }
 }
 
 .section--wrapper {

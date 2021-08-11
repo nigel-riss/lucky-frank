@@ -6,13 +6,13 @@
     // box model
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 3rem 1rem;
-    padding-top: 4rem;
-    // visual
+    padding-top: 0;
 
+    // visual
     background-color: $white;
-    // background-image: linear-gradient(to bottom, transparent, rgba($white, 0.5), $white);
+    background-image: linear-gradient(to bottom, #989898, $white);
   }
 
   @include atDesktopS {

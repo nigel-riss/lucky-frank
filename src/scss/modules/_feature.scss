@@ -10,18 +10,11 @@
   // typography
   text-align: center;
 
-  // @include atTabletsPortrait {
-  //   // box model
-  //   display: inline-block;
-  //   vertical-align: bottom;
-  //   width: 49%;
-  //   max-width: unset;
-  //   padding: 30px;
-  //   margin-bottom: 10px;
-
-  //   // typography
-  //   text-align: left;
-  // }
+  @include atTablet {
+    // box model
+    flex-basis: calc(50% - 1rem);
+    margin-bottom: 4rem;
+  }
 
   // @include atDesktop {
   //   // box model
@@ -52,6 +45,15 @@
   font-weight: 700;
   line-height: 1;
 
+  @include atTablet {
+    // positioning
+    right: -1rem;
+    top: -1rem;
+
+    // typography
+    font-size: 4.5rem;
+  }
+
   // @include atTabletsLandscape {
   //   // positioning
   //   bottom: 10px;
@@ -71,6 +73,12 @@
   height: 6rem;
   width: 6rem;
   margin-bottom: 1rem;
+
+  @include atTablet {
+    // box model
+    height: 4rem;
+    width: 4rem;
+  }
 
   // @include atTabletsPortrait {
   //   // box model
@@ -115,6 +123,11 @@
   letter-spacing: 0.05em;
   // line-height: 1.25;
   text-transform: uppercase;
+
+  @include atTablet {
+    // typography
+    font-size: 0.85rem;
+  }
 
   // @include atTabletsPortrait {
   //   // typography

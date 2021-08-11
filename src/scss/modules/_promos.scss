@@ -1,9 +1,8 @@
 .promos {
-  // @include atTabletsPortrait {
-  //   // box model
-  //   padding: 60px;
-  //   // padding-bottom: 0;
-  // }
+  @include atTablet {
+    // box model
+    padding-bottom: 0;
+  }
 
   // @include atDesktopLarge {
   //   // box model

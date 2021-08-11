@@ -7,6 +7,12 @@
   display: block;
   width: 10rem;
   margin: 0 auto;
+
+  @include atTablet {
+    // box model
+    width: 12rem;
+  }
+
   // margin-bottom: -70px;
   // padding: 20px;
 

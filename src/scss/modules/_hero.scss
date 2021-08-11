@@ -14,15 +14,13 @@
   background-size: cover;
   box-shadow: 0 0.75rem 1rem 0 rgba($dark, 0.25);
 
-  // @include atTabletsPortrait {
-  //   // box model
-  //   padding: 80px;
-  //   // padding-bottom: 140px;
-  //   padding-bottom: 60px;
+  @include atTablet {
+    // box model
+    padding: 3rem;
 
-  //   // visual
-  //   background-image: url("./img/bg-t.jpg");
-  // }
+    // visual
+    background-image: url("./img/bgs/hero-t.jpg");
+  }
 
   // @include atTabletsLandscape {
   //   // box model
@@ -128,6 +126,11 @@
   line-height: 1;
   text-transform: uppercase;
 
+  @include atTablet {
+    // typography
+    font-size: 4rem;
+  }
+
   // @include atTabletsPortrait {
   //   // box model
   //   margin-left: -4px;
@@ -174,6 +177,13 @@
   // box model
   margin-bottom: 1rem;
   padding: 0 1rem;
+
+  @include atTablet {
+    // box model
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
 }
 
 .hero__apps {
@@ -185,6 +195,13 @@
 
   // typography
   font-size: 0;
+
+  @include atTablet {
+    // box model
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
 }
 
 .hero__quote {

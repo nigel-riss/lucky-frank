@@ -1,8 +1,11 @@
 .services {
-  // box model
-
   // visual
   background-color: $white;
+
+  @include atTablet {
+    // box model
+    padding-bottom: 0;
+  }
 
   // @include atTabletsPortrait {
   //   // box model
@@ -31,7 +34,12 @@
   // positioning
   position: relative;
 
-  // box model
+  @include atTablet {
+    // box model
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   // @include atDesktop {
   //   // box model

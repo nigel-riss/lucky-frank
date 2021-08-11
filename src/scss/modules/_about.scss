@@ -31,33 +31,7 @@
 
 .about__video {
   // box model
-  width: 100%;
-  height: 56vw;
-  max-width: 900px;
-  max-height: 520px;
-  padding: 6px;
-
-  // visual
-  border: 2px solid $brown;
-
-  // @include atDesktop {
-  //   // positioning
-  //   position: absolute;
-  //   right: 80px;
-  //   top: 80px;
-
-  //   // box model
-  //   display: block;
-  //   width: 44%;
-  //   // max-width: 500px;
-  //   // width: 35%;
-  // }
-
-  iframe {
-    // box model
-    height: 100%;
-    width: 100%;
-  }
+  margin-bottom: 2rem;
 }
 
 .about__deco {

@@ -25,6 +25,11 @@
   background-image: url("./img/feedback2.jpg");
   background-size: cover;
 
+  @include atTablet {
+    // box model
+    height: auto;
+  }
+
   // @include atTabletsPortrait {
   //   // box model
   //   height: calc(50vw - 50px);
@@ -62,96 +67,19 @@
   border: 2px solid $white;
 }
 
-.feedback__suptitle {
-  // box model
-  margin: 0;
-  padding: 0;
-  padding-bottom: 10px;
-
-  // typography
-  color: $white;
-  font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-
-  // @include atTabletsPortrait {
-  //   // box model
-  //   padding-bottom: 40px;
-
-  //   // typography
-  //   font-size: 1.125rem;
-  //   letter-spacing: 2px;
-  // }
-}
-
-.feedback__title {
-  // box model
-  margin: 0;
-  padding: 0;
-  padding-bottom: 30px;
-
-  // typography
-  color: $white;
-  font-weight: 400;
-  text-transform: uppercase;
-
-  // @include atTabletsPortrait {
-  //   // box model
-  //   padding-bottom: 10px;
-
-  //   // typography
-  //   font-size: 2rem;
-  //   letter-spacing: 2px;
-  // }
-}
-
-.feedback__subtitle {
-  // positioning
-  position: relative;
-
-  // box model
-  margin: 0;
-  padding: 0;
-
-  // typography
-  color: $white;
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-
-  // @include atTabletsPortrait {
-  //   // box model
-  //   padding-bottom: 20px;
-
-  //   // typography
-  //   font-size: 1.125rem;
-  //   letter-spacing: 2px;
-  // }
-
-  &::after {
-    content: "";
-
-    // positioning
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-
+.feedback__caption {
+  @include atTablet {
     // box model
-    height: 2px;
-    width: 50px;
-
-    // visual
-    background-color: $white;
+    margin-bottom: 2rem;
   }
 }
 
 .feedback__more {
-  // positioning
-  position: absolute;
-  bottom: 40px;
-  z-index: 3;
+  @include atTablet {
+    // box model
+    width: 50%;
+    margin-left: auto;
+  }
 }
 
 .feedback__content {
@@ -181,6 +109,12 @@
 
   // visual
   overflow: hidden;
+
+  @include atTablet {
+    // box model
+    flex-basis: calc(33% - 0.5rem);
+    padding-bottom: calc(33% - 0.5rem);
+  }
 }
 
 .feedback__image img {

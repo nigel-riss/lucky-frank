@@ -1,0 +1,48 @@
+.map {
+  // positioning
+  position: relative;
+
+  // box model
+  display: none;
+
+  // @include atTabletsLandscape {
+  //   // box model
+  //   display: block;
+  // }
+
+  &::before {
+    content: "";
+
+    // positioning
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    z-index: 3;
+
+    // box model
+    height: 400px;
+    width: 500px;
+
+    // visual
+    background-image: url("./img/frank.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    // @include atDesktop {
+    //   // box model
+    //   height: 450px;
+    // }
+  }
+}
+
+.map__map {
+  @include atTablet {
+    // box model
+    height: 500px;
+  }
+
+  @include atDesktopS {
+    // box model
+    height: 600px;
+  }
+}

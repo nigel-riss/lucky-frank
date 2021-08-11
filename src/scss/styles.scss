@@ -40,14 +40,14 @@
 @import 'modules/price-table';
 @import 'modules/partners';
 @import 'modules/partner';
-@import 'modules/feedback';
+@import 'modules/feedback'; 
+@import 'modules/map';
+@import 'modules/map-label';
 
 // @import 'modules/inner-section';
 // @import 'modules/inner-about';
 // @import 'modules/about-video';
 // @import 'modules/advices';
-// @import 'modules/location';
-// @import 'modules/map-label';
 // @import 'modules/gallery';
 
 //----- Footer
@@ -62,4 +62,4 @@
 @import 'modules/title';
 @import 'modules/subtitle';
 @import 'modules/section-text';
-// @import 'modules/social';
+@import 'modules/social';

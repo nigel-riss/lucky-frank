@@ -25,6 +25,9 @@
 }
 
 .contact__content {
+  // box model
+  flex-grow: 1;
+
   // typography
   color: $white;
   font-size: 0.85rem;

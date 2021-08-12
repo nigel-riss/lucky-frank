@@ -1,18 +1,53 @@
 .contact {
   // box model
   display: flex;
+  align-items: flex-start;
   margin-bottom: 0.75rem;
+
+  @include atTablet {
+    // box model
+    align-items: center;
+  }
+
+  @include atDesktopS {
+    // box model
+    margin-right: 3rem;
+  }
+}
+
+.contact--desktop {
+  // box model
+  display: none;
+
+  @include atDesktopS {
+    // box model
+    display: flex;
+  }
+}
+
+.contact--social {
+  @include atDesktopS {
+    // box model
+    flex-grow: 1;
+    margin-right: -0.5rem;
+    justify-content: flex-end;
+  }
 }
 
 .contact__icon {
   // box model
   height: 1rem;
   width: 1rem;
-  margin-right: 1rem;
+  margin-right: 0.75rem;
   margin-top: 0.25rem;
 
   // typography
   font-size: 0;
+
+  @include atDesktopS {
+    // box model
+    margin-right: 0.5rem;
+  }
 }
 
 .contact__icon img,
@@ -32,6 +67,11 @@
   color: $white;
   font-size: 0.85rem;
   line-height: 1.25;
+
+  @include atDesktopS {
+    // box model
+    flex-grow: 0;
+  }
 }
 
 .contact__content a {

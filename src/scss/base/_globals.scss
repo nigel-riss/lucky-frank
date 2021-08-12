@@ -63,7 +63,7 @@ body {
 
   @include atDesktopS {
     // box model
-    display: block !important;
+    display: initial !important;
   }
 }
 

@@ -17,28 +17,24 @@
   backdrop-filter: blur(4px);
   transition: all 0.25s ease-in-out;
 
-  // @include atDesktopS {
-  //   // positioning
-  //   position: absolute;
-  //   left: auto;
-  //   right: 50px;
-  //   // bottom: 0px;
-  //   top: 133px;
-  //   // top: 95px;
+  @include atDesktopS {
+    // positioning
+    position: relative;
+    right: auto;
+    top: auto;
 
-  //   // box model
-  //   height: auto;
-  //   width: auto;
-  //   padding: 0;
-  //   // border: 1px solid red;
+    // box model
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+    padding: 0;
 
-  //   // visual
-  //   background-color: transparent;
-  //   box-shadow: none;
-  //   visibility: visible;
-  //   opacity: 1;
-  // }
-
+    // visual
+    background-color: transparent;
+    backdrop-filter: none;
+    transition: none;
+  }
 }
 
 .main-nav__icon {
@@ -47,6 +43,11 @@
   right: 1rem;
   top: 1.25rem;
   z-index: 2;
+
+  @include atDesktopS {
+    // box model
+    display: none;
+  }
 }
 
 .main-nav__logo {
@@ -55,10 +56,20 @@
   margin: 0 auto;
   padding-bottom: 2rem;
 
-  // @include atDesktopS {
-  //   // box model
-  //   display: none;
-  // }
+  @include atDesktopS {
+    // box model
+    flex-grow: 0;
+    margin: 0;
+    margin-bottom: -8rem;
+    padding: 0;
+    width: 16rem;
+  }
+
+  @include atDesktopM {
+    // box model
+    width: 20rem;
+    margin-bottom: -10rem;
+  }
 }
 
 .main-nav--shown {

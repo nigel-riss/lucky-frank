@@ -19,12 +19,30 @@
     // box model
     padding-left: 1.5rem;
   }
+
+  @include atDesktopS {
+    // box model
+    display: block;
+    padding: 0 3rem;
+  }
+
+  @include atDesktopM {
+    // box model
+    // padding: 0 6rem;
+  }
 }
 
 .header__contacts {
   // box model
   padding-top: 0.75rem;
   padding-right: 1rem;
+
+  @include atDesktopS {
+    // box model
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+  }
 }
 
 .header__button {
@@ -36,9 +54,22 @@
 
   // border
   border-left: 1px solid rgba($brown, 0.5);
+
+  @include atDesktopS {
+    // box model
+    display: none;
+  }
 }
 
 .header__nav {
-  // box model
-  // display: none;
+  @include atDesktopS {
+    // box model
+    padding: 1rem 3rem;
+  }
+
+  @include atDesktopM {
+    // box model
+    padding: 1rem 6rem;
+    padding-right: 3rem;
+  }
 }

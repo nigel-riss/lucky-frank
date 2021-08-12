@@ -1,6 +1,11 @@
 .main-menu {
   // typography
   font-size: 0;
+
+  @include atDesktopS {
+    // box model
+    display: flex;
+  }
 }
 
 .main-menu li {
@@ -28,8 +33,17 @@
   // visual
   transition: all 0.25s ease-out;
 
-  &:hover {
+  @include atDesktopS {
+    // box model
+    padding: 0;
+    margin-left: 2rem;
+
     // typography
-    color: $brown;
+    font-size: 1rem;
   }
+}
+
+.main-menu a:hover {
+  // typography
+  color: $brown;
 }

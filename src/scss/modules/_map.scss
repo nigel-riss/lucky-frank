@@ -5,10 +5,10 @@
   // box model
   display: none;
 
-  // @include atTabletsLandscape {
-  //   // box model
-  //   display: block;
-  // }
+  @include atDesktopS {
+    // box model
+    display: block;
+  }
 
   &::before {
     content: "";

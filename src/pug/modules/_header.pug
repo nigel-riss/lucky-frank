@@ -4,7 +4,8 @@ header.header
       .contact
         .contact__icon
           img(src="./img/icons/location.svg", alt="")
-        .contact__content Москва, Волгоградский проспект 60 к1
+        .contact__content 
+          a(href="#map") Москва, Волгоградский проспект 60 к1
 
       .contact
         .contact__icon
@@ -12,16 +13,20 @@ header.header
         .contact__content
           a(href="tel:+79855729406") +7 (985) 572–94–06
 
-      .contact.desktop-only
+      .contact.contact--desktop
         .contact__icon
           img(src="./img/icons/clock.svg", alt="")
         .contact__content Пн-Вс: 10<sup>00</sup> – 22<sup>00</sup>
 
-      .contact.contact--social.desktop-only
+      .contact.contact--desktop.contact--social
         .contact__content
-          .social.social--header
-            a(href="https://www.instagram.com/truemanbarbershop/").social-icon.icon-instagram Instagram
-            a(href="https://vk.com/truemanbarbershop").social-icon.icon-vkontakte Vkontakte
+          .social
+            a(href="https://www.instagram.com/truemanbarbershop/")
+              | Instagram
+              img(src="./img/icons/instagram.svg", alt="")
+            a(href="https://vk.com/truemanbarbershop")
+              | Vkontakte
+              img(src="./img/icons/vk.svg", alt="")
 
     .header__button 
       #menu-icon.menu-icon: .menu-icon__middle 

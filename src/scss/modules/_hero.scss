@@ -22,28 +22,36 @@
     background-image: url("./img/bgs/hero-t.jpg");
   }
 
-  // @include atTabletsLandscape {
-  //   // box model
-  //   padding: 80px;
-  //   padding-bottom: 10px;
-  // }
 
+  @include atDesktopS {
+    // box model
+    padding-top: 6rem;
 
-  // @include atTabletsLandscape {
-  //   // visual
-  //   background-image: url("./img/bg-d.jpg");
-  //   background-position: right center;
-  // }
+    // visual
+    background-image: url("./img/bg-d.jpg");
+    background-position: right center;
+  }
 
-  // @include atDesktop {
-  //   // visual
-  //   background-position: right top;
-  // }
+  @include atDesktopM {
+    // box model
+    padding: 6rem;
+    padding-top: 10rem;
+    
+    // visual
+    background-position: right top;
+  }
 
-  // @include atDesktopLarge {
+  // @include atDesktopL {
   //   // box model
   //   min-height: 800px;
   // }
+}
+
+.hero__logo {
+  @include atDesktopS {
+    // box model
+    display: none;
+  }
 }
 
 .hero__caption {
@@ -60,36 +68,14 @@
   // border
   border-left: 2px solid rgba($white, 0.75);
 
-  // @include atTabletsPortrait {
-  //   // box model
-  //   margin-bottom: 60px;
-  // }
+  @include atDesktopS {
+    // box model
+    padding-left: 0;
+    // margin-bottom: 4rem;
 
-  // @include atDesktop {
-  //   // box model
-  //   margin-bottom: 60px;
-  // }
-
-  // @include atDesktopLarge {
-  //   // box model
-  //   padding-top: 110px;
-  // }
-
-  // &::after {
-  //   content: "";
-
-  //   // positioning
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-
-  //   // box model
-  //   height: 2px;
-  //   width: 50%;
-
-  //   // visual
-  //   background-color: $brown;
-  // }
+    // border
+    border-left: none;
+  }
 }
 
 .hero__welcome {
@@ -104,15 +90,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  // @include atTabletsPortrait {
-  //   // typography
-  //   font-size: 1.25rem;
-  // }
-
-  // @include atDesktop {
-  //   // typography
-  //   font-size: 1.5rem;
-  // }
+  @include atDesktopS {
+    // typography
+    font-size: 1.25rem;
+  }
 }
 
 .hero__title {
@@ -131,28 +112,15 @@
     font-size: 4rem;
   }
 
-  // @include atTabletsPortrait {
-  //   // box model
-  //   margin-left: -4px;
-  //   padding-bottom: 20px;
+  @include atDesktopS {
+    // typography
+    font-size: 5rem;
+  }
 
-  //   // typography
-  //   font-size: 5rem;
-  //   line-height: 0.9;
-  // }
-
-  // @include atDesktop {
-  //   // box model
-  //   margin-left: -6px;
-
-  //   // typography
-  //   font-size: 7rem;
-  // }
-
-  // @include atDesktopLarge {
-  //   // typography
-  //   font-size: 8rem;
-  // }
+  @include atDesktopM {
+    // typography
+    font-size: 6rem;
+  }
 }
 
 .hero__subtitle {
@@ -167,34 +135,18 @@
   line-height: 1.5;
   text-transform: uppercase;
 
-  // @include atDesktop {
-  //   // typography
-  //   letter-spacing: 4px;
-  // }
-}
-
-.hero__cta {
-  // box model
-  margin-bottom: 1rem;
-  padding: 0 1rem;
-
-  @include atTablet {
+  @include atDesktopS {
     // box model
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+    width: 26rem;
+
+    // typography
+    font-size: 1rem;
   }
 }
 
-.hero__apps {
+.hero__buttons {
   // box model
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 3rem;
   padding: 0 1rem;
-
-  // typography
-  font-size: 0;
 
   @include atTablet {
     // box model
@@ -202,51 +154,62 @@
     margin: 0 auto;
     margin-bottom: 3rem;
   }
+
+  @include atDesktopS {
+    // box model
+    width: 22rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.hero__cta {
+  // box model
+  margin-bottom: 1rem;
+}
+
+.hero__apps {
+  // box model
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+
+  // typography
+  font-size: 0;
+
+  @include atDesktopM {
+    // box model
+    margin-bottom: 0;
+  }
 }
 
 .hero__quote {
   // box model
   display: none;
-  margin-top: -10px;
-  margin-bottom: -25px;
-  padding-left: 20px;
-  padding-bottom: 20px;
 
-  // visual
-  border-left: 1px solid $white;
+  @include atDesktopS {
+    // positioning
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
-  // @include atTabletsPortrait {
-  //   // positioning
-  //   position: absolute;
-  //   bottom: 0;
-  //   right: 0;
+    // box model
+    display: block;
+    width: 32rem;
+    padding: 3rem;
+    padding-top: 0;
+    padding-left: 2rem;
 
-  //   // box model
-  //   width: 55%;
-  //   padding: 30px;
-  //   padding-bottom: 40px;
-  //   padding-top: 10px;
-  // }
+    // border
+    border-left: 2px solid $brown;
+  }
 
-  // @include atDesktop {
-  //   // box model
-  //   padding-right: calc(50% - 500px);
-  // }
+  @include atDesktopM {
+    // positioning
+    right: auto;
+    left: 50%;
 
-  // @include atDesktopLarge {
-  //   // box model
-  //   width: 45%;
-  //   padding-right: calc(45% - 500px);
-  // }
-}
-
-.hero__sale {
-  // box model
-  margin-top: -40px;
-  margin-bottom: 80px;
-
-  // typography
-  color: $white;
-  line-height: 1.5;
-
+    // box model
+    width: 38rem;
+  }
 }

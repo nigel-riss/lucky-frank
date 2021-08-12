@@ -2,18 +2,6 @@
   // box model
   display: block;
   flex-basis: calc(50% - 0.5rem);
-
-  // @include atTabletsPortrait {
-  //   // box model
-  //   padding-right: 20px;
-  //   width: 220px;
-  // }
-
-  // @include atDesktop {
-  //   // box model
-  //   display: inline-block;
-  //   vertical-align: top;
-  // }
 }
 
 .app-button svg,
@@ -23,4 +11,10 @@
 
   // visual
   fill: $white;
+  transition: all 0.25s ease-out;
+}
+
+.app-button:hover svg {
+  // visual
+  fill: $brown;
 }

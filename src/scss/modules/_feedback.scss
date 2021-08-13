@@ -1,11 +1,18 @@
 .feedback {
-  // @include atDesktop {
-  //   // box model
-  //   padding: 80px;
+  @include atDesktopS {
+    // box model
+    display: flex;
+    justify-content: space-between;
+    padding: 4.5rem 3rem;
 
-  //   // visual
-  //   background-image: linear-gradient(to bottom, #989898, #ffffff);
-  // }
+    // visual
+    background-image: linear-gradient(to bottom, #989898, $white);
+  }
+
+  @include atDesktopM {
+    // box model
+    padding: 6rem $dPadding;
+  }
 }
 
 
@@ -24,10 +31,18 @@
   background-color: $dark;
   background-image: url("./img/feedback2.jpg");
   background-size: cover;
+  background-position: center center;
 
   @include atTablet {
     // box model
     height: auto;
+  }
+
+  @include atDesktopS {
+    // box model
+    flex-basis: calc(40% - 3rem);
+    margin-right: 1rem;
+    padding: 3rem;
   }
 
   // @include atTabletsPortrait {
@@ -65,6 +80,7 @@
 
   // visual
   border: 2px solid $white;
+  pointer-events: none;
 }
 
 .feedback__caption {
@@ -75,6 +91,7 @@
 }
 
 .feedback__more {
+  display: none;
   @include atTablet {
     // box model
     width: 50%;
@@ -87,14 +104,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
 
-  // @include atDesktop {
-  //   // box model
-  //   display: inline-block;
-  //   vertical-align: top;
-  //   width: calc(60vw - 110px);
-  // }
+  @include atDesktopS {
+    // box model
+    flex-basis: calc(60vw - 12rem);
+    padding: 0;
+    margin-bottom: -1rem;
+  }
 }
 
 .feedback__image {

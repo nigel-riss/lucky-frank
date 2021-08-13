@@ -17,6 +17,14 @@
 
   @include atDesktopS {
     // box model
+    flex-wrap: nowrap;
     justify-content: space-around;
+    padding: 0;
+
+    // visual
+    background-color: transparent;
+    background-image: none;
   }
+
+
 }

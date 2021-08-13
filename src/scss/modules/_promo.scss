@@ -19,12 +19,6 @@
     // typography
     text-align: left;
   }
-
-  // @include atDesktopLarge {
-  //   // box model
-  //   width: 46%;
-  //   padding-left: 160px;
-  // }
 }
 
 
@@ -52,29 +46,6 @@
     // box model
     height: 13rem;
   }
-
-
-  // @include atTabletsLandscape {
-
-
-  //   // box model
-  //   display: block;
-  //   height: 360px;
-  //   width: 360px;
-
-  //   // visual
-  //   box-shadow: 0 0 24px rgba(#333333, 0.75);
-  // }
-
-  // @include atDesktopLarge {
-  //   // positioning
-  //   top: 35px;
-
-  //   // box model
-  //   height: 260px;
-  //   width: 260px;
-  // }
-
 }
 
 .promo img {
@@ -104,23 +75,6 @@
     padding: 2rem;
     padding-left: 12rem;
   }
-
-  // @include atTabletsLandscape {
-  //   // box model
-  //   height: 330px;
-  //   padding-left: 160px;
-  //   display: flex;
-  //   justify-content: center;
-  //   flex-direction: column;
-  // }
-
-  // @include atDesktopLarge {
-  //   // positioning
-  //   z-index: 1;
-
-  //   // box model
-  //   padding-left: 120px;
-  // }
 }
 
 .promo__header {
@@ -156,6 +110,7 @@
 
 .promo__suptitle {
   // box model
+  display: none;
   margin-bottom: 1rem;
 
   // typography
@@ -166,19 +121,24 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  &::before {
-    content: "X ";
-
+  @include atDesktopM {
     // typography
-    font-size: 0.75em;
+    font-size: 0.85rem;
   }
 
-  &::after {
-    content: " X";
+  // &::before {
+  //   content: "X ";
 
-    // typography
-    font-size: 0.75em;
-  }
+  //   // typography
+  //   font-size: 0.75em;
+  // }
+
+  // &::after {
+  //   content: " X";
+
+  //   // typography
+  //   font-size: 0.75em;
+  // }
 }
 
 .promo__title {
@@ -192,6 +152,11 @@
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
+
+  @include atDesktopM {
+    // typography
+    font-size: 1.5rem;
+  }
 }
 
 .promo__subtitle {
@@ -202,6 +167,11 @@
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  @include atDesktopM {
+    // typography
+    font-size: 1rem;
+  }
 }
 
 .promo__text {

@@ -2,6 +2,22 @@
   // box model
   padding: 0;
 
+  @include atDesktopS {
+    // box model
+    padding: 4.5rem 3rem;
+
+    // visual
+    background-image: url('./img/bgs/prices.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @include atDesktopM {
+    // box model
+    padding: 6rem $dPadding;
+  }
+
   // &__column {
   //   @include atDesktop {
   //     // box model
@@ -26,9 +42,12 @@
   // }
 }
 
-.prices__more {
-  // box model
-  display: none;
+.prices__wrapper {
+  @include atDesktopS {
+    // box model
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .prices__header {
@@ -40,6 +59,16 @@
     // box model
     padding: 3rem;
     padding-bottom: 0;
+  }
+
+  @include atDesktopS {
+    // box model
+    flex-basis: calc(35% - 2rem);
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    padding: 0;
   }
 }
 
@@ -61,4 +90,14 @@
     background-size: contain;
   }
 
+  @include atDesktopS {
+    // box model
+    flex-basis: calc(65% - 5rem);
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0;
+
+    // visual
+    background: none;
+  }
 }

@@ -2,27 +2,10 @@
   // box model
   margin-bottom: 2rem;
 
-  // tbody {
-  //   &::before {
-  //     content: "";
-
-  //     // box model
-  //     display: block;
-  //     height: 30px;
-  //     width: 100%;
-  //     border: 1px solid transparent;
-  //   }
-
-  //   &::after {
-  //     content: "";
-
-  //     // box model
-  //     display: block;
-  //     height: 30px;
-  //     width: 100%;
-  //     border: 1px solid transparent;
-  //   }
-  // }
+  @include atDesktopS {
+    // box model
+    margin-bottom: 3rem;
+  }
 }
 
 .price-table__head {
@@ -51,6 +34,12 @@
 
   // border
   border: 2px solid $brown;
+
+  @include atDesktopS {
+    // box model
+    padding: 2rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .price-table__row {
@@ -74,6 +63,11 @@
   font-family: $titleFont;
   font-size: 1rem;
   text-transform: uppercase;
+
+  @include atDesktopM {
+    // typography
+    font-size: 1.25rem;
+  }
 }
 
 .price-table__name small {
@@ -96,6 +90,11 @@
   font-family: $titleFont;
   text-align: right;
   white-space: nowrap;
+
+  @include atDesktopM {
+    // typography
+    font-size: 1.25rem;
+  }
 
   &::after {
     content: " ₽";

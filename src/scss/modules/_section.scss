@@ -6,6 +6,32 @@
     // box model
     padding: 3rem;
   }
+
+  @include atDesktopS {
+    // box model
+    padding: 4.5rem 3rem;
+  }
+
+  @include atDesktopM {
+    // box model
+    padding: 6rem $dPadding;
+  }
+}
+
+.section--fx {
+  @include atDesktopS {
+    // box model
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.section__column {
+  @include atDesktopS {
+    // box model
+    flex-basis: calc(50% - 1rem);
+  }
 }
 
 .section--wrapper {
@@ -25,6 +51,15 @@
 
   // border
   border-left: 2px solid $brown;
+
+  @include atDesktopM {
+    // box model
+    padding-left: 2rem;
+    margin-right: 2rem;
+
+    // border
+    border-left: 4px solid $brown;
+  }
 }
 
 .section__content {

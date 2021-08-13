@@ -4,12 +4,9 @@
     padding-bottom: 0;
   }
 
-  // @include atDesktopLarge {
-  //   // box model
-  //   padding: 0;
-  //   padding-top: 60px;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: space-around;
-  // }
+  @include atDesktopS {
+    // box model
+    display: flex;
+    justify-content: space-between;
+  }
 }

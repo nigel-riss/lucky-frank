@@ -13,14 +13,20 @@
   @include atTablet {
     // box model
     flex-basis: calc(50% - 1rem);
+    flex-shrink: 0;
+    flex-grow: 0;
     margin-bottom: 4rem;
   }
 
-  // @include atDesktop {
-  //   // box model
-  //   width: 33%;
-  //   padding: 40px;
-  // }
+  @include atDesktopS {
+    // box model
+    flex-basis: calc(33% - 2rem);
+    margin: 0 1rem;
+    margin-bottom: 3rem;
+
+    // typography
+    text-align: left;
+  }
 
   // &--first {
   //   @include atDesktopLarge {
@@ -54,13 +60,16 @@
     font-size: 4.5rem;
   }
 
-  // @include atTabletsLandscape {
-  //   // positioning
-  //   bottom: 10px;
+  @include atDesktopS {
+    // positioning
+    bottom: 2.5rem;
+    right: 0;
+    top: auto;
 
-  //   // typography
-  //   font-size: 10rem;
-  // }
+    // typography
+    color: rgba($brown, 0.125);
+    font-size: 7.5rem;
+  }
 }
 
 .feature__icon {
@@ -80,23 +89,11 @@
     width: 4rem;
   }
 
-  // @include atTabletsPortrait {
-  //   // box model
-  //   height: 100px;
-  //   width: 100px;
-  // }
-
-  // @include atTabletsLandscape {
-  //   // box model
-  //   height: 140px;
-  //   width: 140px;
-  // }
-
-  // @include atDesktop {
-  //   // box model
-  //   height: 120px;
-  //   width: 120px;
-  // }
+  @include atDesktopM {
+    // box model
+    height: 6rem;
+    width: 6rem;
+  }
 }
 
 .feature__icon svg,
@@ -127,6 +124,11 @@
   @include atTablet {
     // typography
     font-size: 0.85rem;
+  }
+
+  @include atDesktopM {
+    // typography
+    font-size: 1rem;
   }
 
   // @include atTabletsPortrait {

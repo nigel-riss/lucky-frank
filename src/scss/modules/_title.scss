@@ -11,21 +11,18 @@
   line-height: 1.125;
   text-transform: uppercase;
 
-  small {
-    // box model
-    display: inline-block;
-    vertical-align: top;
-
+  @include atDesktopM {
     // typography
-    font-size: 0.625em;
-    line-height: 1.25;
+    font-size: 3rem;
   }
+}
 
-  // @include atTabletsPortrait {
-  //   // box model
-  //   padding-bottom: 10px;
+.title small {
+  // box model
+  display: inline-block;
+  vertical-align: top;
 
-  //   // typography
-  //   font-size: 2rem;
-  // }
+  // typography
+  font-size: 0.625em;
+  line-height: 1.25;
 }

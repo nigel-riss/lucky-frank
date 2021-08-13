@@ -28,7 +28,7 @@
 
   @include atDesktopM {
     // box model
-    // padding: 0 6rem;
+    padding: 0 $dPadding;
   }
 }
 
@@ -69,7 +69,7 @@
 
   @include atDesktopM {
     // box model
-    padding: 1rem 6rem;
-    padding-right: 3rem;
+    padding: 1rem $dPadding;
+    // padding-right: 6rem;
   }
 }

@@ -9,16 +9,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  // @include atTabletsPortrait {
-  //   // box model
-  //   padding-bottom: 20px;
-  // }
-
-  // @include atTabletsPortrait {
-  //   // box model
-  //   padding-bottom: 40px;
-
-  //   // typography
-  //   font-size: 1.25rem;
-  // }
+  @include atDesktopM {
+    // typography
+    font-size: 1.25rem;
+  }
 }

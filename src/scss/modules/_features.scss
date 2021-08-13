@@ -7,18 +7,32 @@
     padding-bottom: 0;
   }
 
-  // @include atDesktopLarge {
-  //   // visual
-  //   background-image: url("./img/bg-inner-d.jpg");
-  //   background-size: cover;
+  @include atDesktopS {
+    // box model
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4.5rem 3rem;
+    padding-bottom: 2.5rem;
 
-  //   .section__header {
-  //     // box model
-  //     margin-right: 60px;
-  //     float: left;
-  //   }
-  // }
+    // visual
+    background-image: url("./img/bg-inner-d.jpg");
+    background-size: cover;
+  }
 
+  @include atDesktopM {
+    padding: 6rem $dPadding;
+    padding-bottom: 3rem;
+  }
+}
+
+.features__header {
+  @include atDesktopS {
+    // box model
+    flex-basis: calc(30% - 2rem);
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
 }
 
 .features__content {
@@ -27,5 +41,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @include atDesktopS {
+    // box model
+    flex-basis: calc(70% - 3rem);
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 }

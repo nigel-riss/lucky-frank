@@ -34,7 +34,7 @@
 
   @include atDesktopM {
     // box model
-    padding: 6rem;
+    padding: 6rem $dPadding;
     padding-top: 10rem;
     
     // visual

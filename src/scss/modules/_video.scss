@@ -9,18 +9,13 @@
   // visual
   border: 2px solid $brown;
 
-  // @include atDesktop {
-  //   // positioning
-  //   position: absolute;
-  //   right: 80px;
-  //   top: 80px;
-
-  //   // box model
-  //   display: block;
-  //   width: 44%;
-  //   // max-width: 500px;
-  //   // width: 35%;
-  // }
+  @include atDesktopS {
+    // box model
+    display: block;
+    height: 22rem;
+    // max-width: 500px;
+    // width: 35%;
+  }
 }
 
 .video iframe {

@@ -26,25 +26,32 @@
   border: 2px solid $brown;
   border-bottom: none;
 
-  // @include atTabletsLandscape {
-  //   // box model
-  //   justify-content: flex-start;
-  // }
 
-  // @include atDesktop {
-  //   // box model
-  //   padding: 60px 80px;
-  //   padding-bottom: 40px;
-  //   margin-bottom: -82px;
+  @include atDesktopS {
+    // box model
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 1.5rem;
+  }
 
-  //   // visual
-  //   border: 2px solid $brown;
-  // }
+  @include atDesktopM {
+    // box model
+    padding: 3rem;
+  }
 }
 
 .footer__header {
   // box model
   margin-bottom: 3rem;
+
+  @include atDesktopS {
+    // box model
+    flex-basis: 16rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 3rem;
+  }
 }
 
 .footer__cards {
@@ -57,6 +64,13 @@
   // box model
   margin-bottom: 3rem;
   padding: 0 1rem;
+
+  @include atDesktopS {
+    // box model
+    margin-bottom: 0;
+    margin-right: 1rem;
+    padding-top: 3rem;
+  }
 }
 
 .footer__title {
@@ -68,11 +82,25 @@
   font-family: $titleFont;
   text-align: center;
   text-transform: uppercase;
+
+  @include atDesktopS {
+    // typography
+    text-align: left;
+  }
 }
 
 .footer__quote {
   // box model
   display: none;
+
+  @include atDesktopS {
+    // box model
+    display: block;
+    flex-basis: 20rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-top: 3rem;
+  }
 
   // @media (min-width: 1600px) {
   //   // positioning
@@ -89,4 +117,16 @@
   //   // visual
   //   border-left: 2px solid $brown;
   // }
+}
+
+.footer__contacts {
+  @include atDesktopS {
+    // box model
+    margin-left: -1.5rem;
+
+    .social {
+      // box model
+      padding-left: 1rem;
+    }
+  }
 }

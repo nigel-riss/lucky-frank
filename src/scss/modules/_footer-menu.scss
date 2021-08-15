@@ -5,6 +5,14 @@
 .footer-menu__item {
   // typography
   text-align: center;
+
+  @include atDesktopS {
+    // box model
+    margin-bottom: 0.25rem;
+
+    // typography
+    text-align: left;
+  }
 }
 
 .footer-menu__item a {
@@ -14,4 +22,9 @@
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    // typography
+    color: $brown;
+  }
 }

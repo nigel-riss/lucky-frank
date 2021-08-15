@@ -5,7 +5,7 @@ html(lang="ru")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-    link(rel="stylesheet", href="./styles.css")
+    link(rel="stylesheet", href="./styles.css?v=3")
 
     title Барбершоп Lucky Frank
 
@@ -18,7 +18,8 @@ html(lang="ru")
     include ./modules/_promos.pug
     include ./modules/_prices.pug
     include ./modules/_feedback.pug 
-    include ./modules/_map.pug
+    //- include ./modules/_map.pug
     include ./modules/_footer.pug
 
+    script(type="text/javascript", src="https://w126643.yclients.com/widgetJS", charset="UTF-8")
     script(src="./scripts/index.js") 

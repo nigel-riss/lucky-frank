@@ -18,8 +18,9 @@ html(lang="ru")
     include ./modules/_promos.pug
     include ./modules/_prices.pug
     include ./modules/_feedback.pug 
-    //- include ./modules/_map.pug
+    include ./modules/_map.pug
     include ./modules/_footer.pug
 
-    script(type="text/javascript", src="https://w126643.yclients.com/widgetJS", charset="UTF-8")
+    script(type="text/javascript", src="https://w126643.yclients.com/widgetJS", charset="UTF-8") 
     script(src="./scripts/index.js") 
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4rek-2pFY8BLEOCq3jIFzfn4Q43-7loY&callback=initMap") 

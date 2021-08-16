@@ -1,51 +1,57 @@
 .map-label {
-  // @include atTabletsLandscape {
-  //   // positioning
-  //   position: absolute;
-  //   right: 80px;
-  //   top: 35px;
-  //   z-index: 3;
+  @include atDesktopS {
+    // positioning
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
 
-  //   // box model
-  //   display: block;
-  //   padding: 20px 50px;
-  //   padding-bottom: 30px;
+    // box model
+    display: block;
+    padding: 3rem;
+    padding-bottom: 2rem;
+    width: 20rem;
 
-  //   // visual
-  //   background-color: $white;
+    // typography
+    color: $dark;
 
-  //   &::before {
-  //     content: "";
+    // visual
+    background-color: $white;
 
-  //     // positioning
-  //     position: absolute;
-  //     left: 7px;
-  //     top: 7px;
+    &::before {
+      content: "";
 
-  //     // box model
-  //     height: calc(100% - 14px);
-  //     width: calc(100% - 14px);
+      // positioning
+      position: absolute;
+      left: 0.5rem;
+      top: 0.5rem;
 
-  //     // visual
-  //     border: 2px solid $brown;
-  //     pointer-events: none;
-  //   }
-  // }
+      // box model
+      height: calc(100% - 1rem);
+      width: calc(100% - 1rem);
 
-  // @include atDesktop {
-  //   // positioning
-  //   top: 90px;
-  // }
+      // visual
+      border: 2px solid $brown;
+      pointer-events: none;
+    }
+  }
+
+  @include atDesktopM {
+    // positioning
+    right: $dPadding;
+  }
 }
 
 
 .map-label__title {
   // box model
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 
   // typography
   color: $brown;
   font-family: $titleFont;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -65,7 +71,7 @@
 
   a {
     // typography
-    color: $brown;
+    color: $dark;
     text-decoration: none;
 
     &:hover {
@@ -81,5 +87,7 @@
   z-index: 3;
 
   // box model
-  margin-bottom: -90px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 12rem;
 }

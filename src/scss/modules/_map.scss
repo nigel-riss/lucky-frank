@@ -8,6 +8,10 @@
   @include atDesktopS {
     // box model
     display: block;
+
+    // visual
+    background-color: $white;
+    overflow: hidden;
   }
 
   &::before {
@@ -17,7 +21,7 @@
     position: absolute;
     bottom: 0;
     left: 40px;
-    z-index: 3;
+    z-index: 999;
 
     // box model
     height: 400px;
@@ -27,11 +31,6 @@
     background-image: url("./img/frank.png");
     background-repeat: no-repeat;
     background-size: contain;
-
-    // @include atDesktop {
-    //   // box model
-    //   height: 450px;
-    // }
   }
 }
 

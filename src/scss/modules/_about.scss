@@ -5,28 +5,20 @@
 
   // visual
   background-color: $white;
-  // background-image: url("./img/about-bg-m.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
-  // background-size: cover;
-  box-shadow: 0 10px 20px 0 rgba($dark, 0.25);
+  box-shadow: 0 1rem 1.5rem 0 rgba($dark, 0.25);
 
-  // @include atTabletsPortrait {
-  //   // box model
-  //   padding: 80px;
+  @include atTablet {
+    // visual
+    // background-image: url("./img/about-bg-t.jpg");
+  }
 
-  //   // visual
-  //   background-image: url("./img/about-bg-t.jpg");
-  // }
-
-  // @include atDesktop {
-  //   // box model
-  //   padding-right: 56%;
-  //   min-height: 680px;
-
-  //   // visual
-  //   background-image: url("./img/about-bg.jpg");
-  // }
+  @include atDesktopS {
+    // visual
+    background-image: url("./img/bgs/about-d.jpg");
+    background-size: cover;
+  }
 }
 
 .about__video {

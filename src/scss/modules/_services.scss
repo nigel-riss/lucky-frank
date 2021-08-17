@@ -8,20 +8,19 @@
   }
 
   @include atDesktopS {
+    // positioning
+    position: relative;
+
     // box model
-    padding-bottom: 3rem;
+    padding-bottom: 6rem 3rem;
+    padding-bottom: 6rem;
+
+    // visual
+    background-image: url("./img/bgs/services.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
   }
-
-  // @include atDesktop {
-  //   // box model
-  //   padding: 80px;
-
-  //   // visual
-  //   background-image: url("./img/services-bg.jpg");
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   background-position: right bottom;
-  // }
 }
 
 
@@ -39,6 +38,7 @@
   @include atDesktopS {
     // box model
     justify-content: space-between;
+    padding-right: 30%;
   }
 
   // @include atDesktop {
@@ -68,15 +68,20 @@
   // box model
   display: none;
 
-  // // positioning
-  // position: absolute;
-  // right: 0;
-  // bottom: 0;
+  @include atDesktopS {
+    // positioning
+    position: absolute;
+    right: 3rem;
+    bottom: 0;
 
-  // // box model
-  // width: 550px;
-  // padding-top: 30px;
+    // box model
+    display: block;
+    width: 24rem;
+    padding: 3rem;
+    padding-top: 0;
+    padding-left: 2rem;
 
-  // // typography
-  // text-align: left;
+    // border
+    border-left: 2px solid $brown;
+  }
 }

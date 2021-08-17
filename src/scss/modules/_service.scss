@@ -12,19 +12,89 @@
   }
 
   @include atDesktopS {
+    // positioning
+    position: relative;
+
     // box model
-    flex-basis: calc(33% - 2rem);
+    flex-basis: calc(50% - 2rem);
+    margin: 1rem;
+    padding: 0;
+    height: 16rem;
+
+    // visual
+    overflow: hidden;
+  }
+
+  @include atDesktopM {
+    // box model
+    height: 20rem;
   }
 }
 
 .service__header {
   @include atDesktopS {
+    // positioning
+    position: relative;
+    z-index: 2;
+
+    // box model
+    height: 100%;
+    padding: 1rem;
+
+    // visual
+    background-color: rgba($chocolate, 0.25);
+  }
+}
+
+.service__caption {
+  @include atDesktopS {
+    // positioning
+    position: relative;
+
     // box model
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
     height: 100%;
+
+    // border
+    border-left: 1px solid $white;
+    border-top: 1px solid $white;
   }
+}
+
+.service__caption::before {
+    content: "";
+
+    // positioning
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    // box model
+    height: calc(100% - 3.5rem);
+    width: 1px;
+
+    // visual
+    background-color: $white;
+}
+
+.service__caption::after {
+    content: "";
+
+    // positioning
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    // box model
+    height: 1px;
+    width: calc(100% - 3.5rem);
+
+    // visual
+    background-color: $white;
 }
 
 .service__icon {
@@ -41,9 +111,14 @@
   }
 
   @include atDesktopS {
+    // positioning
+    position: absolute;
+    bottom: -0.5rem;
+    right: -0.25rem;
+
     // box model
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
   }
 }
 
@@ -52,6 +127,11 @@
   // box model
   max-height: 100%;
   max-width: 100%;
+
+  @include atDesktopS {
+    // visual
+    fill: $white;
+  }
 }
 
 .service__title {
@@ -69,6 +149,11 @@
   @include atTablet {
     // typography
     font-size: 1.5rem;
+  }
+
+  @include atDesktopS {
+    // typography
+    color: $white;
   }
 
   @include atDesktopM {
@@ -94,6 +179,11 @@
     font-size: 0.75rem;
   }
 
+  @include atDesktopS {
+    // typography
+    color: $white;
+  }
+
   @include atDesktopM {
     // box model
     padding-bottom: 2rem;
@@ -117,6 +207,29 @@
 .service__background {
   // box model
   display: none;
+
+  @include atDesktopS {
+    // positioning
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    // box model
+    display: block;
+  }
+}
+
+.service__background img {
+  // box model
+  height: 100%;
+  width: 100%;
+
+  // visual
+  object-fit: cover;
+  object-position: center center;
 }
 
 
@@ -149,136 +262,9 @@
 //       height: 350px;
 //       width: 440px;
 
-//       // visual
-//       border-left: 1px solid $white;
-//       border-top: 1px solid $white;
 
-//       &::before {
-//           content: "";
 
-//           // positioning
-//           position: absolute;
-//           right: 0;
-//           top: 0;
 
-//           // box model
-//           height: 290px;
-//           width: 1px;
-
-//           // visual
-//           background-color: $white;
-//       }
-
-//       &::after {
-//           content: "";
-
-//           // positioning
-//           position: absolute;
-//           bottom: 0;
-//           left: 0;
-
-//           // box model
-//           height: 1px;
-//           width: 380px;
-
-//           // visual
-//           background-color: $white;
-//       }
 //   }
 
-//   &__title {
-//       // box model
-//       padding-top: 30px;
-
-//       // typography
-//       color: $white;
-//       font-family: $titleFont;
-//       font-size: 2rem;
-//       text-align: center;
-//       text-transform: uppercase;
-//   }
-
-//   &__description {
-//       // positioning
-//       position: absolute;
-//       top: 150px;
-
-//       // box model
-//       padding: 0 50px;
-
-//       // typography
-//       color: $white;
-//       font-size: 1rem;
-//       line-height: 1.5;
-//       font-weight: 700;
-//       text-align: center;
-//   }
-
-//   &__more {
-//       // positioning
-//       position: absolute;
-//       bottom: 50px;
-//       z-index: 3;
-
-//       // box model
-//       width: 100%;
-      
-//       // typography
-//       text-align: center;
-      
-//       a {
-//           // box model
-//           display: inline-block;
-//           vertical-align: top;
-//           padding: 10px 30px;
-          
-//           // typography
-//           color: $white;
-//           font-size: 1rem;
-//           letter-spacing: 1px;
-//           text-decoration: none;
-//           text-transform: uppercase;
-
-//           // visual
-//           border: 2px solid $brown;
-//           transition: all 0.3s ease-out;
-
-//           &:hover {
-//               // visual
-//               background-color: $brown;
-//           }
-//       }
-//   }
-
-//   &__icon {
-//       // positioning
-//       position: absolute;
-//       bottom: 0;
-//       right: 0;
-//       z-index: 2;
-
-//       // box model
-//       height: 60px;
-//       width: 60px;
-//       padding: 5px;
-//       // border: 1px solid red;
-
-//       img {
-//           // box model
-//           display: inline-block;
-//           vertical-align: bottom;
-//           max-height: 100%;
-//           max-width: 100%;
-//       }
-//   }
-
-//   &__background {
-//       // positioning
-//       position: absolute;
-//       left: 0;
-//       top: 0;
-
-//       // box model
-      
-//   }
 // }

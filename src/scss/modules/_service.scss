@@ -19,7 +19,7 @@
     flex-basis: calc(50% - 2rem);
     margin: 1rem;
     padding: 0;
-    height: 16rem;
+    min-height: 16rem;
 
     // visual
     overflow: hidden;
@@ -27,7 +27,7 @@
 
   @include atDesktopM {
     // box model
-    height: 20rem;
+    min-height: 20rem;
   }
 }
 
@@ -42,7 +42,7 @@
     padding: 1rem;
 
     // visual
-    background-color: rgba($chocolate, 0.25);
+    background-color: rgba($chocolate, 0.5);
   }
 }
 
@@ -56,7 +56,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 2rem 3rem;
     height: 100%;
 
     // border
@@ -158,7 +158,7 @@
 
   @include atDesktopM {
     // typography
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -195,7 +195,7 @@
 
 .service__more {
   // box model
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 
   // @include atDesktop {

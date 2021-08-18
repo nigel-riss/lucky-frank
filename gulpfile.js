@@ -35,6 +35,7 @@ const dirs = {
 const webpackConfig = {
   entry: {
     index: `./src/js/index.js`,
+    inner: `./src/js/inner.js`,
   },
   output: {
     filename: `[name].js`,

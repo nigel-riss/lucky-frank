@@ -1,131 +1,153 @@
 .inner-section {
+  // positioning
+  position: relative;
+
+  // box model
+  padding: 2rem 1rem;
+
+  @include atTablet {
+    // box model
+    padding: 3rem;
+  }
+
+  @include atDesktopS {
+    // box model
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  @include atDesktopM {
+    // box model
+    padding: 4.5rem $dPadding;
+  }
+}
+
+.inner-section:nth-child(2n + 1) {
+  @include atDesktopS {
+    .inner-section__header {
+      // box model
+      margin-right: 0;
+      order: 1;
+    }
+
+    .inner-section__content {
+      // box model
+      margin-right: 3rem;
+    }
+  }
+}
+
+.inner-section__header {
+  // box model
+  margin-bottom: 1rem;
+
+  @include atDesktopS {
+    // box model
+    flex-basis: 25rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 3rem;
+  }
+}
+
+.inner-section__title {
+  // box model
+  padding: 1rem;
+
+  // typography
+  color: $brown;
+  font-family: $titleFont;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+
+  @include atDesktopS {
+    // box model
+    padding: 0;
+    margin-bottom: 2rem;
+
+    // typography
+    font-size: 2rem;
+  }
+}
+
+.inner-section__image {
+  // positioning
+  position: relative;
+
+  // box model
+  max-width: 25rem;
+  margin: 0 auto;
+
+  // typography
+  font-size: 0;
+
+  @include atDesktopS {
+    // box model
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+
     // positioning
-    position: relative;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
 
     // box model
-    padding: 25px;
+    height: 100%;
+    width: 100%;
+    height: calc(100% - 1rem);
+    width: calc(100% - 1rem);
 
-    @include atTabletsPortrait {
-        // box model
-        padding: 0 60px;
-        margin: 60px 0;
-    }
+    // visual
+    border: 2px solid $brown;
+  }
 
-    @include atTabletsLandscape {
-        // box model
-        padding: 0 80px;
-    }
+  img {
+    // box model
+    height: 100%;
+    width: 100%;
+  }
+}
 
-    @include atDesktop {
-        // box model
-        padding: 0 80px;
-        max-width: 1400px;
-        margin: 60px auto;
-    }
+.inner-section__content {
+  // box model
+  padding: 0 1rem;
 
-    &::after {
-        content: "";
+  // typography
+  font-size: 0.85rem;
 
-        // box model
-        display: table;
-        width: 100%;
-        clear: both;
-    }
+  @include atDesktopS {
+    // box model
+    flex-basis: calc(50% - 1.5rem);
+    flex-grow: 1;
+    flex-shrink: 0;
 
-    &__title {
-        // box model
-        padding: 10px;
-        margin-top: 0;
-        margin-bottom: 30px;
+    // typography
+    font-size: 1rem;
+  }
 
-        // typography
-        color: $white;
-        font-size: 1.25rem;
-        font-weight: 400;
-        text-align: center;
-        text-transform: uppercase;
+  // @include atTabletsPortrait {
+  //   // box model
+  //   margin-top: -20px;
+  // }
 
-        // visual
-        background-color: $brown;
+  // @include atDesktop {
+  //   // box model
+  //   display: flex;
+  //   flex-direction: column;
+  //   // justify-content: center;
+  //   min-height: 450px;
+  //   margin-top: 0;
+  // }
 
-        @include atTabletsPortrait {
-            // box model
-            display: inline-block;
-            margin-bottom: 40px;
-        }
-    }
-
-    &__image {
-        // positioning
-        position: relative;
-
-        // box model
-        max-width: 450px;
-
-        // typography
-        font-size: 0;
-        
-        &::before {
-            content: "";
-
-            // positioning
-            position: absolute;
-            left: 5px;
-            top: 5px;
-
-            // box model
-            height: 100%;
-            width: 100%;
-            height: calc(100% - 10px);
-            width: calc(100% - 10px);
-
-            // visual
-            border: 2px solid $brown;
-        }
-
-        @include atTabletsPortrait {
-            // box model
-            width: 45%;
-            float: left;
-            margin-right: 30px;
-            margin-bottom: 20px;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            margin-right: 40px;
-        }
-
-        @include atDesktop {
-            // box model
-            margin-right: 60px;
-        }
-
-        img {
-            // box model
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    &__content {
-        @include atTabletsPortrait {
-            // box model
-            margin-top: -20px;
-        }
-
-        @include atDesktop {
-            // box model
-            display: flex;
-            flex-direction: column;
-            // justify-content: center;
-            min-height: 450px;
-            margin-top: 0;
-        }
-
-        p {
-            // typography
-            line-height: 1.5;
-        }
-    }
+  p {
+    // box model
+    margin-bottom: 1rem;
+  }
 }

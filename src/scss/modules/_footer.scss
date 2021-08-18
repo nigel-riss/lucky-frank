@@ -6,11 +6,6 @@
   // visual
   background-color: $dark;
   overflow: hidden;
-
-  // @include atTabletsLandscape {
-  //   // box model
-  //   padding: 40px 80px;
-  // }
 }
 
 
@@ -68,7 +63,7 @@
   @include atDesktopS {
     // box model
     margin-bottom: 0;
-    margin-right: 1rem;
+    margin-right: 2rem;
     padding-top: 3rem;
   }
 }

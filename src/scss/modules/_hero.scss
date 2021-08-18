@@ -41,6 +41,11 @@
   }
 }
 
+.hero--inner {
+  // visual
+  background-image: url("./img/bgs/inner-hero-d.jpg");
+}
+
 .hero__logo {
   @include atDesktopS {
     // box model

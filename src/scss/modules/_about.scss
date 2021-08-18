@@ -5,18 +5,13 @@
 
   // visual
   background-color: $white;
-  background-position: bottom center;
-  background-repeat: no-repeat;
   box-shadow: 0 1rem 1.5rem 0 rgba($dark, 0.25);
-
-  @include atTablet {
-    // visual
-    // background-image: url("./img/about-bg-t.jpg");
-  }
 
   @include atDesktopS {
     // visual
     background-image: url("./img/bgs/about-d.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }

@@ -20,33 +20,53 @@
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
-
-  //   @include atTabletsPortrait {
-  //     // box model
-  //     padding-bottom: 30px;
-  //   }
-  // }
 }
 
 .price-table__body {
   // box model
-  padding: 1.5rem 1rem;
+  padding: 1rem 0.5rem;
 
   // border
   border: 2px solid $brown;
 
   @include atDesktopS {
     // box model
-    padding: 2rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem 1rem;
   }
 }
 
 .price-table__row {
   // box model
-  margin-bottom: 1rem;
+  margin-bottom: 1px;
+  padding: 0.5rem;
+
+  // visual
+  transition: all 0.25s ease-out;
+
+  @include atDesktopS {
+    // box model
+    padding: 0.5rem 1rem;
+  }
 }
 
+.price-table__row--open {
+  // box model
+  padding: 1rem 0.5rem;
+
+  // visual
+  background-color: rgba($brown, 0.25);
+
+  @include atDesktopS {
+    // box model
+    padding: 1rem;
+  }
+}
+
+.price-table__row:hover {
+  // visual
+  background-color: rgba($brown, 0.25);
+  cursor: pointer;
+}
 
 .price-table__caption {
   // box model
@@ -103,5 +123,23 @@
 
 .price-table__description {
   // box model
-  display: none;
+  padding: 0;
+  max-height: 0;
+
+  // typography
+  font-size: 0.85rem;
+
+  // visual
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.25s ease-out;
+}
+
+.price-table__row--open .price-table__description {
+  // box model
+  padding: 0.5rem 0;
+  max-height: initial;
+
+  // visual
+  opacity: 1;
 }

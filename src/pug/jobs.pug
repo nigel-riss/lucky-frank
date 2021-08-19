@@ -5,17 +5,16 @@ html(lang="ru")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-    link(rel="stylesheet", href="./styles.css?v=6")
+    link(rel="stylesheet", href="./styles.css?v=7")
 
     title Вакансии в Барбершопе Lucky Frank
 
   body
     include ./modules/_header.pug
-
-    //- include ./modules/_shaving.pug
-
+    include ./modules/_hero-jobs.pug
+    include ./modules/_jobs.pug
     include ./modules/_footer.pug
 
     script(type="text/javascript", src="https://w126643.yclients.com/widgetJS", charset="UTF-8") 
-    script(src="./scripts/index.js?v=6") 
+    script(src="./scripts/inner.js?v=7") 
     script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4rek-2pFY8BLEOCq3jIFzfn4Q43-7loY&callback=initMap") 

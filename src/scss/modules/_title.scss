@@ -1,5 +1,6 @@
 .title {
   // box model
+  display: flex;
   margin: 0;
   padding: 0;
   padding-bottom: 0.25rem;
@@ -21,6 +22,7 @@
   // box model
   display: inline-block;
   vertical-align: top;
+  margin-top: 2rem;
 
   // typography
   font-size: 0.625em;

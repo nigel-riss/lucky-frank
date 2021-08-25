@@ -36,6 +36,10 @@
     // box model
     display: block;
     height: 10rem;
+    width: 10rem;
+
+    // visual
+    overflow: hidden;
   }
 
   @include atDesktopS {
@@ -45,6 +49,7 @@
 
     // box model
     height: 13rem;
+    width: 13rem;
   }
 }
 
@@ -52,6 +57,7 @@
   // box model
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .promo__content {
